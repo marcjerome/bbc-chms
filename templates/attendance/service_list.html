@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% block title %}Services · {% endblock %}
+{% block content %}
+<div class="flex flex-wrap items-end justify-between gap-4">
+  <div><h1 class="page-title">Services &amp; attendance</h1><div class="gold-rule"></div></div>
+  {% if perms.attendance.view_servicetype %}<a href="{% url 'attendance:servicetype_list' %}" class="btn-ghost"><span aria-hidden="true" class="material-symbols-outlined">event_repeat</span>Service types</a>{% endif %}
+</div>
+
+{% if perms.attendance.add_service %}
+<form method="post" class="card mt-6 p-5">{% csrf_token %}
+  <h2 class="text-lg font-semibold">Open or schedule a service</h2>
+  <p class="text-sm text-on-surface-variant">Today's date opens check-in; a future date adds it to the schedule. Leave the time blank to use the usual time.</p>
+  {% if form.non_field_errors %}<div class="mt-3 rounded-lg bg-error-container px-3 py-2 text-sm text-error">{{ form.non_field_errors|join:" " }}</div>{% endif %}
+  <div class="mt-4 grid items-end gap-4 md:grid-cols-[1.2fr_auto_auto_1fr_auto]">
+    {% include "partials/form_field.html" with field=form.service_type %}
+    {% include "partials/form_field.html" with field=form.date %}
+    {% include "partials/form_field.html" with field=form.start_time %}
+    {% include "partials/form_field.html" with field=form.title %}
+    <button class="btn-primary"><span aria-hidden="true" class="material-symbols-outlined">add</span>Save</button>
+  </div>
+</form>
+{% endif %}
+
+{% if upcoming %}
+<section class="card mt-6">
+  <h2 class="border-b border-outline-variant/40 px-5 py-4 text-lg font-semibold">Upcoming</h2>
+  <ul class="divide-y divide-outline-variant/40">
+    {% for s in upcoming %}
+    <li class="flex flex-wrap items-center gap-3 px-5 py-3">
+      <div class="w-28 text-sm"><p class="font-semibold">{{ s.date|date:"D, M j" }}</p><p class="text-on-surface-variant">{{ s.time|time:"g:i A"|default:"—" }}</p></div>
+      <div class="min-w-0 flex-1"><p class="font-medium">{{ s.title|default:s.service_type.name }}</p>
+        {% if s.is_rescheduled %}<span class="pill bg-secondary-container text-secondary">Rescheduled</span>{% endif %}</div>
+      {% if perms.attendance.change_service %}<a href="{% url 'attendance:service_update' s.pk %}" class="btn-ghost !min-h-9"><span aria-hidden="true" class="material-symbols-outlined">edit_calendar</span>Change</a>{% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
+
+<section class="card mt-6 overflow-hidden">
+  <h2 class="px-5 pt-4 text-lg font-semibold">Past &amp; today</h2>
+  <div class="overflow-x-auto">
+  <table class="table mt-2">
+    <thead><tr><th>Date</th><th>Service</th><th class="text-right">Checked in</th><th class="text-right">Guests</th><th class="text-right">Total</th></tr></thead>
+    <tbody>
+    {% for s in page %}
+      <tr class="cursor-pointer" onclick="location='{{ s.get_absolute_url }}'">
+        <td class="whitespace-nowrap"><a href="{{ s.get_absolute_url }}" class="font-medium hover:underline">{{ s.date|date:"D, M j, Y" }}</a>{% if s.date == today %} <span class="pill bg-tertiary-fixed text-tertiary">Today</span>{% endif %}<p class="text-xs text-on-surface-variant">{{ s.time|time:"g:i A" }}</p></td>
+        <td>{{ s.service_type.name }}{% if s.title %} <span class="text-on-surface-variant">· {{ s.title }}</span>{% endif %}</td>
+        <td class="text-right">{{ s.present }}</td>
+        <td class="text-right">{{ s.guest_headcount }}</td>
+        <td class="text-right font-semibold">{{ s.present|add:s.guest_headcount }}</td>
+      </tr>
+    {% empty %}
+      <tr><td colspan="5" class="py-10 text-center font-serif italic text-on-surface-variant">No services yet. Open one above.</td></tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  </div>
+  {% include "partials/pagination.html" %}
+</section>
+{% endblock %}

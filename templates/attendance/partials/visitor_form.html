@@ -1,0 +1,9 @@
+<form id="visitor-form" hx-post="{% url 'attendance:add_visitor' service.pk %}" hx-target="this" hx-swap="outerHTML" class="space-y-3">
+  {% if added %}<p class="rounded-lg bg-tertiary-fixed px-3 py-2 text-sm text-tertiary">{{ added.full_name }} was added and checked in.</p>{% endif %}
+  <div class="grid gap-3 sm:grid-cols-2">
+    {% include "partials/form_field.html" with field=visitor_form.first_name %}
+    {% include "partials/form_field.html" with field=visitor_form.last_name %}
+  </div>
+  {% include "partials/form_field.html" with field=visitor_form.phone %}
+  <button class="btn-primary w-full">Add &amp; check in</button>
+</form>

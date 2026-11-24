@@ -1,0 +1,5 @@
+{% if visitor_form %}{% include "attendance/partials/visitor_form.html" %}{% endif %}
+{% if member %}{% include "attendance/partials/member_row.html" %}{% endif %}
+{% include "attendance/service_checkin.html#counters" %}
+<span id="absent-count" hx-swap-oob="true">Not yet seen ({{ absent_count }})</span>
+{% include "attendance/service_checkin.html#checked_in" %}

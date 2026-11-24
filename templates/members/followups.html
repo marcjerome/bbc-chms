@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}Visitation · {% endblock %}
+{% block content %}
+<h1 class="page-title">Visitation</h1>
+<div class="gold-rule"></div>
+<div class="mt-6 grid gap-6 lg:grid-cols-2">
+  <section class="card">
+    <div class="border-b border-outline-variant/40 px-5 py-4">
+      <h2 class="text-lg font-semibold">First-time visitors</h2>
+      <p class="text-sm text-on-surface-variant">Visited in the last 14 days. Welcome call or visit.</p>
+    </div>
+    <ul class="divide-y divide-outline-variant/40">
+      {% for m in visitors %}{% include "members/partials/followup_row.html" with prefix="Visited" when=m.first_visit_date %}
+      {% empty %}<li class="px-5 py-6 font-serif italic text-on-surface-variant">No new visitors.</li>{% endfor %}
+    </ul>
+  </section>
+  <section class="card">
+    <div class="border-b border-outline-variant/40 px-5 py-4">
+      <h2 class="text-lg font-semibold">We missed you last {{ absent_services.0.service_type.name|default:"service" }}</h2>
+      <p class="text-sm text-on-surface-variant">{% if absent_services %}Members and regular attendees we didn't see on {{ absent_services.0.date|date:"D, M j" }}. <a class="underline" href="{{ absent_services.0.get_absolute_url }}?absent=1">Open service</a>{% else %}No service recorded yet.{% endif %}</p>
+    </div>
+    <ul class="divide-y divide-outline-variant/40">
+      {% for m in absentees %}{% include "members/partials/followup_row.html" with prefix="Last seen" when=m.last_seen %}
+      {% empty %}<li class="px-5 py-6 font-serif italic text-on-surface-variant">{% if absent_services %}Everyone was there. Praise God!{% else %}No service recorded yet.{% endif %}</li>{% endfor %}
+    </ul>
+  </section>
+</div>
+{% endblock %}

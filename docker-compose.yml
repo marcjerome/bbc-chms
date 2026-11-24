@@ -1,0 +1,52 @@
+# Local development: live-reloading Django + Tailwind watcher, code bind-mounted.
+#   docker compose up --build   ->  http://localhost:8002
+services:
+  db:
+    image: postgres:17
+    environment:
+      POSTGRES_DB: chms
+      POSTGRES_USER: chms
+      POSTGRES_PASSWORD: chms
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U chms -d chms"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  web:
+    build: .
+    command: python manage.py runserver 0.0.0.0:8000
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      DJANGO_SETTINGS_MODULE: config.settings.dev
+      DATABASE_URL: postgres://chms:chms@db:5432/chms
+      SEED_DEMO: ${SEED_DEMO:-true}
+      DJANGO_SUPERUSER_USERNAME: ${DJANGO_SUPERUSER_USERNAME:-admin}
+      DJANGO_SUPERUSER_EMAIL: ${DJANGO_SUPERUSER_EMAIL:-admin@example.com}
+      DJANGO_SUPERUSER_PASSWORD: ${DJANGO_SUPERUSER_PASSWORD:-admin}
+    volumes:
+      - .:/app
+      - /app/tailwind/node_modules
+      - media:/app/media
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "8002:8000"
+
+  tailwind:
+    image: node:22-slim
+    working_dir: /app/tailwind
+    command: sh -c "npm install --no-audit --no-fund && npm run watch"
+    volumes:
+      - .:/app
+      - /app/tailwind/node_modules
+    tty: true
+
+volumes:
+  pgdata:
+  media:

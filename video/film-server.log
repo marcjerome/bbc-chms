@@ -1,0 +1,2188 @@
+Watching for file changes with StatReloader
+[22/Nov/2026 22:38:38] "GET /static/film/s1.html HTTP/1.1" 200 393
+[22/Nov/2026 22:39:19] "GET /login/ HTTP/1.1" 200 4184
+[22/Nov/2026 22:39:19] "GET /static/css/app.css HTTP/1.1" 200 61459
+[22/Nov/2026 22:39:19] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[22/Nov/2026 22:39:19] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[22/Nov/2026 22:39:19] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[22/Nov/2026 22:39:19] "GET /static/img/logo.png HTTP/1.1" 200 74513
+[22/Nov/2026 22:39:20] "POST /login/ HTTP/1.1" 302 0
+[22/Nov/2026 22:39:20] "GET / HTTP/1.1" 200 16161
+[22/Nov/2026 22:39:20] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[22/Nov/2026 22:39:21] "GET /static/film/s1.html HTTP/1.1" 200 393
+[22/Nov/2026 22:39:21] "GET /static/film/base.css HTTP/1.1" 200 1587
+[22/Nov/2026 22:39:21] "GET /static/img/logo.png HTTP/1.1" 200 74513
+[22/Nov/2026 22:39:30] "GET /static/film/s2.html HTTP/1.1" 200 1448
+[22/Nov/2026 22:39:30] "GET /static/film/base.css HTTP/1.1" 200 1587
+[22/Nov/2026 22:39:41] "GET /static/film/s3.html HTTP/1.1" 200 621
+[22/Nov/2026 22:39:41] "GET /static/film/base.css HTTP/1.1" 200 1587
+[22/Nov/2026 22:39:41] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[22/Nov/2026 22:39:47] "GET /static/film/split.html?s=13 HTTP/1.1" 200 999
+[22/Nov/2026 22:39:47] "GET /static/film/base.css HTTP/1.1" 200 1587
+Not Found: /attendance/services/SERVICE/
+[22/Nov/2026 22:39:47] "GET /attendance/services/SERVICE/ HTTP/1.1" 404 7130
+[22/Nov/2026 22:39:47] "GET /biometrics/simulator/ HTTP/1.1" 200 9354
+[22/Nov/2026 22:39:47] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[22/Nov/2026 22:39:47] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[22/Nov/2026 22:39:47] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[22/Nov/2026 22:39:47] "GET /static/css/app.css HTTP/1.1" 200 61459
+[22/Nov/2026 22:39:47] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[22/Nov/2026 22:39:48] "GET /attendance/services/13/ HTTP/1.1" 200 16350
+[22/Nov/2026 22:39:51] "POST /biometrics/simulator/ HTTP/1.1" 200 277
+[22/Nov/2026 22:39:52] "GET /attendance/services/13/live/ HTTP/1.1" 200 9324
+[22/Nov/2026 22:39:53] "GET /attendance/services/13/live/ HTTP/1.1" 200 9324
+[22/Nov/2026 22:39:55] "POST /biometrics/simulator/ HTTP/1.1" 200 274
+[22/Nov/2026 22:39:56] "GET /attendance/services/13/live/ HTTP/1.1" 200 10022
+[22/Nov/2026 22:39:58] "GET /attendance/services/13/live/ HTTP/1.1" 200 10022
+[22/Nov/2026 22:40:00] "POST /biometrics/simulator/ HTTP/1.1" 200 276
+[22/Nov/2026 22:40:01] "GET /attendance/services/13/live/ HTTP/1.1" 200 10722
+[22/Nov/2026 22:40:03] "GET /attendance/services/13/live/ HTTP/1.1" 200 10722
+[22/Nov/2026 22:40:06] "GET /members/67/ HTTP/1.1" 200 10329
+[22/Nov/2026 22:40:06] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[22/Nov/2026 22:40:06] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[22/Nov/2026 22:40:06] "GET /static/css/app.css HTTP/1.1" 200 61459
+[22/Nov/2026 22:40:06] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[22/Nov/2026 22:40:06] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[22/Nov/2026 22:40:06] "GET /static/film/base.css HTTP/1.1" 200 1587
+[22/Nov/2026 22:40:09] "POST /biometrics/members/67/consent/ HTTP/1.1" 302 0
+[22/Nov/2026 22:40:09] "GET /members/67/ HTTP/1.1" 200 11249
+[22/Nov/2026 22:40:11] "POST /biometrics/members/67/register/ HTTP/1.1" 302 0
+[22/Nov/2026 22:40:11] "GET /members/67/ HTTP/1.1" 200 11365
+[22/Nov/2026 22:40:15] "GET / HTTP/1.1" 200 16161
+[22/Nov/2026 22:40:15] "GET /static/css/app.css HTTP/1.1" 200 61459
+[22/Nov/2026 22:40:15] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[22/Nov/2026 22:40:15] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[22/Nov/2026 22:40:15] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[22/Nov/2026 22:40:15] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[22/Nov/2026 22:40:15] "GET /static/film/base.css HTTP/1.1" 200 1587
+[22/Nov/2026 22:40:19] "GET /static/film/phone.html?u=%2Fattendance%2Fservices%2F13%2F%3Fq%3DRa&t=Ushers%20check%20in%3Cbr%3Ewith%20a%20tap. HTTP/1.1" 200 853
+[22/Nov/2026 22:40:19] "GET /attendance/services/13/?q=Ra HTTP/1.1" 200 28822
+[22/Nov/2026 22:40:22] "GET /members/11/ HTTP/1.1" 200 10932
+[22/Nov/2026 22:40:25] "GET /attendance/ HTTP/1.1" 200 12990
+[22/Nov/2026 22:40:25] "GET /static/film/base.css HTTP/1.1" 304 0
+[22/Nov/2026 22:40:27] "GET /members/birthdays/ HTTP/1.1" 200 5782
+[22/Nov/2026 22:40:33] "GET /members/visitation/ HTTP/1.1" 200 12018
+[22/Nov/2026 22:40:33] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[22/Nov/2026 22:40:33] "GET /static/css/app.css HTTP/1.1" 200 61459
+[22/Nov/2026 22:40:33] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[22/Nov/2026 22:40:33] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[22/Nov/2026 22:40:33] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[22/Nov/2026 22:40:33] "GET /static/film/base.css HTTP/1.1" 200 1587
+[22/Nov/2026 22:40:42] "GET /static/film/s8.html HTTP/1.1" 200 825
+[22/Nov/2026 22:40:42] "GET /static/film/base.css HTTP/1.1" 200 1587
+[22/Nov/2026 22:40:42] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[22/Nov/2026 22:40:42] "GET /static/img/logo.png HTTP/1.1" 200 74513
+/home/marcjerome/bbc-chms/biometrics/services.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 22, 2026 - 22:38:35
+Django version 6.1.3, using settings 'config.settings.film'
+Starting WSGI development server at http://127.0.0.1:8003/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.1/howto/deployment/
+Watching for file changes with StatReloader
+[22/Nov/2026 22:41:58] "GET /login/ HTTP/1.1" 200 4184
+[22/Nov/2026 22:41:58] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[22/Nov/2026 22:41:58] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[22/Nov/2026 22:41:58] "GET /static/css/app.css HTTP/1.1" 200 61459
+[22/Nov/2026 22:41:58] "GET /static/img/logo.png HTTP/1.1" 200 74513
+[22/Nov/2026 22:41:58] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[22/Nov/2026 22:41:59] "POST /login/ HTTP/1.1" 302 0
+[22/Nov/2026 22:41:59] "GET / HTTP/1.1" 200 16161
+[22/Nov/2026 22:41:59] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[22/Nov/2026 22:41:59] "GET /static/film/split.html?s=13 HTTP/1.1" 200 1015
+[22/Nov/2026 22:41:59] "GET /static/film/base.css HTTP/1.1" 200 1587
+Not Found: /attendance/services/SERVICE/
+[22/Nov/2026 22:41:59] "GET /attendance/services/SERVICE/ HTTP/1.1" 404 7130
+[22/Nov/2026 22:41:59] "GET /biometrics/simulator/ HTTP/1.1" 200 9354
+[22/Nov/2026 22:41:59] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[22/Nov/2026 22:41:59] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[22/Nov/2026 22:41:59] "GET /static/css/app.css HTTP/1.1" 200 61459
+[22/Nov/2026 22:41:59] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[22/Nov/2026 22:41:59] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[22/Nov/2026 22:42:00] "GET /attendance/services/13/ HTTP/1.1" 200 16338
+[22/Nov/2026 22:42:00] "GET /static/film/overlay.css HTTP/1.1" 200 588
+[22/Nov/2026 22:42:04] "POST /biometrics/simulator/ HTTP/1.1" 200 277
+[22/Nov/2026 22:42:04] "GET /attendance/services/13/live/ HTTP/1.1" 200 9311
+[22/Nov/2026 22:42:05] "GET /attendance/services/13/live/ HTTP/1.1" 200 9311
+[22/Nov/2026 22:42:08] "POST /biometrics/simulator/ HTTP/1.1" 200 274
+[22/Nov/2026 22:42:09] "GET /attendance/services/13/live/ HTTP/1.1" 200 10008
+[22/Nov/2026 22:42:10] "GET /attendance/services/13/live/ HTTP/1.1" 200 10008
+[22/Nov/2026 22:42:12] "POST /biometrics/simulator/ HTTP/1.1" 200 276
+[22/Nov/2026 22:42:13] "GET /attendance/services/13/live/ HTTP/1.1" 200 10707
+[22/Nov/2026 22:42:15] "GET /attendance/services/13/live/ HTTP/1.1" 200 10707
+[22/Nov/2026 22:42:19] "GET /login/ HTTP/1.1" 200 4184
+[22/Nov/2026 22:42:20] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[22/Nov/2026 22:42:20] "GET /static/img/logo.png HTTP/1.1" 200 74513
+[22/Nov/2026 22:42:20] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[22/Nov/2026 22:42:20] "GET /static/css/app.css HTTP/1.1" 200 61459
+[22/Nov/2026 22:42:20] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[22/Nov/2026 22:42:21] "POST /login/ HTTP/1.1" 302 0
+[22/Nov/2026 22:42:21] "GET / HTTP/1.1" 200 16161
+[22/Nov/2026 22:42:21] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[22/Nov/2026 22:42:21] "GET /members/67/ HTTP/1.1" 200 10329
+[22/Nov/2026 22:42:21] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[22/Nov/2026 22:42:21] "GET /static/css/app.css HTTP/1.1" 200 61459
+[22/Nov/2026 22:42:21] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[22/Nov/2026 22:42:21] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[22/Nov/2026 22:42:21] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[22/Nov/2026 22:42:21] "GET /static/film/overlay.css HTTP/1.1" 200 588
+[22/Nov/2026 22:42:24] "POST /biometrics/members/67/consent/ HTTP/1.1" 302 0
+[22/Nov/2026 22:42:24] "GET /members/67/ HTTP/1.1" 200 11249
+[22/Nov/2026 22:42:24] "GET /static/film/overlay.css HTTP/1.1" 304 0
+[22/Nov/2026 22:42:26] "POST /biometrics/members/67/register/ HTTP/1.1" 302 0
+[22/Nov/2026 22:42:26] "GET /members/67/ HTTP/1.1" 200 11365
+[22/Nov/2026 22:42:31] "GET /login/ HTTP/1.1" 200 4184
+[22/Nov/2026 22:42:31] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[22/Nov/2026 22:42:31] "GET /static/css/app.css HTTP/1.1" 200 61459
+[22/Nov/2026 22:42:31] "GET /static/img/logo.png HTTP/1.1" 200 74513
+[22/Nov/2026 22:42:31] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[22/Nov/2026 22:42:31] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[22/Nov/2026 22:42:32] "POST /login/ HTTP/1.1" 302 0
+[22/Nov/2026 22:42:32] "GET / HTTP/1.1" 200 16161
+[22/Nov/2026 22:42:32] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[22/Nov/2026 22:42:32] "GET / HTTP/1.1" 200 16161
+[22/Nov/2026 22:42:32] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[22/Nov/2026 22:42:32] "GET /static/css/app.css HTTP/1.1" 200 61459
+[22/Nov/2026 22:42:32] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[22/Nov/2026 22:42:32] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[22/Nov/2026 22:42:32] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[22/Nov/2026 22:42:33] "GET /static/film/overlay.css HTTP/1.1" 200 588
+[22/Nov/2026 22:42:37] "GET /static/film/phone.html?u=%2Fattendance%2Fservices%2F13%2F%3Fq%3DRa&t=Ushers%20check%20in%3Cbr%3Ewith%20a%20tap. HTTP/1.1" 200 853
+[22/Nov/2026 22:42:37] "GET /static/film/base.css HTTP/1.1" 200 1587
+[22/Nov/2026 22:42:37] "GET /static/film/overlay.css HTTP/1.1" 304 0
+[22/Nov/2026 22:42:37] "GET /attendance/services/13/?q=Ra HTTP/1.1" 200 28803
+[22/Nov/2026 22:42:40] "GET /members/11/ HTTP/1.1" 200 10932
+[22/Nov/2026 22:42:43] "GET /attendance/ HTTP/1.1" 200 12990
+[22/Nov/2026 22:42:43] "GET /static/film/overlay.css HTTP/1.1" 304 0
+[22/Nov/2026 22:42:45] "GET /members/birthdays/ HTTP/1.1" 200 5782
+[22/Nov/2026 22:42:53] "GET /login/ HTTP/1.1" 200 4184
+[22/Nov/2026 22:42:53] "GET /static/css/app.css HTTP/1.1" 200 61459
+[22/Nov/2026 22:42:53] "GET /static/img/logo.png HTTP/1.1" 200 74513
+[22/Nov/2026 22:42:53] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[22/Nov/2026 22:42:53] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[22/Nov/2026 22:42:53] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[22/Nov/2026 22:42:55] "POST /login/ HTTP/1.1" 302 0
+[22/Nov/2026 22:42:55] "GET / HTTP/1.1" 200 16161
+[22/Nov/2026 22:42:55] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[22/Nov/2026 22:42:55] "GET /members/visitation/ HTTP/1.1" 200 12018
+[22/Nov/2026 22:42:55] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[22/Nov/2026 22:42:55] "GET /static/css/app.css HTTP/1.1" 200 61459
+[22/Nov/2026 22:42:55] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[22/Nov/2026 22:42:55] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[22/Nov/2026 22:42:55] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[22/Nov/2026 22:42:55] "GET /static/film/overlay.css HTTP/1.1" 200 588
+[22/Nov/2026 22:43:40] "GET /login/ HTTP/1.1" 200 4184
+[22/Nov/2026 22:43:41] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[22/Nov/2026 22:43:41] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[22/Nov/2026 22:43:41] "GET /static/img/logo.png HTTP/1.1" 200 74513
+[22/Nov/2026 22:43:41] "GET /static/css/app.css HTTP/1.1" 200 61459
+[22/Nov/2026 22:43:41] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[22/Nov/2026 22:43:42] "POST /login/ HTTP/1.1" 302 0
+[22/Nov/2026 22:43:42] "GET / HTTP/1.1" 200 16161
+[22/Nov/2026 22:43:42] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[22/Nov/2026 22:43:42] "GET /static/film/split.html?s=13 HTTP/1.1" 200 1015
+[22/Nov/2026 22:43:42] "GET /static/film/base.css HTTP/1.1" 200 1587
+Not Found: /attendance/services/SERVICE/
+[22/Nov/2026 22:43:42] "GET /attendance/services/SERVICE/ HTTP/1.1" 404 7130
+[22/Nov/2026 22:43:42] "GET /biometrics/simulator/ HTTP/1.1" 200 9354
+[22/Nov/2026 22:43:42] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[22/Nov/2026 22:43:42] "GET /static/css/app.css HTTP/1.1" 200 61459
+[22/Nov/2026 22:43:42] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[22/Nov/2026 22:43:42] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[22/Nov/2026 22:43:42] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[22/Nov/2026 22:43:42] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[22/Nov/2026 22:43:42] "GET /attendance/services/13/ HTTP/1.1" 200 16338
+[22/Nov/2026 22:43:46] "POST /biometrics/simulator/ HTTP/1.1" 200 277
+[22/Nov/2026 22:43:47] "GET /attendance/services/13/live/ HTTP/1.1" 200 9311
+[22/Nov/2026 22:43:47] "GET /attendance/services/13/live/ HTTP/1.1" 200 9311
+[22/Nov/2026 22:43:50] "POST /biometrics/simulator/ HTTP/1.1" 200 274
+[22/Nov/2026 22:43:51] "GET /attendance/services/13/live/ HTTP/1.1" 200 10008
+[22/Nov/2026 22:43:52] "GET /attendance/services/13/live/ HTTP/1.1" 200 10008
+[22/Nov/2026 22:43:54] "POST /biometrics/simulator/ HTTP/1.1" 200 276
+[22/Nov/2026 22:43:55] "GET /attendance/services/13/live/ HTTP/1.1" 200 10707
+[22/Nov/2026 22:43:57] "GET /attendance/services/13/live/ HTTP/1.1" 200 10707
+[22/Nov/2026 22:44:02] "GET /login/ HTTP/1.1" 200 4184
+[22/Nov/2026 22:44:02] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[22/Nov/2026 22:44:02] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[22/Nov/2026 22:44:02] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[22/Nov/2026 22:44:02] "GET /static/css/app.css HTTP/1.1" 200 61459
+[22/Nov/2026 22:44:02] "GET /static/img/logo.png HTTP/1.1" 200 74513
+[22/Nov/2026 22:44:04] "POST /login/ HTTP/1.1" 302 0
+[22/Nov/2026 22:44:04] "GET / HTTP/1.1" 200 16161
+[22/Nov/2026 22:44:04] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[22/Nov/2026 22:44:04] "GET /members/67/ HTTP/1.1" 200 10329
+[22/Nov/2026 22:44:04] "GET /static/css/app.css HTTP/1.1" 200 61459
+[22/Nov/2026 22:44:04] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[22/Nov/2026 22:44:04] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[22/Nov/2026 22:44:04] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[22/Nov/2026 22:44:04] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[22/Nov/2026 22:44:04] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[22/Nov/2026 22:44:06] "POST /biometrics/members/67/consent/ HTTP/1.1" 302 0
+[22/Nov/2026 22:44:06] "GET /members/67/ HTTP/1.1" 200 11249
+[22/Nov/2026 22:44:07] "GET /static/film/overlay.css HTTP/1.1" 304 0
+[22/Nov/2026 22:44:08] "POST /biometrics/members/67/register/ HTTP/1.1" 302 0
+[22/Nov/2026 22:44:08] "GET /members/67/ HTTP/1.1" 200 11365
+[22/Nov/2026 22:44:14] "GET /login/ HTTP/1.1" 200 4184
+[22/Nov/2026 22:44:14] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[22/Nov/2026 22:44:14] "GET /static/css/app.css HTTP/1.1" 200 61459
+[22/Nov/2026 22:44:14] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[22/Nov/2026 22:44:14] "GET /static/img/logo.png HTTP/1.1" 200 74513
+[22/Nov/2026 22:44:14] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[22/Nov/2026 22:44:15] "POST /login/ HTTP/1.1" 302 0
+[22/Nov/2026 22:44:15] "GET / HTTP/1.1" 200 16161
+[22/Nov/2026 22:44:15] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[22/Nov/2026 22:44:15] "GET / HTTP/1.1" 200 16161
+[22/Nov/2026 22:44:15] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[22/Nov/2026 22:44:15] "GET /static/css/app.css HTTP/1.1" 200 61459
+[22/Nov/2026 22:44:15] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[22/Nov/2026 22:44:15] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[22/Nov/2026 22:44:15] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[22/Nov/2026 22:44:16] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[22/Nov/2026 22:44:19] "GET /static/film/phone.html?u=%2Fattendance%2Fservices%2F13%2F%3Fq%3DRa&t=Ushers%20check%20in%3Cbr%3Ewith%20a%20tap. HTTP/1.1" 200 853
+[22/Nov/2026 22:44:19] "GET /static/film/base.css HTTP/1.1" 200 1587
+[22/Nov/2026 22:44:20] "GET /static/film/overlay.css HTTP/1.1" 304 0
+[22/Nov/2026 22:44:20] "GET /attendance/services/13/?q=Ra HTTP/1.1" 200 28803
+[22/Nov/2026 22:44:23] "GET /members/11/ HTTP/1.1" 200 10932
+[22/Nov/2026 22:44:26] "GET /attendance/ HTTP/1.1" 200 12990
+[22/Nov/2026 22:44:26] "GET /static/film/overlay.css HTTP/1.1" 304 0
+[22/Nov/2026 22:44:28] "GET /members/birthdays/ HTTP/1.1" 200 5782
+[22/Nov/2026 22:44:37] "GET /login/ HTTP/1.1" 200 4184
+[22/Nov/2026 22:44:37] "GET /static/css/app.css HTTP/1.1" 200 61459
+[22/Nov/2026 22:44:37] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[22/Nov/2026 22:44:37] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[22/Nov/2026 22:44:37] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[22/Nov/2026 22:44:37] "GET /static/img/logo.png HTTP/1.1" 200 74513
+[22/Nov/2026 22:44:38] "POST /login/ HTTP/1.1" 302 0
+[22/Nov/2026 22:44:38] "GET / HTTP/1.1" 200 16161
+[22/Nov/2026 22:44:38] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[22/Nov/2026 22:44:38] "GET /members/visitation/ HTTP/1.1" 200 12018
+[22/Nov/2026 22:44:38] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[22/Nov/2026 22:44:38] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[22/Nov/2026 22:44:38] "GET /static/css/app.css HTTP/1.1" 200 61459
+[22/Nov/2026 22:44:38] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[22/Nov/2026 22:44:38] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[22/Nov/2026 22:44:39] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[22/Nov/2026 22:52:10] "GET /login/ HTTP/1.1" 200 4184
+[22/Nov/2026 22:52:10] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[22/Nov/2026 22:52:10] "GET /static/css/app.css HTTP/1.1" 200 61459
+[22/Nov/2026 22:52:10] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[22/Nov/2026 22:52:10] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[22/Nov/2026 22:52:10] "GET /static/img/logo.png HTTP/1.1" 200 74513
+[22/Nov/2026 22:52:11] "POST /login/ HTTP/1.1" 302 0
+[22/Nov/2026 22:52:11] "GET / HTTP/1.1" 200 16161
+[22/Nov/2026 22:52:11] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[22/Nov/2026 22:52:11] "GET /static/film/s1.html HTTP/1.1" 200 785
+[22/Nov/2026 22:52:11] "GET /static/film/base.css HTTP/1.1" 200 1587
+[22/Nov/2026 22:52:11] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[22/Nov/2026 22:52:11] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[22/Nov/2026 22:52:12] "GET /static/film/auditorium.jpg HTTP/1.1" 200 388167
+[22/Nov/2026 22:52:20] "GET /login/ HTTP/1.1" 200 4184
+[22/Nov/2026 22:52:20] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[22/Nov/2026 22:52:20] "GET /static/css/app.css HTTP/1.1" 200 61459
+[22/Nov/2026 22:52:20] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[22/Nov/2026 22:52:20] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[22/Nov/2026 22:52:20] "GET /static/img/logo.png HTTP/1.1" 200 74513
+[22/Nov/2026 22:52:22] "POST /login/ HTTP/1.1" 302 0
+[22/Nov/2026 22:52:22] "GET / HTTP/1.1" 200 16161
+[22/Nov/2026 22:52:22] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[22/Nov/2026 22:52:22] "GET /static/film/s2.html HTTP/1.1" 200 1143
+[22/Nov/2026 22:52:22] "GET /static/film/base.css HTTP/1.1" 200 1587
+[22/Nov/2026 22:52:22] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[22/Nov/2026 22:52:22] "GET /static/film/congregation.jpg HTTP/1.1" 200 317497
+[22/Nov/2026 22:52:22] "GET /static/film/pews.jpg HTTP/1.1" 200 364509
+[22/Nov/2026 22:52:33] "GET /login/ HTTP/1.1" 200 4184
+[22/Nov/2026 22:52:33] "GET /static/css/app.css HTTP/1.1" 200 61459
+[22/Nov/2026 22:52:33] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[22/Nov/2026 22:52:33] "GET /static/img/logo.png HTTP/1.1" 200 74513
+[22/Nov/2026 22:52:33] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[22/Nov/2026 22:52:33] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[22/Nov/2026 22:52:34] "POST /login/ HTTP/1.1" 302 0
+[22/Nov/2026 22:52:34] "GET / HTTP/1.1" 200 16161
+[22/Nov/2026 22:52:34] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[22/Nov/2026 22:52:34] "GET /biometrics/ HTTP/1.1" 200 9159
+[22/Nov/2026 22:52:34] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[22/Nov/2026 22:52:34] "GET /static/css/app.css HTTP/1.1" 200 61459
+[22/Nov/2026 22:52:34] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[22/Nov/2026 22:52:34] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[22/Nov/2026 22:52:34] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[22/Nov/2026 22:52:35] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[22/Nov/2026 22:52:40] "GET /biometrics/ HTTP/1.1" 200 1360
+[22/Nov/2026 22:52:45] "GET /biometrics/ HTTP/1.1" 200 1360
+[22/Nov/2026 22:52:50] "GET /biometrics/ HTTP/1.1" 200 1360
+[22/Nov/2026 22:52:52] "GET /login/ HTTP/1.1" 200 4184
+[22/Nov/2026 22:52:52] "GET /static/css/app.css HTTP/1.1" 200 61459
+[22/Nov/2026 22:52:52] "GET /static/img/logo.png HTTP/1.1" 200 74513
+[22/Nov/2026 22:52:52] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[22/Nov/2026 22:52:52] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[22/Nov/2026 22:52:52] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[22/Nov/2026 22:52:53] "POST /login/ HTTP/1.1" 302 0
+[22/Nov/2026 22:52:53] "GET / HTTP/1.1" 200 16161
+[22/Nov/2026 22:52:53] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[22/Nov/2026 22:52:53] "GET / HTTP/1.1" 200 16161
+[22/Nov/2026 22:52:53] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[22/Nov/2026 22:52:53] "GET /static/css/app.css HTTP/1.1" 200 61459
+[22/Nov/2026 22:52:53] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[22/Nov/2026 22:52:53] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[22/Nov/2026 22:52:53] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[22/Nov/2026 22:52:53] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[22/Nov/2026 22:52:57] "GET /static/film/phone.html?u=%2Fattendance%2Fservices%2F13%2F%3Fq%3DRa&t=Ushers%20check%20in%3Cbr%3Ewith%20a%20tap. HTTP/1.1" 200 853
+[22/Nov/2026 22:52:57] "GET /static/film/base.css HTTP/1.1" 200 1587
+[22/Nov/2026 22:52:57] "GET /attendance/services/13/?q=Ra HTTP/1.1" 200 28803
+[22/Nov/2026 22:53:00] "GET /members/11/ HTTP/1.1" 200 10932
+[22/Nov/2026 22:53:03] "GET /members/birthdays/ HTTP/1.1" 200 5782
+[22/Nov/2026 22:53:11] "GET /login/ HTTP/1.1" 200 4184
+[22/Nov/2026 22:53:11] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[22/Nov/2026 22:53:11] "GET /static/css/app.css HTTP/1.1" 200 61459
+[22/Nov/2026 22:53:11] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[22/Nov/2026 22:53:11] "GET /static/img/logo.png HTTP/1.1" 200 74513
+[22/Nov/2026 22:53:11] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[22/Nov/2026 22:53:12] "POST /login/ HTTP/1.1" 302 0
+[22/Nov/2026 22:53:12] "GET / HTTP/1.1" 200 16161
+[22/Nov/2026 22:53:12] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[22/Nov/2026 22:53:12] "GET /static/film/s8.html HTTP/1.1" 200 825
+[22/Nov/2026 22:53:12] "GET /static/film/base.css HTTP/1.1" 200 1587
+[22/Nov/2026 22:53:12] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[22/Nov/2026 22:53:12] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[22/Nov/2026 22:53:12] "GET /static/img/logo.png HTTP/1.1" 200 74513
+[22/Nov/2026 23:07:01] "GET /static/film/kinetic.html HTTP/1.1" 200 1246
+[22/Nov/2026 23:07:02] "GET /login/ HTTP/1.1" 200 4184
+[22/Nov/2026 23:07:02] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[22/Nov/2026 23:07:02] "GET /static/css/app.css HTTP/1.1" 200 61459
+[22/Nov/2026 23:07:02] "GET /static/img/logo.png HTTP/1.1" 200 74513
+[22/Nov/2026 23:07:02] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[22/Nov/2026 23:07:02] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[22/Nov/2026 23:07:03] "POST /login/ HTTP/1.1" 302 0
+[22/Nov/2026 23:07:03] "GET / HTTP/1.1" 200 16161
+[22/Nov/2026 23:07:03] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[22/Nov/2026 23:07:03] "GET /static/film/s1.html HTTP/1.1" 200 785
+[22/Nov/2026 23:07:03] "GET /static/film/base.css HTTP/1.1" 200 1587
+[22/Nov/2026 23:07:03] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[22/Nov/2026 23:07:03] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[22/Nov/2026 23:07:04] "GET /static/film/auditorium.jpg HTTP/1.1" 200 388167
+[22/Nov/2026 23:07:10] "GET /static/film/s2.html HTTP/1.1" 200 1143
+[22/Nov/2026 23:07:10] "GET /static/film/base.css HTTP/1.1" 200 1587
+[22/Nov/2026 23:07:10] "GET /static/film/congregation.jpg HTTP/1.1" 200 317497
+[22/Nov/2026 23:07:10] "GET /static/film/pews.jpg HTTP/1.1" 200 364509
+[22/Nov/2026 23:07:10] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[22/Nov/2026 23:07:20] "GET /static/film/s3.html HTTP/1.1" 200 1225
+[22/Nov/2026 23:07:20] "GET /static/film/base.css HTTP/1.1" 200 1587
+[22/Nov/2026 23:07:20] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[22/Nov/2026 23:07:20] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[22/Nov/2026 23:07:25] "GET /static/film/split.html?s=13 HTTP/1.1" 200 1561
+[22/Nov/2026 23:07:25] "GET /static/film/base.css HTTP/1.1" 200 1587
+Not Found: /attendance/services/SERVICE/
+[22/Nov/2026 23:07:25] "GET /attendance/services/SERVICE/ HTTP/1.1" 404 7130
+[22/Nov/2026 23:07:25] "GET /biometrics/simulator/ HTTP/1.1" 200 9354
+[22/Nov/2026 23:07:25] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[22/Nov/2026 23:07:25] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[22/Nov/2026 23:07:25] "GET /static/css/app.css HTTP/1.1" 200 61459
+[22/Nov/2026 23:07:25] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[22/Nov/2026 23:07:25] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[22/Nov/2026 23:07:25] "GET /attendance/services/13/ HTTP/1.1" 200 16338
+[22/Nov/2026 23:07:25] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[22/Nov/2026 23:07:30] "POST /biometrics/simulator/ HTTP/1.1" 200 277
+[22/Nov/2026 23:07:30] "GET /attendance/services/13/live/ HTTP/1.1" 200 9311
+[22/Nov/2026 23:07:30] "GET /attendance/services/13/live/ HTTP/1.1" 200 9311
+[22/Nov/2026 23:07:31] "POST /biometrics/simulator/ HTTP/1.1" 200 274
+[22/Nov/2026 23:07:32] "GET /attendance/services/13/live/ HTTP/1.1" 200 10008
+[22/Nov/2026 23:07:34] "GET /static/film/kinetic.html?w=No%20lines.%7CNo%20logbooks.&at=1,3 HTTP/1.1" 200 1246
+[22/Nov/2026 23:07:34] "GET /static/film/base.css HTTP/1.1" 200 1587
+[22/Nov/2026 23:07:34] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[22/Nov/2026 23:07:38] "GET /static/film/phone.html?u=%2Fattendance%2Fservices%2F13%2F%3Fq%3DCo&t=Ushers%20check%20in%3Cbr%3Ewith%20a%20tap. HTTP/1.1" 200 853
+[22/Nov/2026 23:07:38] "GET /static/film/base.css HTTP/1.1" 200 1587
+[22/Nov/2026 23:07:38] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[22/Nov/2026 23:07:38] "GET /attendance/services/13/?q=Co HTTP/1.1" 200 21893
+[22/Nov/2026 23:07:38] "GET /static/css/app.css HTTP/1.1" 200 61459
+[22/Nov/2026 23:07:38] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[22/Nov/2026 23:07:38] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[22/Nov/2026 23:07:38] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[22/Nov/2026 23:07:38] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[22/Nov/2026 23:07:43] "POST /attendance/services/13/toggle/44/ HTTP/1.1" 200 11529
+[22/Nov/2026 23:07:43] "GET /attendance/services/13/live/ HTTP/1.1" 200 10579
+[22/Nov/2026 23:07:46] "GET /biometrics/ HTTP/1.1" 200 8730
+[22/Nov/2026 23:07:46] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[22/Nov/2026 23:07:46] "GET /static/css/app.css HTTP/1.1" 200 61459
+[22/Nov/2026 23:07:46] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[22/Nov/2026 23:07:46] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[22/Nov/2026 23:07:46] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[22/Nov/2026 23:07:47] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[22/Nov/2026 23:07:52] "GET /biometrics/ HTTP/1.1" 200 931
+[22/Nov/2026 23:07:56] "GET /biometrics/ HTTP/1.1" 200 931
+[22/Nov/2026 23:08:01] "GET / HTTP/1.1" 200 16161
+[22/Nov/2026 23:08:01] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[22/Nov/2026 23:08:01] "GET /static/css/app.css HTTP/1.1" 200 61459
+[22/Nov/2026 23:08:01] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[22/Nov/2026 23:08:01] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[22/Nov/2026 23:08:01] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[22/Nov/2026 23:08:01] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[22/Nov/2026 23:08:06] "GET /attendance/services/13/ HTTP/1.1" 200 18305
+[22/Nov/2026 23:08:07] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[22/Nov/2026 23:08:07] "GET /static/css/app.css HTTP/1.1" 200 61459
+[22/Nov/2026 23:08:07] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[22/Nov/2026 23:08:07] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[22/Nov/2026 23:08:07] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[22/Nov/2026 23:08:07] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[22/Nov/2026 23:08:11] "GET /members/ HTTP/1.1" 200 34141
+[22/Nov/2026 23:08:11] "GET /static/css/app.css HTTP/1.1" 200 61459
+[22/Nov/2026 23:08:11] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[22/Nov/2026 23:08:11] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[22/Nov/2026 23:08:11] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[22/Nov/2026 23:08:11] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[22/Nov/2026 23:08:12] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[22/Nov/2026 23:08:17] "GET /members/birthdays/ HTTP/1.1" 200 5782
+[22/Nov/2026 23:08:17] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[22/Nov/2026 23:08:17] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[22/Nov/2026 23:08:17] "GET /static/css/app.css HTTP/1.1" 200 61459
+[22/Nov/2026 23:08:17] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[22/Nov/2026 23:08:17] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[22/Nov/2026 23:08:17] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[22/Nov/2026 23:08:23] "GET /static/film/kinetic.html?w=Who%20did%20we%20miss%3F&at=0 HTTP/1.1" 200 1246
+[22/Nov/2026 23:08:23] "GET /static/film/base.css HTTP/1.1" 200 1587
+[22/Nov/2026 23:08:24] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[22/Nov/2026 23:08:26] "GET /members/visitation/ HTTP/1.1" 200 12018
+[22/Nov/2026 23:08:26] "GET /static/css/app.css HTTP/1.1" 200 61459
+[22/Nov/2026 23:08:26] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[22/Nov/2026 23:08:26] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[22/Nov/2026 23:08:26] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[22/Nov/2026 23:08:26] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[22/Nov/2026 23:08:27] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[22/Nov/2026 23:08:32] "GET /static/film/s8.html HTTP/1.1" 200 1470
+[22/Nov/2026 23:08:32] "GET /static/film/base.css HTTP/1.1" 200 1587
+[22/Nov/2026 23:08:32] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[22/Nov/2026 23:08:32] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[22/Nov/2026 23:08:32] "GET /static/img/logo.png HTTP/1.1" 200 74513
+[22/Nov/2026 23:24:48] "GET /login/ HTTP/1.1" 200 4184
+[22/Nov/2026 23:24:49] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[22/Nov/2026 23:24:49] "GET /static/css/app.css HTTP/1.1" 200 61459
+[22/Nov/2026 23:24:49] "GET /static/img/logo.png HTTP/1.1" 200 74513
+[22/Nov/2026 23:24:49] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[22/Nov/2026 23:24:49] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[22/Nov/2026 23:24:50] "POST /login/ HTTP/1.1" 302 0
+[22/Nov/2026 23:24:50] "GET / HTTP/1.1" 200 16161
+[22/Nov/2026 23:24:50] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[22/Nov/2026 23:24:50] "GET /static/film/split.html?s=13 HTTP/1.1" 200 1561
+[22/Nov/2026 23:24:50] "GET /static/film/base.css HTTP/1.1" 200 1587
+Not Found: /attendance/services/SERVICE/
+[22/Nov/2026 23:24:50] "GET /attendance/services/SERVICE/ HTTP/1.1" 404 7130
+[22/Nov/2026 23:24:50] "GET /biometrics/simulator/ HTTP/1.1" 200 9354
+[22/Nov/2026 23:24:50] "GET /static/css/app.css HTTP/1.1" 200 61459
+[22/Nov/2026 23:24:50] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[22/Nov/2026 23:24:50] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[22/Nov/2026 23:24:50] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[22/Nov/2026 23:24:50] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[22/Nov/2026 23:24:50] "GET /attendance/services/13/ HTTP/1.1" 200 16338
+[22/Nov/2026 23:24:51] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[22/Nov/2026 23:24:54] "POST /biometrics/simulator/ HTTP/1.1" 200 277
+[22/Nov/2026 23:24:56] "GET /attendance/services/13/live/ HTTP/1.1" 200 9311
+[22/Nov/2026 23:24:56] "GET /attendance/services/13/live/ HTTP/1.1" 200 9311
+/home/marcjerome/bbc-chms/core/context_processors.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 22, 2026 - 22:41:31
+Django version 6.1.3, using settings 'config.settings.film'
+Starting WSGI development server at http://127.0.0.1:8003/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.1/howto/deployment/
+Watching for file changes with StatReloader
+/home/marcjerome/bbc-chms/checkin/services.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 23, 2026 - 08:43:57
+Django version 6.1.3, using settings 'config.settings.film'
+Starting WSGI development server at http://127.0.0.1:8003/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.1/howto/deployment/
+Watching for file changes with StatReloader
+/home/marcjerome/bbc-chms/checkin/services.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 2 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): attendance, checkin.
+Run 'python manage.py migrate' to apply them.
+November 23, 2026 - 08:46:44
+Django version 6.1.3, using settings 'config.settings.film'
+Starting WSGI development server at http://127.0.0.1:8003/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.1/howto/deployment/
+Watching for file changes with StatReloader
+/home/marcjerome/bbc-chms/checkin/services.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 2 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): attendance, checkin.
+Run 'python manage.py migrate' to apply them.
+November 23, 2026 - 08:46:59
+Django version 6.1.3, using settings 'config.settings.film'
+Starting WSGI development server at http://127.0.0.1:8003/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.1/howto/deployment/
+Watching for file changes with StatReloader
+/home/marcjerome/bbc-chms/checkin/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 2 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): attendance, checkin.
+Run 'python manage.py migrate' to apply them.
+November 23, 2026 - 08:50:26
+Django version 6.1.3, using settings 'config.settings.film'
+Starting WSGI development server at http://127.0.0.1:8003/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.1/howto/deployment/
+Watching for file changes with StatReloader
+/home/marcjerome/bbc-chms/members/forms.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 2 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): attendance, checkin.
+Run 'python manage.py migrate' to apply them.
+November 23, 2026 - 09:45:21
+Django version 6.1.3, using settings 'config.settings.film'
+Starting WSGI development server at http://127.0.0.1:8003/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.1/howto/deployment/
+Watching for file changes with StatReloader
+/home/marcjerome/bbc-chms/core/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 2 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): attendance, checkin.
+Run 'python manage.py migrate' to apply them.
+November 23, 2026 - 09:45:29
+Django version 6.1.3, using settings 'config.settings.film'
+Starting WSGI development server at http://127.0.0.1:8003/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.1/howto/deployment/
+Watching for file changes with StatReloader
+/home/marcjerome/bbc-chms/checkin/services.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 2 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): attendance, checkin.
+Run 'python manage.py migrate' to apply them.
+November 23, 2026 - 09:46:50
+Django version 6.1.3, using settings 'config.settings.film'
+Starting WSGI development server at http://127.0.0.1:8003/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.1/howto/deployment/
+Watching for file changes with StatReloader
+/home/marcjerome/bbc-chms/checkin/services.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 2 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): attendance, checkin.
+Run 'python manage.py migrate' to apply them.
+November 23, 2026 - 10:02:13
+Django version 6.1.3, using settings 'config.settings.film'
+Starting WSGI development server at http://127.0.0.1:8003/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.1/howto/deployment/
+Watching for file changes with StatReloader
+[23/Nov/2026 11:34:32] "GET /login/ HTTP/1.1" 200 4010
+[23/Nov/2026 11:37:47] "GET /login/ HTTP/1.1" 200 4010
+[23/Nov/2026 11:37:47] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[23/Nov/2026 11:37:47] "GET /static/css/app.css HTTP/1.1" 200 67486
+[23/Nov/2026 11:37:47] "GET /static/img/logo.png HTTP/1.1" 200 74513
+[23/Nov/2026 11:37:47] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[23/Nov/2026 11:37:47] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[23/Nov/2026 11:37:47] "GET /static/fonts/material-symbols-outlined.woff2 HTTP/1.1" 200 4025760
+[23/Nov/2026 11:37:47] "GET /static/fonts/playfair-display-latin-400-italic.woff2 HTTP/1.1" 200 21884
+[23/Nov/2026 11:37:47] "GET /static/fonts/playfair-display-latin-700-normal.woff2 HTTP/1.1" 200 23224
+[23/Nov/2026 11:37:47] "GET /static/fonts/inter-latin-wght-normal.woff2 HTTP/1.1" 200 48256
+[23/Nov/2026 11:37:48] "POST /login/ HTTP/1.1" 302 0
+[23/Nov/2026 11:37:48] "GET / HTTP/1.1" 200 15717
+[23/Nov/2026 11:37:48] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[23/Nov/2026 11:37:49] "GET /static/fonts/playfair-display-latin-600-normal.woff2 HTTP/1.1" 200 23228
+[23/Nov/2026 11:37:49] "GET /checkin/stickers/?member=2 HTTP/1.1" 200 19432
+[23/Nov/2026 11:39:08] "GET /login/ HTTP/1.1" 200 4010
+[23/Nov/2026 11:39:08] "GET /static/css/app.css HTTP/1.1" 200 67486
+[23/Nov/2026 11:39:08] "GET /static/img/logo.png HTTP/1.1" 200 74513
+[23/Nov/2026 11:39:08] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[23/Nov/2026 11:39:08] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[23/Nov/2026 11:39:08] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[23/Nov/2026 11:39:08] "GET /static/fonts/material-symbols-outlined.woff2 HTTP/1.1" 200 4025760
+[23/Nov/2026 11:39:09] "GET /static/fonts/playfair-display-latin-400-italic.woff2 HTTP/1.1" 200 21884
+[23/Nov/2026 11:39:09] "GET /static/fonts/playfair-display-latin-700-normal.woff2 HTTP/1.1" 200 23224
+[23/Nov/2026 11:39:09] "GET /static/fonts/inter-latin-wght-normal.woff2 HTTP/1.1" 200 48256
+[23/Nov/2026 11:39:10] "POST /login/ HTTP/1.1" 302 0
+[23/Nov/2026 11:39:10] "GET / HTTP/1.1" 200 15717
+[23/Nov/2026 11:39:10] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[23/Nov/2026 11:39:10] "GET /static/fonts/playfair-display-latin-600-normal.woff2 HTTP/1.1" 200 23228
+[23/Nov/2026 11:39:10] "GET /static/film/door.html?s=13 HTTP/1.1" 200 1518
+[23/Nov/2026 11:39:10] "GET /static/film/base.css HTTP/1.1" 200 1587
+Not Found: /attendance/services/SERVICE/
+[23/Nov/2026 11:39:10] "GET /attendance/services/SERVICE/ HTTP/1.1" 404 6650
+[23/Nov/2026 11:39:10] "GET /checkin/kiosk/?station=Front%20door HTTP/1.1" 200 14930
+[23/Nov/2026 11:39:10] "GET /static/css/app.css HTTP/1.1" 200 67486
+[23/Nov/2026 11:39:10] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[23/Nov/2026 11:39:10] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[23/Nov/2026 11:39:10] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[23/Nov/2026 11:39:10] "GET /static/js/vendor/jsQR.js HTTP/1.1" 200 256885
+[23/Nov/2026 11:39:10] "GET /static/fonts/material-symbols-outlined.woff2 HTTP/1.1" 200 4025760
+[23/Nov/2026 11:39:11] "GET /static/fonts/playfair-display-latin-700-normal.woff2 HTTP/1.1" 200 23224
+[23/Nov/2026 11:39:11] "GET /static/fonts/playfair-display-latin-600-normal.woff2 HTTP/1.1" 200 23228
+[23/Nov/2026 11:39:11] "GET /static/fonts/inter-latin-wght-normal.woff2 HTTP/1.1" 200 48256
+[23/Nov/2026 11:39:11] "GET /attendance/services/13/ HTTP/1.1" 200 16427
+[23/Nov/2026 11:39:11] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[23/Nov/2026 11:39:11] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 11:39:16] "GET /attendance/services/13/live/ HTTP/1.1" 200 8650
+[23/Nov/2026 11:39:18] "POST /checkin/kiosk/scan/ HTTP/1.1" 200 343
+[23/Nov/2026 11:39:19] "GET /attendance/services/13/live/ HTTP/1.1" 200 9372
+[23/Nov/2026 11:39:21] "GET /attendance/services/13/live/ HTTP/1.1" 200 9372
+[23/Nov/2026 11:39:26] "GET /attendance/services/13/live/ HTTP/1.1" 200 9372
+[23/Nov/2026 11:39:31] "GET /attendance/services/13/live/ HTTP/1.1" 200 9372
+[23/Nov/2026 11:39:58] "GET /login/ HTTP/1.1" 200 4010
+[23/Nov/2026 11:39:58] "GET /static/img/logo.png HTTP/1.1" 200 74513
+[23/Nov/2026 11:39:58] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[23/Nov/2026 11:39:58] "GET /static/css/app.css HTTP/1.1" 200 67486
+[23/Nov/2026 11:39:58] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[23/Nov/2026 11:39:58] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[23/Nov/2026 11:39:58] "GET /static/fonts/material-symbols-outlined.woff2 HTTP/1.1" 200 4025760
+[23/Nov/2026 11:39:58] "GET /static/fonts/playfair-display-latin-700-normal.woff2 HTTP/1.1" 200 23224
+[23/Nov/2026 11:39:58] "GET /static/fonts/playfair-display-latin-400-italic.woff2 HTTP/1.1" 200 21884
+[23/Nov/2026 11:39:58] "GET /static/fonts/inter-latin-wght-normal.woff2 HTTP/1.1" 200 48256
+[23/Nov/2026 11:39:59] "POST /login/ HTTP/1.1" 302 0
+[23/Nov/2026 11:39:59] "GET / HTTP/1.1" 200 15717
+[23/Nov/2026 11:39:59] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[23/Nov/2026 11:39:59] "GET /static/fonts/playfair-display-latin-600-normal.woff2 HTTP/1.1" 200 23228
+[23/Nov/2026 11:39:59] "GET /static/film/door.html?s=13 HTTP/1.1" 200 1518
+[23/Nov/2026 11:39:59] "GET /static/film/base.css HTTP/1.1" 200 1587
+Not Found: /attendance/services/SERVICE/
+[23/Nov/2026 11:39:59] "GET /attendance/services/SERVICE/ HTTP/1.1" 404 6650
+[23/Nov/2026 11:39:59] "GET /checkin/kiosk/?station=Front%20door HTTP/1.1" 200 14930
+[23/Nov/2026 11:39:59] "GET /static/css/app.css HTTP/1.1" 200 67486
+[23/Nov/2026 11:39:59] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[23/Nov/2026 11:39:59] "GET /static/js/vendor/jsQR.js HTTP/1.1" 200 256885
+[23/Nov/2026 11:39:59] "GET /static/fonts/material-symbols-outlined.woff2 HTTP/1.1" 200 4025760
+[23/Nov/2026 11:39:59] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[23/Nov/2026 11:39:59] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[23/Nov/2026 11:40:00] "GET /static/fonts/playfair-display-latin-700-normal.woff2 HTTP/1.1" 200 23224
+[23/Nov/2026 11:40:00] "GET /static/fonts/playfair-display-latin-600-normal.woff2 HTTP/1.1" 200 23228
+[23/Nov/2026 11:40:00] "GET /static/fonts/inter-latin-wght-normal.woff2 HTTP/1.1" 200 48256
+[23/Nov/2026 11:40:00] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 11:40:00] "GET /attendance/services/13/ HTTP/1.1" 200 17149
+[23/Nov/2026 11:40:00] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[23/Nov/2026 11:40:05] "GET /attendance/services/13/live/ HTTP/1.1" 200 9372
+[23/Nov/2026 11:40:06] "POST /checkin/kiosk/scan/ HTTP/1.1" 200 338
+[23/Nov/2026 11:40:10] "GET /attendance/services/13/live/ HTTP/1.1" 200 9372
+[23/Nov/2026 11:40:15] "GET /attendance/services/13/live/ HTTP/1.1" 200 9372
+[23/Nov/2026 11:40:20] "GET /attendance/services/13/live/ HTTP/1.1" 200 9372
+[23/Nov/2026 11:40:22] "POST /checkin/kiosk/scan/ HTTP/1.1" 200 338
+[23/Nov/2026 11:40:33] "GET /login/ HTTP/1.1" 200 4010
+[23/Nov/2026 11:40:33] "GET /static/css/app.css HTTP/1.1" 200 67486
+[23/Nov/2026 11:40:33] "GET /static/img/logo.png HTTP/1.1" 200 74513
+[23/Nov/2026 11:40:33] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[23/Nov/2026 11:40:33] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[23/Nov/2026 11:40:33] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[23/Nov/2026 11:40:33] "GET /static/fonts/material-symbols-outlined.woff2 HTTP/1.1" 200 4025760
+[23/Nov/2026 11:40:33] "GET /static/fonts/playfair-display-latin-700-normal.woff2 HTTP/1.1" 200 23224
+[23/Nov/2026 11:40:33] "GET /static/fonts/inter-latin-wght-normal.woff2 HTTP/1.1" 200 48256
+[23/Nov/2026 11:40:33] "GET /static/fonts/playfair-display-latin-400-italic.woff2 HTTP/1.1" 200 21884
+[23/Nov/2026 11:40:34] "POST /login/ HTTP/1.1" 302 0
+[23/Nov/2026 11:40:34] "GET / HTTP/1.1" 200 15717
+[23/Nov/2026 11:40:34] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[23/Nov/2026 11:40:34] "GET /static/fonts/playfair-display-latin-600-normal.woff2 HTTP/1.1" 200 23228
+[23/Nov/2026 11:40:35] "GET /static/film/door.html?s=13 HTTP/1.1" 200 1518
+[23/Nov/2026 11:40:35] "GET /static/film/base.css HTTP/1.1" 200 1587
+Not Found: /attendance/services/SERVICE/
+[23/Nov/2026 11:40:35] "GET /attendance/services/SERVICE/ HTTP/1.1" 404 6650
+[23/Nov/2026 11:40:35] "GET /checkin/kiosk/?station=Front%20door HTTP/1.1" 200 14930
+[23/Nov/2026 11:40:35] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[23/Nov/2026 11:40:35] "GET /static/css/app.css HTTP/1.1" 200 67486
+[23/Nov/2026 11:40:35] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[23/Nov/2026 11:40:35] "GET /static/js/vendor/jsQR.js HTTP/1.1" 200 256885
+[23/Nov/2026 11:40:35] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[23/Nov/2026 11:40:35] "GET /static/fonts/material-symbols-outlined.woff2 HTTP/1.1" 200 4025760
+[23/Nov/2026 11:40:35] "GET /static/fonts/playfair-display-latin-600-normal.woff2 HTTP/1.1" 200 23228
+[23/Nov/2026 11:40:35] "GET /static/fonts/playfair-display-latin-700-normal.woff2 HTTP/1.1" 200 23224
+[23/Nov/2026 11:40:35] "GET /static/fonts/inter-latin-wght-normal.woff2 HTTP/1.1" 200 48256
+[23/Nov/2026 11:40:35] "GET /attendance/services/13/ HTTP/1.1" 200 16427
+[23/Nov/2026 11:40:35] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[23/Nov/2026 11:40:35] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 11:40:40] "GET /attendance/services/13/live/ HTTP/1.1" 200 8650
+[23/Nov/2026 11:40:42] "POST /checkin/kiosk/scan/ HTTP/1.1" 200 343
+[23/Nov/2026 11:40:42] "GET /attendance/services/13/live/ HTTP/1.1" 200 9372
+[23/Nov/2026 11:40:45] "GET /attendance/services/13/live/ HTTP/1.1" 200 9372
+[23/Nov/2026 11:40:50] "GET /attendance/services/13/live/ HTTP/1.1" 200 9372
+[23/Nov/2026 11:41:13] "GET /login/ HTTP/1.1" 200 4010
+[23/Nov/2026 11:41:13] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[23/Nov/2026 11:41:13] "GET /static/css/app.css HTTP/1.1" 200 67486
+[23/Nov/2026 11:41:13] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[23/Nov/2026 11:41:13] "GET /static/img/logo.png HTTP/1.1" 200 74513
+[23/Nov/2026 11:41:13] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[23/Nov/2026 11:41:13] "GET /static/fonts/material-symbols-outlined.woff2 HTTP/1.1" 200 4025760
+[23/Nov/2026 11:41:13] "GET /static/fonts/playfair-display-latin-700-normal.woff2 HTTP/1.1" 200 23224
+[23/Nov/2026 11:41:13] "GET /static/fonts/inter-latin-wght-normal.woff2 HTTP/1.1" 200 48256
+[23/Nov/2026 11:41:13] "GET /static/fonts/playfair-display-latin-400-italic.woff2 HTTP/1.1" 200 21884
+[23/Nov/2026 11:41:13] "POST /login/ HTTP/1.1" 302 0
+[23/Nov/2026 11:41:13] "GET / HTTP/1.1" 200 15717
+[23/Nov/2026 11:41:13] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[23/Nov/2026 11:41:13] "GET /static/fonts/playfair-display-latin-600-normal.woff2 HTTP/1.1" 200 23228
+[23/Nov/2026 11:41:14] "GET /static/film/s1.html HTTP/1.1" 200 785
+[23/Nov/2026 11:41:14] "GET /static/film/base.css HTTP/1.1" 200 1587
+[23/Nov/2026 11:41:14] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[23/Nov/2026 11:41:14] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 11:41:14] "GET /static/film/auditorium.jpg HTTP/1.1" 200 388167
+[23/Nov/2026 11:41:25] "GET /static/film/s2.html HTTP/1.1" 200 1143
+[23/Nov/2026 11:41:25] "GET /static/film/base.css HTTP/1.1" 200 1587
+[23/Nov/2026 11:41:25] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 11:41:25] "GET /static/film/pews.jpg HTTP/1.1" 200 364509
+[23/Nov/2026 11:41:25] "GET /static/film/congregation.jpg HTTP/1.1" 200 317497
+[23/Nov/2026 11:41:36] "GET /static/film/s3.html HTTP/1.1" 200 1225
+[23/Nov/2026 11:41:36] "GET /static/film/base.css HTTP/1.1" 200 1587
+[23/Nov/2026 11:41:36] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[23/Nov/2026 11:41:36] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 11:41:42] "GET /static/film/bible.html HTTP/1.1" 200 3602
+[23/Nov/2026 11:41:42] "GET /static/film/base.css HTTP/1.1" 200 1587
+[23/Nov/2026 11:41:42] "GET /static/film/sticker-marites.png HTTP/1.1" 200 47319
+[23/Nov/2026 11:41:42] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 11:41:42] "GET /static/film/pews.jpg HTTP/1.1" 200 364509
+[23/Nov/2026 11:41:52] "GET /static/film/door.html?s=13 HTTP/1.1" 200 1518
+[23/Nov/2026 11:41:52] "GET /static/film/base.css HTTP/1.1" 200 1587
+Not Found: /attendance/services/SERVICE/
+[23/Nov/2026 11:41:52] "GET /attendance/services/SERVICE/ HTTP/1.1" 404 6650
+[23/Nov/2026 11:41:52] "GET /checkin/kiosk/?station=Front%20door HTTP/1.1" 200 14930
+[23/Nov/2026 11:41:52] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[23/Nov/2026 11:41:52] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[23/Nov/2026 11:41:52] "GET /static/css/app.css HTTP/1.1" 200 67486
+[23/Nov/2026 11:41:52] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[23/Nov/2026 11:41:52] "GET /static/js/vendor/jsQR.js HTTP/1.1" 200 256885
+[23/Nov/2026 11:41:52] "GET /static/fonts/material-symbols-outlined.woff2 HTTP/1.1" 200 4025760
+[23/Nov/2026 11:41:52] "GET /static/fonts/playfair-display-latin-600-normal.woff2 HTTP/1.1" 200 23228
+[23/Nov/2026 11:41:52] "GET /static/fonts/playfair-display-latin-700-normal.woff2 HTTP/1.1" 200 23224
+[23/Nov/2026 11:41:52] "GET /static/fonts/inter-latin-wght-normal.woff2 HTTP/1.1" 200 48256
+[23/Nov/2026 11:41:52] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 11:41:52] "GET /attendance/services/13/ HTTP/1.1" 200 16427
+[23/Nov/2026 11:41:52] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[23/Nov/2026 11:41:57] "GET /attendance/services/13/live/ HTTP/1.1" 200 8650
+[23/Nov/2026 11:41:58] "POST /checkin/kiosk/scan/ HTTP/1.1" 200 343
+[23/Nov/2026 11:41:59] "GET /attendance/services/13/live/ HTTP/1.1" 200 9372
+[23/Nov/2026 11:42:02] "GET /attendance/services/13/live/ HTTP/1.1" 200 9372
+[23/Nov/2026 11:42:07] "GET /attendance/services/13/live/ HTTP/1.1" 200 9372
+[23/Nov/2026 11:42:11] "GET /static/film/kinetic.html?w=No%20lines.%7CNo%20logbooks.&at=0.85,1.54&ms=1000 HTTP/1.1" 200 1278
+[23/Nov/2026 11:42:12] "GET /static/film/base.css HTTP/1.1" 200 1587
+[23/Nov/2026 11:42:12] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 11:42:22] "GET / HTTP/1.1" 200 15717
+[23/Nov/2026 11:42:23] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[23/Nov/2026 11:42:23] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[23/Nov/2026 11:42:23] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[23/Nov/2026 11:42:23] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[23/Nov/2026 11:42:23] "GET /static/css/app.css HTTP/1.1" 200 67486
+[23/Nov/2026 11:42:23] "GET /static/fonts/material-symbols-outlined.woff2 HTTP/1.1" 200 4025760
+[23/Nov/2026 11:42:23] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 11:42:23] "GET /static/fonts/inter-latin-wght-normal.woff2 HTTP/1.1" 200 48256
+[23/Nov/2026 11:42:23] "GET /static/fonts/playfair-display-latin-700-normal.woff2 HTTP/1.1" 200 23224
+[23/Nov/2026 11:42:23] "GET /static/fonts/playfair-display-latin-600-normal.woff2 HTTP/1.1" 200 23228
+[23/Nov/2026 11:42:32] "GET /attendance/services/13/ HTTP/1.1" 200 17149
+[23/Nov/2026 11:42:32] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[23/Nov/2026 11:42:32] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[23/Nov/2026 11:42:32] "GET /static/css/app.css HTTP/1.1" 200 67486
+[23/Nov/2026 11:42:32] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[23/Nov/2026 11:42:32] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[23/Nov/2026 11:42:32] "GET /static/fonts/material-symbols-outlined.woff2 HTTP/1.1" 200 4025760
+[23/Nov/2026 11:42:32] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 11:42:32] "GET /static/fonts/inter-latin-wght-normal.woff2 HTTP/1.1" 200 48256
+[23/Nov/2026 11:42:32] "GET /static/fonts/playfair-display-latin-700-normal.woff2 HTTP/1.1" 200 23224
+[23/Nov/2026 11:42:32] "GET /static/fonts/playfair-display-latin-600-normal.woff2 HTTP/1.1" 200 23228
+[23/Nov/2026 11:42:37] "GET /attendance/services/13/live/ HTTP/1.1" 200 9372
+[23/Nov/2026 11:42:39] "GET /members/ HTTP/1.1" 200 34119
+[23/Nov/2026 11:42:39] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[23/Nov/2026 11:42:39] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[23/Nov/2026 11:42:39] "GET /static/css/app.css HTTP/1.1" 200 67486
+[23/Nov/2026 11:42:39] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[23/Nov/2026 11:42:39] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[23/Nov/2026 11:42:39] "GET /static/fonts/material-symbols-outlined.woff2 HTTP/1.1" 200 4025760
+[23/Nov/2026 11:42:39] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 11:42:39] "GET /static/fonts/playfair-display-latin-700-normal.woff2 HTTP/1.1" 200 23224
+[23/Nov/2026 11:42:39] "GET /static/fonts/inter-latin-wght-normal.woff2 HTTP/1.1" 200 48256
+[23/Nov/2026 11:42:46] "GET /members/birthdays/ HTTP/1.1" 200 5760
+[23/Nov/2026 11:42:46] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[23/Nov/2026 11:42:46] "GET /static/css/app.css HTTP/1.1" 200 67486
+[23/Nov/2026 11:42:46] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[23/Nov/2026 11:42:46] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[23/Nov/2026 11:42:46] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[23/Nov/2026 11:42:46] "GET /static/fonts/material-symbols-outlined.woff2 HTTP/1.1" 200 4025760
+[23/Nov/2026 11:42:46] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 11:42:46] "GET /static/fonts/inter-latin-wght-normal.woff2 HTTP/1.1" 200 48256
+[23/Nov/2026 11:42:46] "GET /static/fonts/playfair-display-latin-700-normal.woff2 HTTP/1.1" 200 23224
+[23/Nov/2026 11:42:54] "GET /members/visitation/ HTTP/1.1" 200 12129
+[23/Nov/2026 11:42:54] "GET /static/css/app.css HTTP/1.1" 200 67486
+[23/Nov/2026 11:42:54] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[23/Nov/2026 11:42:54] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[23/Nov/2026 11:42:54] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[23/Nov/2026 11:42:54] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[23/Nov/2026 11:42:54] "GET /static/fonts/material-symbols-outlined.woff2 HTTP/1.1" 200 4025760
+[23/Nov/2026 11:42:54] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 11:42:55] "GET /static/fonts/inter-latin-wght-normal.woff2 HTTP/1.1" 200 48256
+[23/Nov/2026 11:42:55] "GET /static/fonts/playfair-display-latin-700-normal.woff2 HTTP/1.1" 200 23224
+[23/Nov/2026 11:42:55] "GET /static/fonts/playfair-display-latin-600-normal.woff2 HTTP/1.1" 200 23228
+[23/Nov/2026 11:42:55] "GET /static/fonts/playfair-display-latin-400-italic.woff2 HTTP/1.1" 200 21884
+[23/Nov/2026 11:43:04] "GET /static/film/s8.html HTTP/1.1" 200 1470
+[23/Nov/2026 11:43:04] "GET /static/film/base.css HTTP/1.1" 200 1587
+[23/Nov/2026 11:43:04] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[23/Nov/2026 11:43:04] "GET /static/img/logo.png HTTP/1.1" 200 74513
+[23/Nov/2026 11:43:04] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 11:43:24] "GET /login/ HTTP/1.1" 200 4010
+[23/Nov/2026 11:43:24] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[23/Nov/2026 11:43:24] "GET /static/css/app.css HTTP/1.1" 200 67486
+[23/Nov/2026 11:43:24] "GET /static/img/logo.png HTTP/1.1" 200 74513
+[23/Nov/2026 11:43:24] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[23/Nov/2026 11:43:24] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[23/Nov/2026 11:43:24] "GET /static/fonts/material-symbols-outlined.woff2 HTTP/1.1" 200 4025760
+[23/Nov/2026 11:43:24] "GET /static/fonts/playfair-display-latin-700-normal.woff2 HTTP/1.1" 200 23224
+[23/Nov/2026 11:43:24] "GET /static/fonts/inter-latin-wght-normal.woff2 HTTP/1.1" 200 48256
+[23/Nov/2026 11:43:24] "GET /static/fonts/playfair-display-latin-400-italic.woff2 HTTP/1.1" 200 21884
+[23/Nov/2026 11:43:25] "POST /login/ HTTP/1.1" 302 0
+[23/Nov/2026 11:43:25] "GET / HTTP/1.1" 200 15717
+[23/Nov/2026 11:43:25] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[23/Nov/2026 11:43:25] "GET /static/fonts/playfair-display-latin-600-normal.woff2 HTTP/1.1" 200 23228
+[23/Nov/2026 11:43:25] "GET /static/film/s1.html HTTP/1.1" 200 785
+[23/Nov/2026 11:43:25] "GET /static/film/base.css HTTP/1.1" 200 1587
+[23/Nov/2026 11:43:25] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[23/Nov/2026 11:43:25] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 11:43:26] "GET /static/film/auditorium.jpg HTTP/1.1" 200 388167
+[23/Nov/2026 11:43:32] "GET /static/film/s2.html HTTP/1.1" 200 1143
+[23/Nov/2026 11:43:32] "GET /static/film/base.css HTTP/1.1" 200 1587
+[23/Nov/2026 11:43:32] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 11:43:33] "GET /static/film/pews.jpg HTTP/1.1" 200 364509
+[23/Nov/2026 11:43:33] "GET /static/film/congregation.jpg HTTP/1.1" 200 317497
+[23/Nov/2026 11:43:44] "GET /static/film/s3.html HTTP/1.1" 200 1225
+[23/Nov/2026 11:43:44] "GET /static/film/base.css HTTP/1.1" 200 1587
+[23/Nov/2026 11:43:44] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[23/Nov/2026 11:43:44] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 11:43:53] "GET /static/film/bible.html HTTP/1.1" 200 3602
+[23/Nov/2026 11:43:53] "GET /static/film/base.css HTTP/1.1" 200 1587
+[23/Nov/2026 11:43:53] "GET /static/film/sticker-marites.png HTTP/1.1" 200 47319
+[23/Nov/2026 11:43:53] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 11:43:53] "GET /static/film/pews.jpg HTTP/1.1" 200 364509
+[23/Nov/2026 11:44:01] "GET /static/film/door.html?s=13 HTTP/1.1" 200 1518
+[23/Nov/2026 11:44:01] "GET /static/film/base.css HTTP/1.1" 200 1587
+Not Found: /attendance/services/SERVICE/
+[23/Nov/2026 11:44:01] "GET /attendance/services/SERVICE/ HTTP/1.1" 404 6650
+[23/Nov/2026 11:44:01] "GET /checkin/kiosk/?station=Front%20door HTTP/1.1" 200 14930
+[23/Nov/2026 11:44:01] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[23/Nov/2026 11:44:01] "GET /static/css/app.css HTTP/1.1" 200 67486
+[23/Nov/2026 11:44:01] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[23/Nov/2026 11:44:01] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[23/Nov/2026 11:44:01] "GET /static/js/vendor/jsQR.js HTTP/1.1" 200 256885
+[23/Nov/2026 11:44:01] "GET /static/fonts/material-symbols-outlined.woff2 HTTP/1.1" 200 4025760
+[23/Nov/2026 11:44:01] "GET /static/fonts/playfair-display-latin-700-normal.woff2 HTTP/1.1" 200 23224
+[23/Nov/2026 11:44:01] "GET /static/fonts/inter-latin-wght-normal.woff2 HTTP/1.1" 200 48256
+[23/Nov/2026 11:44:01] "GET /static/fonts/playfair-display-latin-600-normal.woff2 HTTP/1.1" 200 23228
+[23/Nov/2026 11:44:01] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 11:44:01] "GET /attendance/services/13/ HTTP/1.1" 200 16427
+[23/Nov/2026 11:44:01] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[23/Nov/2026 11:44:06] "GET /attendance/services/13/live/ HTTP/1.1" 200 8650
+[23/Nov/2026 11:44:08] "POST /checkin/kiosk/scan/ HTTP/1.1" 200 343
+[23/Nov/2026 11:44:08] "GET /attendance/services/13/live/ HTTP/1.1" 200 9372
+[23/Nov/2026 11:44:11] "GET /attendance/services/13/live/ HTTP/1.1" 200 9372
+[23/Nov/2026 11:44:16] "GET /attendance/services/13/live/ HTTP/1.1" 200 9372
+[23/Nov/2026 11:44:20] "GET /static/film/kinetic.html?w=No%20lines.%7CNo%20logbooks.&at=0.57,1.30&ms=1000 HTTP/1.1" 200 1278
+[23/Nov/2026 11:44:20] "GET /static/film/base.css HTTP/1.1" 200 1587
+[23/Nov/2026 11:44:21] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 11:44:29] "GET / HTTP/1.1" 200 15717
+[23/Nov/2026 11:44:29] "GET /static/css/app.css HTTP/1.1" 200 67486
+[23/Nov/2026 11:44:29] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[23/Nov/2026 11:44:29] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[23/Nov/2026 11:44:29] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[23/Nov/2026 11:44:29] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[23/Nov/2026 11:44:29] "GET /static/fonts/material-symbols-outlined.woff2 HTTP/1.1" 200 4025760
+[23/Nov/2026 11:44:30] "GET /static/fonts/playfair-display-latin-700-normal.woff2 HTTP/1.1" 200 23224
+[23/Nov/2026 11:44:30] "GET /static/fonts/inter-latin-wght-normal.woff2 HTTP/1.1" 200 48256
+[23/Nov/2026 11:44:30] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 11:44:30] "GET /static/fonts/playfair-display-latin-600-normal.woff2 HTTP/1.1" 200 23228
+[23/Nov/2026 11:44:37] "GET /attendance/services/13/ HTTP/1.1" 200 17149
+[23/Nov/2026 11:44:37] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[23/Nov/2026 11:44:37] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[23/Nov/2026 11:44:37] "GET /static/css/app.css HTTP/1.1" 200 67486
+[23/Nov/2026 11:44:37] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[23/Nov/2026 11:44:37] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[23/Nov/2026 11:44:37] "GET /static/fonts/material-symbols-outlined.woff2 HTTP/1.1" 200 4025760
+[23/Nov/2026 11:44:37] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 11:44:37] "GET /static/fonts/playfair-display-latin-600-normal.woff2 HTTP/1.1" 200 23228
+[23/Nov/2026 11:44:37] "GET /static/fonts/playfair-display-latin-700-normal.woff2 HTTP/1.1" 200 23224
+[23/Nov/2026 11:44:37] "GET /static/fonts/inter-latin-wght-normal.woff2 HTTP/1.1" 200 48256
+[23/Nov/2026 11:44:42] "GET /attendance/services/13/live/ HTTP/1.1" 200 9372
+[23/Nov/2026 11:44:44] "GET /members/ HTTP/1.1" 200 34119
+[23/Nov/2026 11:44:45] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[23/Nov/2026 11:44:45] "GET /static/css/app.css HTTP/1.1" 200 67486
+[23/Nov/2026 11:44:45] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[23/Nov/2026 11:44:45] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[23/Nov/2026 11:44:45] "GET /static/fonts/material-symbols-outlined.woff2 HTTP/1.1" 200 4025760
+[23/Nov/2026 11:44:45] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[23/Nov/2026 11:44:45] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 11:44:45] "GET /static/fonts/playfair-display-latin-700-normal.woff2 HTTP/1.1" 200 23224
+[23/Nov/2026 11:44:45] "GET /static/fonts/inter-latin-wght-normal.woff2 HTTP/1.1" 200 48256
+[23/Nov/2026 11:44:50] "GET /members/birthdays/ HTTP/1.1" 200 5760
+[23/Nov/2026 11:44:51] "GET /static/css/app.css HTTP/1.1" 200 67486
+[23/Nov/2026 11:44:51] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[23/Nov/2026 11:44:51] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[23/Nov/2026 11:44:51] "GET /static/fonts/material-symbols-outlined.woff2 HTTP/1.1" 200 4025760
+[23/Nov/2026 11:44:51] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[23/Nov/2026 11:44:51] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[23/Nov/2026 11:44:51] "GET /static/fonts/inter-latin-wght-normal.woff2 HTTP/1.1" 200 48256
+[23/Nov/2026 11:44:51] "GET /static/fonts/playfair-display-latin-700-normal.woff2 HTTP/1.1" 200 23224
+[23/Nov/2026 11:44:51] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 11:44:58] "GET /members/visitation/ HTTP/1.1" 200 12129
+[23/Nov/2026 11:44:58] "GET /static/css/app.css HTTP/1.1" 200 67486
+[23/Nov/2026 11:44:58] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[23/Nov/2026 11:44:58] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[23/Nov/2026 11:44:58] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[23/Nov/2026 11:44:58] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[23/Nov/2026 11:44:58] "GET /static/fonts/material-symbols-outlined.woff2 HTTP/1.1" 200 4025760
+[23/Nov/2026 11:44:58] "GET /static/fonts/playfair-display-latin-700-normal.woff2 HTTP/1.1" 200 23224
+[23/Nov/2026 11:44:58] "GET /static/fonts/playfair-display-latin-600-normal.woff2 HTTP/1.1" 200 23228
+[23/Nov/2026 11:44:58] "GET /static/fonts/inter-latin-wght-normal.woff2 HTTP/1.1" 200 48256
+[23/Nov/2026 11:44:59] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 11:44:59] "GET /static/fonts/playfair-display-latin-400-italic.woff2 HTTP/1.1" 200 21884
+[23/Nov/2026 11:45:06] "GET /static/film/s8.html HTTP/1.1" 200 1470
+[23/Nov/2026 11:45:06] "GET /static/film/base.css HTTP/1.1" 200 1587
+[23/Nov/2026 11:45:06] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[23/Nov/2026 11:45:06] "GET /static/img/logo.png HTTP/1.1" 200 74513
+[23/Nov/2026 11:45:06] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 11:51:10] "GET /login/ HTTP/1.1" 200 4010
+[23/Nov/2026 11:51:10] "GET /static/css/app.css HTTP/1.1" 200 67486
+[23/Nov/2026 11:51:10] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[23/Nov/2026 11:51:10] "GET /static/img/logo.png HTTP/1.1" 200 74513
+[23/Nov/2026 11:51:10] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[23/Nov/2026 11:51:10] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[23/Nov/2026 11:51:10] "GET /static/fonts/material-symbols-outlined.woff2 HTTP/1.1" 200 4025760
+[23/Nov/2026 11:51:10] "GET /static/fonts/playfair-display-latin-700-normal.woff2 HTTP/1.1" 200 23224
+[23/Nov/2026 11:51:10] "GET /static/fonts/playfair-display-latin-400-italic.woff2 HTTP/1.1" 200 21884
+[23/Nov/2026 11:51:10] "GET /static/fonts/inter-latin-wght-normal.woff2 HTTP/1.1" 200 48256
+[23/Nov/2026 11:51:11] "POST /login/ HTTP/1.1" 302 0
+[23/Nov/2026 11:51:11] "GET / HTTP/1.1" 200 15717
+[23/Nov/2026 11:51:11] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[23/Nov/2026 11:51:11] "GET /static/fonts/playfair-display-latin-600-normal.woff2 HTTP/1.1" 200 23228
+[23/Nov/2026 11:51:11] "GET /static/film/s1.html HTTP/1.1" 200 785
+[23/Nov/2026 11:51:11] "GET /static/film/base.css HTTP/1.1" 200 1587
+[23/Nov/2026 11:51:11] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[23/Nov/2026 11:51:11] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 11:51:12] "GET /static/film/auditorium.jpg HTTP/1.1" 200 388167
+[23/Nov/2026 11:51:19] "GET /static/film/s2.html HTTP/1.1" 200 1143
+[23/Nov/2026 11:51:19] "GET /static/film/base.css HTTP/1.1" 200 1587
+[23/Nov/2026 11:51:19] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 11:51:19] "GET /static/film/pews.jpg HTTP/1.1" 200 364509
+[23/Nov/2026 11:51:19] "GET /static/film/congregation.jpg HTTP/1.1" 200 317497
+[23/Nov/2026 11:51:30] "GET /static/film/s3.html HTTP/1.1" 200 1225
+[23/Nov/2026 11:51:30] "GET /static/film/base.css HTTP/1.1" 200 1587
+[23/Nov/2026 11:51:30] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[23/Nov/2026 11:51:30] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 11:51:41] "GET /static/film/bible.html HTTP/1.1" 200 3602
+[23/Nov/2026 11:51:41] "GET /static/film/base.css HTTP/1.1" 200 1587
+[23/Nov/2026 11:51:41] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 11:51:41] "GET /static/film/sticker-marites.png HTTP/1.1" 200 47319
+[23/Nov/2026 11:51:41] "GET /static/film/pews.jpg HTTP/1.1" 200 364509
+[23/Nov/2026 11:51:51] "GET /static/film/door.html?s=13 HTTP/1.1" 200 1518
+[23/Nov/2026 11:51:51] "GET /static/film/base.css HTTP/1.1" 200 1587
+Not Found: /attendance/services/SERVICE/
+[23/Nov/2026 11:51:51] "GET /attendance/services/SERVICE/ HTTP/1.1" 404 6650
+[23/Nov/2026 11:51:51] "GET /checkin/kiosk/?station=Front%20door HTTP/1.1" 200 14930
+[23/Nov/2026 11:51:51] "GET /static/css/app.css HTTP/1.1" 200 67486
+[23/Nov/2026 11:51:51] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[23/Nov/2026 11:51:51] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[23/Nov/2026 11:51:51] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[23/Nov/2026 11:51:51] "GET /static/js/vendor/jsQR.js HTTP/1.1" 200 256885
+[23/Nov/2026 11:51:51] "GET /static/fonts/material-symbols-outlined.woff2 HTTP/1.1" 200 4025760
+[23/Nov/2026 11:51:51] "GET /static/fonts/playfair-display-latin-600-normal.woff2 HTTP/1.1" 200 23228
+[23/Nov/2026 11:51:51] "GET /static/fonts/inter-latin-wght-normal.woff2 HTTP/1.1" 200 48256
+[23/Nov/2026 11:51:51] "GET /static/fonts/playfair-display-latin-700-normal.woff2 HTTP/1.1" 200 23224
+[23/Nov/2026 11:51:51] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 11:51:51] "GET /attendance/services/13/ HTTP/1.1" 200 16427
+[23/Nov/2026 11:51:51] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[23/Nov/2026 11:51:56] "GET /attendance/services/13/live/ HTTP/1.1" 200 8650
+[23/Nov/2026 11:51:59] "POST /checkin/kiosk/scan/ HTTP/1.1" 200 343
+[23/Nov/2026 11:51:59] "GET /attendance/services/13/live/ HTTP/1.1" 200 9372
+[23/Nov/2026 11:52:01] "GET /attendance/services/13/live/ HTTP/1.1" 200 9372
+[23/Nov/2026 11:52:07] "GET /attendance/services/13/live/ HTTP/1.1" 200 9372
+[23/Nov/2026 11:52:12] "GET /attendance/services/13/live/ HTTP/1.1" 200 9372
+[23/Nov/2026 11:52:12] "GET /static/film/kinetic.html?w=No%20lines.%7CNo%20logbooks.&at=0.57,1.30&ms=1000 HTTP/1.1" 200 1278
+[23/Nov/2026 11:52:12] "GET /static/film/base.css HTTP/1.1" 200 1587
+[23/Nov/2026 11:52:12] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 11:52:20] "GET / HTTP/1.1" 200 15717
+[23/Nov/2026 11:52:20] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[23/Nov/2026 11:52:20] "GET /static/css/app.css HTTP/1.1" 200 67486
+[23/Nov/2026 11:52:20] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[23/Nov/2026 11:52:20] "GET /static/fonts/material-symbols-outlined.woff2 HTTP/1.1" 200 4025760
+[23/Nov/2026 11:52:20] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[23/Nov/2026 11:52:20] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[23/Nov/2026 11:52:20] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 11:52:20] "GET /static/fonts/playfair-display-latin-700-normal.woff2 HTTP/1.1" 200 23224
+[23/Nov/2026 11:52:20] "GET /static/fonts/inter-latin-wght-normal.woff2 HTTP/1.1" 200 48256
+[23/Nov/2026 11:52:20] "GET /static/fonts/playfair-display-latin-600-normal.woff2 HTTP/1.1" 200 23228
+[23/Nov/2026 11:52:27] "GET /attendance/services/13/ HTTP/1.1" 200 17149
+[23/Nov/2026 11:52:27] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[23/Nov/2026 11:52:27] "GET /static/css/app.css HTTP/1.1" 200 67486
+[23/Nov/2026 11:52:27] "GET /static/fonts/material-symbols-outlined.woff2 HTTP/1.1" 200 4025760
+[23/Nov/2026 11:52:27] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[23/Nov/2026 11:52:27] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[23/Nov/2026 11:52:27] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[23/Nov/2026 11:52:27] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 11:52:27] "GET /static/fonts/playfair-display-latin-600-normal.woff2 HTTP/1.1" 200 23228
+[23/Nov/2026 11:52:27] "GET /static/fonts/playfair-display-latin-700-normal.woff2 HTTP/1.1" 200 23224
+[23/Nov/2026 11:52:27] "GET /static/fonts/inter-latin-wght-normal.woff2 HTTP/1.1" 200 48256
+[23/Nov/2026 11:52:32] "GET /attendance/services/13/live/ HTTP/1.1" 200 9372
+[23/Nov/2026 11:52:33] "GET /members/ HTTP/1.1" 200 34119
+[23/Nov/2026 11:52:33] "GET /static/css/app.css HTTP/1.1" 200 67486
+[23/Nov/2026 11:52:33] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[23/Nov/2026 11:52:33] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[23/Nov/2026 11:52:33] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[23/Nov/2026 11:52:33] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[23/Nov/2026 11:52:33] "GET /static/fonts/material-symbols-outlined.woff2 HTTP/1.1" 200 4025760
+[23/Nov/2026 11:52:33] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 11:52:33] "GET /static/fonts/inter-latin-wght-normal.woff2 HTTP/1.1" 200 48256
+[23/Nov/2026 11:52:33] "GET /static/fonts/playfair-display-latin-700-normal.woff2 HTTP/1.1" 200 23224
+[23/Nov/2026 11:52:38] "GET /members/birthdays/ HTTP/1.1" 200 5760
+[23/Nov/2026 11:52:38] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[23/Nov/2026 11:52:38] "GET /static/css/app.css HTTP/1.1" 200 67486
+[23/Nov/2026 11:52:38] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[23/Nov/2026 11:52:38] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[23/Nov/2026 11:52:38] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[23/Nov/2026 11:52:38] "GET /static/fonts/material-symbols-outlined.woff2 HTTP/1.1" 200 4025760
+[23/Nov/2026 11:52:38] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 11:52:38] "GET /static/fonts/inter-latin-wght-normal.woff2 HTTP/1.1" 200 48256
+[23/Nov/2026 11:52:38] "GET /static/fonts/playfair-display-latin-700-normal.woff2 HTTP/1.1" 200 23224
+[23/Nov/2026 11:52:45] "GET /members/visitation/ HTTP/1.1" 200 12129
+[23/Nov/2026 11:52:45] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[23/Nov/2026 11:52:45] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[23/Nov/2026 11:52:45] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[23/Nov/2026 11:52:45] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[23/Nov/2026 11:52:45] "GET /static/css/app.css HTTP/1.1" 200 67486
+[23/Nov/2026 11:52:45] "GET /static/fonts/material-symbols-outlined.woff2 HTTP/1.1" 200 4025760
+[23/Nov/2026 11:52:45] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 11:52:45] "GET /static/fonts/playfair-display-latin-700-normal.woff2 HTTP/1.1" 200 23224
+[23/Nov/2026 11:52:45] "GET /static/fonts/playfair-display-latin-600-normal.woff2 HTTP/1.1" 200 23228
+[23/Nov/2026 11:52:45] "GET /static/fonts/inter-latin-wght-normal.woff2 HTTP/1.1" 200 48256
+[23/Nov/2026 11:52:45] "GET /static/fonts/playfair-display-latin-400-italic.woff2 HTTP/1.1" 200 21884
+[23/Nov/2026 11:52:53] "GET /static/film/s8.html HTTP/1.1" 200 1470
+[23/Nov/2026 11:52:53] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[23/Nov/2026 11:52:53] "GET /static/film/base.css HTTP/1.1" 200 1587
+[23/Nov/2026 11:52:53] "GET /static/img/logo.png HTTP/1.1" 200 74513
+[23/Nov/2026 11:52:53] "GET /static/film/overlay.css HTTP/1.1" 200 587
+/home/marcjerome/bbc-chms/checkin/feature.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 2 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): attendance, checkin.
+Run 'python manage.py migrate' to apply them.
+November 23, 2026 - 10:03:01
+Django version 6.1.3, using settings 'config.settings.film'
+Starting WSGI development server at http://127.0.0.1:8003/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.1/howto/deployment/
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/home/marcjerome/bbc-chms/.venv/lib/python3.12/site-packages/django/utils/autoreload.py", line 354, in run
+    get_resolver().urlconf_module
+  File "/home/marcjerome/bbc-chms/.venv/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/marcjerome/bbc-chms/.venv/lib/python3.12/site-packages/django/urls/resolvers.py", line 722, in urlconf_module
+    return import_module(self.urlconf_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marcjerome/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/marcjerome/bbc-chms/config/urls.py", line 15, in <module>
+    path("checkin/", include("checkin.urls")),
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marcjerome/bbc-chms/.venv/lib/python3.12/site-packages/django/urls/conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marcjerome/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/marcjerome/bbc-chms/checkin/urls.py", line 3, in <module>
+    from . import views
+  File "/home/marcjerome/bbc-chms/checkin/views.py", line 13, in <module>
+    from .feature import requires_self_checkin
+ImportError: cannot import name 'requires_self_checkin' from 'checkin.feature' (/home/marcjerome/bbc-chms/checkin/feature.py)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/marcjerome/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/threading.py", line 1075, in _bootstrap_inner
+    self.run()
+  File "/home/marcjerome/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/threading.py", line 1012, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/marcjerome/bbc-chms/.venv/lib/python3.12/site-packages/django/utils/autoreload.py", line 81, in wrapper
+    raise e from _url_module_exception
+  File "/home/marcjerome/bbc-chms/.venv/lib/python3.12/site-packages/django/utils/autoreload.py", line 66, in wrapper
+    fn(*args, **kwargs)
+  File "/home/marcjerome/bbc-chms/.venv/lib/python3.12/site-packages/django/core/management/commands/runserver.py", line 134, in inner_run
+    self.check(**check_kwargs)
+  File "/home/marcjerome/bbc-chms/.venv/lib/python3.12/site-packages/django/core/management/base.py", line 498, in check
+    all_issues = checks.run_checks(
+                 ^^^^^^^^^^^^^^^^^^
+  File "/home/marcjerome/bbc-chms/.venv/lib/python3.12/site-packages/django/core/checks/registry.py", line 100, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marcjerome/bbc-chms/.venv/lib/python3.12/site-packages/django/core/checks/urls.py", line 138, in check_custom_error_handlers
+    path = getattr(resolver.urlconf_module, "handler%s" % status_code)
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marcjerome/bbc-chms/.venv/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/marcjerome/bbc-chms/.venv/lib/python3.12/site-packages/django/urls/resolvers.py", line 722, in urlconf_module
+    return import_module(self.urlconf_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marcjerome/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/marcjerome/bbc-chms/config/urls.py", line 15, in <module>
+    path("checkin/", include("checkin.urls")),
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marcjerome/bbc-chms/.venv/lib/python3.12/site-packages/django/urls/conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marcjerome/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/marcjerome/bbc-chms/checkin/urls.py", line 3, in <module>
+    from . import views
+  File "/home/marcjerome/bbc-chms/checkin/views.py", line 13, in <module>
+    from .feature import requires_self_checkin
+ImportError: cannot import name 'requires_self_checkin' from 'checkin.feature' (/home/marcjerome/bbc-chms/checkin/feature.py)
+/home/marcjerome/bbc-chms/attendance/models.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/home/marcjerome/bbc-chms/.venv/lib/python3.12/site-packages/django/utils/autoreload.py", line 354, in run
+    get_resolver().urlconf_module
+  File "/home/marcjerome/bbc-chms/.venv/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/marcjerome/bbc-chms/.venv/lib/python3.12/site-packages/django/urls/resolvers.py", line 722, in urlconf_module
+    return import_module(self.urlconf_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marcjerome/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/marcjerome/bbc-chms/config/urls.py", line 16, in <module>
+    path("checkin/", include("checkin.urls")),
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marcjerome/bbc-chms/.venv/lib/python3.12/site-packages/django/urls/conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marcjerome/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/marcjerome/bbc-chms/checkin/urls.py", line 3, in <module>
+    from . import views
+  File "/home/marcjerome/bbc-chms/checkin/views.py", line 13, in <module>
+    from .feature import requires_self_checkin
+ImportError: cannot import name 'requires_self_checkin' from 'checkin.feature' (/home/marcjerome/bbc-chms/checkin/feature.py)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/marcjerome/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/threading.py", line 1075, in _bootstrap_inner
+    self.run()
+  File "/home/marcjerome/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/threading.py", line 1012, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/marcjerome/bbc-chms/.venv/lib/python3.12/site-packages/django/utils/autoreload.py", line 81, in wrapper
+    raise e from _url_module_exception
+  File "/home/marcjerome/bbc-chms/.venv/lib/python3.12/site-packages/django/utils/autoreload.py", line 66, in wrapper
+    fn(*args, **kwargs)
+  File "/home/marcjerome/bbc-chms/.venv/lib/python3.12/site-packages/django/core/management/commands/runserver.py", line 134, in inner_run
+    self.check(**check_kwargs)
+  File "/home/marcjerome/bbc-chms/.venv/lib/python3.12/site-packages/django/core/management/base.py", line 498, in check
+    all_issues = checks.run_checks(
+                 ^^^^^^^^^^^^^^^^^^
+  File "/home/marcjerome/bbc-chms/.venv/lib/python3.12/site-packages/django/core/checks/registry.py", line 100, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marcjerome/bbc-chms/.venv/lib/python3.12/site-packages/django/core/checks/urls.py", line 138, in check_custom_error_handlers
+    path = getattr(resolver.urlconf_module, "handler%s" % status_code)
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marcjerome/bbc-chms/.venv/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/marcjerome/bbc-chms/.venv/lib/python3.12/site-packages/django/urls/resolvers.py", line 722, in urlconf_module
+    return import_module(self.urlconf_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marcjerome/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/marcjerome/bbc-chms/config/urls.py", line 16, in <module>
+    path("checkin/", include("checkin.urls")),
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marcjerome/bbc-chms/.venv/lib/python3.12/site-packages/django/urls/conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marcjerome/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/marcjerome/bbc-chms/checkin/urls.py", line 3, in <module>
+    from . import views
+  File "/home/marcjerome/bbc-chms/checkin/views.py", line 13, in <module>
+    from .feature import requires_self_checkin
+ImportError: cannot import name 'requires_self_checkin' from 'checkin.feature' (/home/marcjerome/bbc-chms/checkin/feature.py)
+/home/marcjerome/bbc-chms/config/settings/base.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/home/marcjerome/bbc-chms/.venv/lib/python3.12/site-packages/django/utils/autoreload.py", line 354, in run
+    get_resolver().urlconf_module
+  File "/home/marcjerome/bbc-chms/.venv/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/marcjerome/bbc-chms/.venv/lib/python3.12/site-packages/django/urls/resolvers.py", line 722, in urlconf_module
+    return import_module(self.urlconf_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marcjerome/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/marcjerome/bbc-chms/config/urls.py", line 16, in <module>
+    path("checkin/", include("checkin.urls")),
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marcjerome/bbc-chms/.venv/lib/python3.12/site-packages/django/urls/conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marcjerome/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/marcjerome/bbc-chms/checkin/urls.py", line 3, in <module>
+    from . import views
+  File "/home/marcjerome/bbc-chms/checkin/views.py", line 13, in <module>
+    from .feature import requires_self_checkin
+ImportError: cannot import name 'requires_self_checkin' from 'checkin.feature' (/home/marcjerome/bbc-chms/checkin/feature.py)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/marcjerome/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/threading.py", line 1075, in _bootstrap_inner
+    self.run()
+  File "/home/marcjerome/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/threading.py", line 1012, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/marcjerome/bbc-chms/.venv/lib/python3.12/site-packages/django/utils/autoreload.py", line 81, in wrapper
+    raise e from _url_module_exception
+  File "/home/marcjerome/bbc-chms/.venv/lib/python3.12/site-packages/django/utils/autoreload.py", line 66, in wrapper
+    fn(*args, **kwargs)
+  File "/home/marcjerome/bbc-chms/.venv/lib/python3.12/site-packages/django/core/management/commands/runserver.py", line 134, in inner_run
+    self.check(**check_kwargs)
+  File "/home/marcjerome/bbc-chms/.venv/lib/python3.12/site-packages/django/core/management/base.py", line 498, in check
+    all_issues = checks.run_checks(
+                 ^^^^^^^^^^^^^^^^^^
+  File "/home/marcjerome/bbc-chms/.venv/lib/python3.12/site-packages/django/core/checks/registry.py", line 100, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marcjerome/bbc-chms/.venv/lib/python3.12/site-packages/django/core/checks/urls.py", line 138, in check_custom_error_handlers
+    path = getattr(resolver.urlconf_module, "handler%s" % status_code)
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marcjerome/bbc-chms/.venv/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/marcjerome/bbc-chms/.venv/lib/python3.12/site-packages/django/urls/resolvers.py", line 722, in urlconf_module
+    return import_module(self.urlconf_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marcjerome/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/marcjerome/bbc-chms/config/urls.py", line 16, in <module>
+    path("checkin/", include("checkin.urls")),
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marcjerome/bbc-chms/.venv/lib/python3.12/site-packages/django/urls/conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marcjerome/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/marcjerome/bbc-chms/checkin/urls.py", line 3, in <module>
+    from . import views
+  File "/home/marcjerome/bbc-chms/checkin/views.py", line 13, in <module>
+    from .feature import requires_self_checkin
+ImportError: cannot import name 'requires_self_checkin' from 'checkin.feature' (/home/marcjerome/bbc-chms/checkin/feature.py)
+/home/marcjerome/bbc-chms/biometrics/adms.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/home/marcjerome/bbc-chms/.venv/lib/python3.12/site-packages/django/utils/autoreload.py", line 354, in run
+    get_resolver().urlconf_module
+  File "/home/marcjerome/bbc-chms/.venv/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/marcjerome/bbc-chms/.venv/lib/python3.12/site-packages/django/urls/resolvers.py", line 722, in urlconf_module
+    return import_module(self.urlconf_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marcjerome/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/marcjerome/bbc-chms/config/urls.py", line 16, in <module>
+    path("checkin/", include("checkin.urls")),
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marcjerome/bbc-chms/.venv/lib/python3.12/site-packages/django/urls/conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marcjerome/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/marcjerome/bbc-chms/checkin/urls.py", line 3, in <module>
+    from . import views
+  File "/home/marcjerome/bbc-chms/checkin/views.py", line 13, in <module>
+    from .feature import requires_self_checkin
+ImportError: cannot import name 'requires_self_checkin' from 'checkin.feature' (/home/marcjerome/bbc-chms/checkin/feature.py)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/marcjerome/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/threading.py", line 1075, in _bootstrap_inner
+    self.run()
+  File "/home/marcjerome/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/threading.py", line 1012, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/marcjerome/bbc-chms/.venv/lib/python3.12/site-packages/django/utils/autoreload.py", line 81, in wrapper
+    raise e from _url_module_exception
+  File "/home/marcjerome/bbc-chms/.venv/lib/python3.12/site-packages/django/utils/autoreload.py", line 66, in wrapper
+    fn(*args, **kwargs)
+  File "/home/marcjerome/bbc-chms/.venv/lib/python3.12/site-packages/django/core/management/commands/runserver.py", line 134, in inner_run
+    self.check(**check_kwargs)
+  File "/home/marcjerome/bbc-chms/.venv/lib/python3.12/site-packages/django/core/management/base.py", line 498, in check
+    all_issues = checks.run_checks(
+                 ^^^^^^^^^^^^^^^^^^
+  File "/home/marcjerome/bbc-chms/.venv/lib/python3.12/site-packages/django/core/checks/registry.py", line 100, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marcjerome/bbc-chms/.venv/lib/python3.12/site-packages/django/core/checks/urls.py", line 138, in check_custom_error_handlers
+    path = getattr(resolver.urlconf_module, "handler%s" % status_code)
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marcjerome/bbc-chms/.venv/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/marcjerome/bbc-chms/.venv/lib/python3.12/site-packages/django/urls/resolvers.py", line 722, in urlconf_module
+    return import_module(self.urlconf_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marcjerome/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/marcjerome/bbc-chms/config/urls.py", line 16, in <module>
+    path("checkin/", include("checkin.urls")),
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marcjerome/bbc-chms/.venv/lib/python3.12/site-packages/django/urls/conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marcjerome/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/marcjerome/bbc-chms/checkin/urls.py", line 3, in <module>
+    from . import views
+  File "/home/marcjerome/bbc-chms/checkin/views.py", line 13, in <module>
+    from .feature import requires_self_checkin
+ImportError: cannot import name 'requires_self_checkin' from 'checkin.feature' (/home/marcjerome/bbc-chms/checkin/feature.py)
+/home/marcjerome/bbc-chms/checkin/services.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/home/marcjerome/bbc-chms/.venv/lib/python3.12/site-packages/django/utils/autoreload.py", line 354, in run
+    get_resolver().urlconf_module
+  File "/home/marcjerome/bbc-chms/.venv/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/marcjerome/bbc-chms/.venv/lib/python3.12/site-packages/django/urls/resolvers.py", line 722, in urlconf_module
+    return import_module(self.urlconf_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marcjerome/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/marcjerome/bbc-chms/config/urls.py", line 16, in <module>
+    path("checkin/", include("checkin.urls")),
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marcjerome/bbc-chms/.venv/lib/python3.12/site-packages/django/urls/conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marcjerome/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/marcjerome/bbc-chms/checkin/urls.py", line 3, in <module>
+    from . import views
+  File "/home/marcjerome/bbc-chms/checkin/views.py", line 13, in <module>
+    from .feature import requires_self_checkin
+ImportError: cannot import name 'requires_self_checkin' from 'checkin.feature' (/home/marcjerome/bbc-chms/checkin/feature.py)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/marcjerome/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/threading.py", line 1075, in _bootstrap_inner
+    self.run()
+  File "/home/marcjerome/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/threading.py", line 1012, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/marcjerome/bbc-chms/.venv/lib/python3.12/site-packages/django/utils/autoreload.py", line 81, in wrapper
+    raise e from _url_module_exception
+  File "/home/marcjerome/bbc-chms/.venv/lib/python3.12/site-packages/django/utils/autoreload.py", line 66, in wrapper
+    fn(*args, **kwargs)
+  File "/home/marcjerome/bbc-chms/.venv/lib/python3.12/site-packages/django/core/management/commands/runserver.py", line 134, in inner_run
+    self.check(**check_kwargs)
+  File "/home/marcjerome/bbc-chms/.venv/lib/python3.12/site-packages/django/core/management/base.py", line 498, in check
+    all_issues = checks.run_checks(
+                 ^^^^^^^^^^^^^^^^^^
+  File "/home/marcjerome/bbc-chms/.venv/lib/python3.12/site-packages/django/core/checks/registry.py", line 100, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marcjerome/bbc-chms/.venv/lib/python3.12/site-packages/django/core/checks/urls.py", line 138, in check_custom_error_handlers
+    path = getattr(resolver.urlconf_module, "handler%s" % status_code)
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marcjerome/bbc-chms/.venv/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/marcjerome/bbc-chms/.venv/lib/python3.12/site-packages/django/urls/resolvers.py", line 722, in urlconf_module
+    return import_module(self.urlconf_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marcjerome/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/marcjerome/bbc-chms/config/urls.py", line 16, in <module>
+    path("checkin/", include("checkin.urls")),
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marcjerome/bbc-chms/.venv/lib/python3.12/site-packages/django/urls/conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marcjerome/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/marcjerome/bbc-chms/checkin/urls.py", line 3, in <module>
+    from . import views
+  File "/home/marcjerome/bbc-chms/checkin/views.py", line 13, in <module>
+    from .feature import requires_self_checkin
+ImportError: cannot import name 'requires_self_checkin' from 'checkin.feature' (/home/marcjerome/bbc-chms/checkin/feature.py)
+/home/marcjerome/bbc-chms/checkin/views.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+/home/marcjerome/bbc-chms/checkin/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 1 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): biometrics.
+Run 'python manage.py migrate' to apply them.
+November 23, 2026 - 12:03:15
+Django version 6.1.3, using settings 'config.settings.film'
+Starting WSGI development server at http://127.0.0.1:8003/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.1/howto/deployment/
+Watching for file changes with StatReloader
+/home/marcjerome/bbc-chms/checkin/admin.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 1 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): biometrics.
+Run 'python manage.py migrate' to apply them.
+November 23, 2026 - 12:03:20
+Django version 6.1.3, using settings 'config.settings.film'
+Starting WSGI development server at http://127.0.0.1:8003/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.1/howto/deployment/
+Watching for file changes with StatReloader
+/home/marcjerome/bbc-chms/biometrics/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 1 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): biometrics.
+Run 'python manage.py migrate' to apply them.
+November 23, 2026 - 12:03:26
+Django version 6.1.3, using settings 'config.settings.film'
+Starting WSGI development server at http://127.0.0.1:8003/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.1/howto/deployment/
+Watching for file changes with StatReloader
+/home/marcjerome/bbc-chms/checkin/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 4 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): attendance, biometrics, checkin.
+Run 'python manage.py migrate' to apply them.
+November 23, 2026 - 12:07:47
+Django version 6.1.3, using settings 'config.settings.film'
+Starting WSGI development server at http://127.0.0.1:8003/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.1/howto/deployment/
+Watching for file changes with StatReloader
+/home/marcjerome/bbc-chms/biometrics/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 4 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): attendance, biometrics, checkin.
+Run 'python manage.py migrate' to apply them.
+November 23, 2026 - 12:16:41
+Django version 6.1.3, using settings 'config.settings.film'
+Starting WSGI development server at http://127.0.0.1:8003/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.1/howto/deployment/
+Watching for file changes with StatReloader
+[23/Nov/2026 12:49:23] "GET /login/ HTTP/1.1" 200 4010
+[23/Nov/2026 12:49:53] "GET /login/ HTTP/1.1" 200 4010
+[23/Nov/2026 12:49:53] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[23/Nov/2026 12:49:53] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[23/Nov/2026 12:49:53] "GET /static/css/app.css HTTP/1.1" 200 69676
+[23/Nov/2026 12:49:53] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[23/Nov/2026 12:49:53] "GET /static/img/logo.png HTTP/1.1" 200 74513
+[23/Nov/2026 12:49:53] "GET /static/fonts/material-symbols-outlined.woff2 HTTP/1.1" 200 4025760
+[23/Nov/2026 12:49:53] "GET /static/fonts/playfair-display-latin-700-normal.woff2 HTTP/1.1" 200 23224
+[23/Nov/2026 12:49:53] "GET /static/fonts/playfair-display-latin-400-italic.woff2 HTTP/1.1" 200 21884
+[23/Nov/2026 12:49:53] "GET /static/fonts/inter-latin-wght-normal.woff2 HTTP/1.1" 200 48256
+[23/Nov/2026 12:49:54] "POST /login/ HTTP/1.1" 302 0
+[23/Nov/2026 12:49:54] "GET / HTTP/1.1" 200 15724
+[23/Nov/2026 12:49:54] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[23/Nov/2026 12:49:54] "GET /static/fonts/playfair-display-latin-600-normal.woff2 HTTP/1.1" 200 23228
+[23/Nov/2026 12:49:54] "GET /checkin/modes/ HTTP/1.1" 200 7794
+[23/Nov/2026 12:49:54] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[23/Nov/2026 12:49:54] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[23/Nov/2026 12:49:54] "GET /static/css/app.css HTTP/1.1" 200 69676
+[23/Nov/2026 12:49:54] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[23/Nov/2026 12:49:54] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[23/Nov/2026 12:49:54] "GET /static/fonts/material-symbols-outlined.woff2 HTTP/1.1" 200 4025760
+[23/Nov/2026 12:49:54] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 12:49:54] "GET /static/fonts/playfair-display-latin-700-normal.woff2 HTTP/1.1" 200 23224
+[23/Nov/2026 12:49:54] "GET /static/fonts/inter-latin-wght-normal.woff2 HTTP/1.1" 200 48256
+[23/Nov/2026 12:50:05] "GET /login/ HTTP/1.1" 200 4010
+[23/Nov/2026 12:50:05] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[23/Nov/2026 12:50:05] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[23/Nov/2026 12:50:05] "GET /static/fonts/material-symbols-outlined.woff2 HTTP/1.1" 200 4025760
+[23/Nov/2026 12:50:05] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[23/Nov/2026 12:50:05] "GET /static/css/app.css HTTP/1.1" 200 69676
+[23/Nov/2026 12:50:05] "GET /static/img/logo.png HTTP/1.1" 200 74513
+[23/Nov/2026 12:50:05] "GET /static/fonts/playfair-display-latin-700-normal.woff2 HTTP/1.1" 200 23224
+[23/Nov/2026 12:50:05] "GET /static/fonts/playfair-display-latin-400-italic.woff2 HTTP/1.1" 200 21884
+[23/Nov/2026 12:50:05] "GET /static/fonts/inter-latin-wght-normal.woff2 HTTP/1.1" 200 48256
+[23/Nov/2026 12:50:06] "POST /login/ HTTP/1.1" 302 0
+[23/Nov/2026 12:50:06] "GET / HTTP/1.1" 200 15724
+[23/Nov/2026 12:50:06] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[23/Nov/2026 12:50:06] "GET /static/fonts/playfair-display-latin-600-normal.woff2 HTTP/1.1" 200 23228
+[23/Nov/2026 12:50:06] "GET /checkin/modes/ HTTP/1.1" 200 7794
+[23/Nov/2026 12:50:06] "GET /static/css/app.css HTTP/1.1" 200 69676
+[23/Nov/2026 12:50:06] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[23/Nov/2026 12:50:06] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[23/Nov/2026 12:50:06] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[23/Nov/2026 12:50:06] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[23/Nov/2026 12:50:06] "GET /static/fonts/material-symbols-outlined.woff2 HTTP/1.1" 200 4025760
+[23/Nov/2026 12:50:06] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 12:50:06] "GET /static/fonts/inter-latin-wght-normal.woff2 HTTP/1.1" 200 48256
+[23/Nov/2026 12:50:06] "GET /static/fonts/playfair-display-latin-700-normal.woff2 HTTP/1.1" 200 23224
+[23/Nov/2026 13:06:15] "GET /login/ HTTP/1.1" 200 4010
+[23/Nov/2026 13:06:15] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[23/Nov/2026 13:06:15] "GET /static/css/app.css HTTP/1.1" 200 69676
+[23/Nov/2026 13:06:15] "GET /static/img/logo.png HTTP/1.1" 200 74513
+[23/Nov/2026 13:06:15] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[23/Nov/2026 13:06:15] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[23/Nov/2026 13:06:15] "GET /static/fonts/material-symbols-outlined.woff2 HTTP/1.1" 200 4025760
+[23/Nov/2026 13:06:15] "GET /static/fonts/playfair-display-latin-700-normal.woff2 HTTP/1.1" 200 23224
+[23/Nov/2026 13:06:15] "GET /static/fonts/playfair-display-latin-400-italic.woff2 HTTP/1.1" 200 21884
+[23/Nov/2026 13:06:15] "GET /static/fonts/inter-latin-wght-normal.woff2 HTTP/1.1" 200 48256
+[23/Nov/2026 13:06:16] "POST /login/ HTTP/1.1" 302 0
+[23/Nov/2026 13:06:16] "GET / HTTP/1.1" 200 15725
+[23/Nov/2026 13:06:16] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[23/Nov/2026 13:06:16] "GET /static/fonts/playfair-display-latin-600-normal.woff2 HTTP/1.1" 200 23228
+[23/Nov/2026 13:06:16] "GET /static/film/s1.html HTTP/1.1" 200 785
+[23/Nov/2026 13:06:16] "GET /static/film/base.css HTTP/1.1" 200 1587
+[23/Nov/2026 13:06:16] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[23/Nov/2026 13:06:16] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 13:06:16] "GET /static/film/auditorium.jpg HTTP/1.1" 200 388167
+[23/Nov/2026 13:06:26] "GET /static/film/s2.html HTTP/1.1" 200 1143
+[23/Nov/2026 13:06:26] "GET /static/film/base.css HTTP/1.1" 200 1587
+[23/Nov/2026 13:06:26] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 13:06:26] "GET /static/film/congregation.jpg HTTP/1.1" 200 317497
+[23/Nov/2026 13:06:26] "GET /static/film/pews.jpg HTTP/1.1" 200 364509
+[23/Nov/2026 13:06:36] "GET /static/film/s3.html HTTP/1.1" 200 1225
+[23/Nov/2026 13:06:36] "GET /static/film/base.css HTTP/1.1" 200 1587
+[23/Nov/2026 13:06:36] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[23/Nov/2026 13:06:36] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 13:06:41] "GET /static/film/bible.html HTTP/1.1" 200 3602
+[23/Nov/2026 13:06:41] "GET /static/film/base.css HTTP/1.1" 200 1587
+[23/Nov/2026 13:06:41] "GET /static/film/sticker-marites.png HTTP/1.1" 200 47319
+[23/Nov/2026 13:06:41] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 13:06:41] "GET /static/film/pews.jpg HTTP/1.1" 200 364509
+[23/Nov/2026 13:06:47] "GET /static/film/door.html?s=13 HTTP/1.1" 200 1518
+[23/Nov/2026 13:06:47] "GET /static/film/base.css HTTP/1.1" 200 1587
+Not Found: /attendance/services/SERVICE/
+[23/Nov/2026 13:06:48] "GET /attendance/services/SERVICE/ HTTP/1.1" 404 7302
+[23/Nov/2026 13:06:48] "GET /checkin/kiosk/?station=Front%20door HTTP/1.1" 200 17082
+[23/Nov/2026 13:06:48] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[23/Nov/2026 13:06:48] "GET /static/css/app.css HTTP/1.1" 200 69676
+[23/Nov/2026 13:06:48] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[23/Nov/2026 13:06:48] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[23/Nov/2026 13:06:48] "GET /static/js/vendor/jsQR.js HTTP/1.1" 200 256885
+[23/Nov/2026 13:06:48] "GET /static/fonts/material-symbols-outlined.woff2 HTTP/1.1" 200 4025760
+[23/Nov/2026 13:06:48] "GET /static/fonts/playfair-display-latin-700-normal.woff2 HTTP/1.1" 200 23224
+[23/Nov/2026 13:06:48] "GET /static/fonts/playfair-display-latin-600-normal.woff2 HTTP/1.1" 200 23228
+[23/Nov/2026 13:06:48] "GET /static/fonts/inter-latin-wght-normal.woff2 HTTP/1.1" 200 48256
+[23/Nov/2026 13:06:48] "GET /attendance/services/13/ HTTP/1.1" 200 16436
+[23/Nov/2026 13:06:48] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 13:06:48] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[23/Nov/2026 13:06:53] "GET /attendance/services/13/live/ HTTP/1.1" 200 8652
+[23/Nov/2026 13:06:54] "POST /checkin/kiosk/scan/ HTTP/1.1" 200 343
+[23/Nov/2026 13:06:55] "GET /attendance/services/13/live/ HTTP/1.1" 200 9374
+[23/Nov/2026 13:06:58] "GET /attendance/services/13/live/ HTTP/1.1" 200 9374
+[23/Nov/2026 13:07:03] "GET /attendance/services/13/live/ HTTP/1.1" 200 9374
+[23/Nov/2026 13:07:07] "GET /checkin/modes/ HTTP/1.1" 200 7794
+[23/Nov/2026 13:07:07] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[23/Nov/2026 13:07:07] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[23/Nov/2026 13:07:07] "GET /static/css/app.css HTTP/1.1" 200 69676
+[23/Nov/2026 13:07:07] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[23/Nov/2026 13:07:07] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[23/Nov/2026 13:07:07] "GET /static/fonts/material-symbols-outlined.woff2 HTTP/1.1" 200 4025760
+[23/Nov/2026 13:07:07] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 13:07:07] "GET /static/fonts/playfair-display-latin-700-normal.woff2 HTTP/1.1" 200 23224
+[23/Nov/2026 13:07:07] "GET /static/fonts/inter-latin-wght-normal.woff2 HTTP/1.1" 200 48256
+[23/Nov/2026 13:07:18] "GET /static/film/kinetic.html?w=No%20lines.%7CNo%20logbooks.&at=0.50,1.28&ms=1000 HTTP/1.1" 200 1278
+[23/Nov/2026 13:07:18] "GET /static/film/base.css HTTP/1.1" 200 1587
+[23/Nov/2026 13:07:18] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 13:07:28] "GET / HTTP/1.1" 200 15725
+[23/Nov/2026 13:07:28] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[23/Nov/2026 13:07:28] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[23/Nov/2026 13:07:28] "GET /static/css/app.css HTTP/1.1" 200 69676
+[23/Nov/2026 13:07:28] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[23/Nov/2026 13:07:28] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[23/Nov/2026 13:07:28] "GET /static/fonts/material-symbols-outlined.woff2 HTTP/1.1" 200 4025760
+[23/Nov/2026 13:07:28] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 13:07:28] "GET /static/fonts/playfair-display-latin-700-normal.woff2 HTTP/1.1" 200 23224
+[23/Nov/2026 13:07:28] "GET /static/fonts/inter-latin-wght-normal.woff2 HTTP/1.1" 200 48256
+[23/Nov/2026 13:07:28] "GET /static/fonts/playfair-display-latin-600-normal.woff2 HTTP/1.1" 200 23228
+[23/Nov/2026 13:07:35] "GET /attendance/services/13/ HTTP/1.1" 200 17158
+[23/Nov/2026 13:07:35] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[23/Nov/2026 13:07:35] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[23/Nov/2026 13:07:35] "GET /static/css/app.css HTTP/1.1" 200 69676
+[23/Nov/2026 13:07:35] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[23/Nov/2026 13:07:35] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[23/Nov/2026 13:07:35] "GET /static/fonts/material-symbols-outlined.woff2 HTTP/1.1" 200 4025760
+[23/Nov/2026 13:07:35] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 13:07:35] "GET /static/fonts/playfair-display-latin-700-normal.woff2 HTTP/1.1" 200 23224
+[23/Nov/2026 13:07:35] "GET /static/fonts/playfair-display-latin-600-normal.woff2 HTTP/1.1" 200 23228
+[23/Nov/2026 13:07:35] "GET /static/fonts/inter-latin-wght-normal.woff2 HTTP/1.1" 200 48256
+[23/Nov/2026 13:07:41] "GET /attendance/services/13/live/ HTTP/1.1" 200 9374
+[23/Nov/2026 13:07:42] "GET /members/ HTTP/1.1" 200 34097
+[23/Nov/2026 13:07:42] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[23/Nov/2026 13:07:42] "GET /static/css/app.css HTTP/1.1" 200 69676
+[23/Nov/2026 13:07:42] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[23/Nov/2026 13:07:42] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[23/Nov/2026 13:07:42] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[23/Nov/2026 13:07:42] "GET /static/fonts/material-symbols-outlined.woff2 HTTP/1.1" 200 4025760
+[23/Nov/2026 13:07:42] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 13:07:42] "GET /static/fonts/inter-latin-wght-normal.woff2 HTTP/1.1" 200 48256
+[23/Nov/2026 13:07:42] "GET /static/fonts/playfair-display-latin-700-normal.woff2 HTTP/1.1" 200 23224
+[23/Nov/2026 13:07:48] "GET /members/birthdays/ HTTP/1.1" 200 5768
+[23/Nov/2026 13:07:48] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[23/Nov/2026 13:07:48] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[23/Nov/2026 13:07:48] "GET /static/css/app.css HTTP/1.1" 200 69676
+[23/Nov/2026 13:07:48] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[23/Nov/2026 13:07:48] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[23/Nov/2026 13:07:48] "GET /static/fonts/material-symbols-outlined.woff2 HTTP/1.1" 200 4025760
+[23/Nov/2026 13:07:48] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 13:07:48] "GET /static/fonts/playfair-display-latin-700-normal.woff2 HTTP/1.1" 200 23224
+[23/Nov/2026 13:07:48] "GET /static/fonts/inter-latin-wght-normal.woff2 HTTP/1.1" 200 48256
+[23/Nov/2026 13:07:56] "GET /members/visitation/ HTTP/1.1" 200 12134
+[23/Nov/2026 13:07:56] "GET /static/css/app.css HTTP/1.1" 200 69676
+[23/Nov/2026 13:07:56] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[23/Nov/2026 13:07:56] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[23/Nov/2026 13:07:56] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[23/Nov/2026 13:07:56] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[23/Nov/2026 13:07:56] "GET /static/fonts/material-symbols-outlined.woff2 HTTP/1.1" 200 4025760
+[23/Nov/2026 13:07:56] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 13:07:56] "GET /static/fonts/playfair-display-latin-600-normal.woff2 HTTP/1.1" 200 23228
+[23/Nov/2026 13:07:56] "GET /static/fonts/playfair-display-latin-700-normal.woff2 HTTP/1.1" 200 23224
+[23/Nov/2026 13:07:56] "GET /static/fonts/inter-latin-wght-normal.woff2 HTTP/1.1" 200 48256
+[23/Nov/2026 13:07:56] "GET /static/fonts/playfair-display-latin-400-italic.woff2 HTTP/1.1" 200 21884
+[23/Nov/2026 13:08:05] "GET /static/film/s8.html HTTP/1.1" 200 1470
+[23/Nov/2026 13:08:05] "GET /static/film/base.css HTTP/1.1" 200 1587
+[23/Nov/2026 13:08:05] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[23/Nov/2026 13:08:05] "GET /static/img/logo.png HTTP/1.1" 200 74513
+[23/Nov/2026 13:08:05] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 13:10:33] "GET /login/ HTTP/1.1" 200 4010
+[23/Nov/2026 13:10:33] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[23/Nov/2026 13:10:33] "GET /static/img/logo.png HTTP/1.1" 200 74513
+[23/Nov/2026 13:10:33] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[23/Nov/2026 13:10:33] "GET /static/css/app.css HTTP/1.1" 200 69676
+[23/Nov/2026 13:10:33] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[23/Nov/2026 13:10:33] "GET /static/fonts/material-symbols-outlined.woff2 HTTP/1.1" 200 4025760
+[23/Nov/2026 13:10:33] "GET /static/fonts/playfair-display-latin-400-italic.woff2 HTTP/1.1" 200 21884
+[23/Nov/2026 13:10:33] "GET /static/fonts/playfair-display-latin-700-normal.woff2 HTTP/1.1" 200 23224
+[23/Nov/2026 13:10:33] "GET /static/fonts/inter-latin-wght-normal.woff2 HTTP/1.1" 200 48256
+[23/Nov/2026 13:10:34] "POST /login/ HTTP/1.1" 302 0
+[23/Nov/2026 13:10:34] "GET / HTTP/1.1" 200 15725
+[23/Nov/2026 13:10:34] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[23/Nov/2026 13:10:34] "GET /static/fonts/playfair-display-latin-600-normal.woff2 HTTP/1.1" 200 23228
+[23/Nov/2026 13:10:34] "GET /static/film/s1.html HTTP/1.1" 200 785
+[23/Nov/2026 13:10:34] "GET /static/film/base.css HTTP/1.1" 200 1587
+[23/Nov/2026 13:10:34] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[23/Nov/2026 13:10:34] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 13:10:34] "GET /static/film/auditorium.jpg HTTP/1.1" 200 388167
+[23/Nov/2026 13:10:45] "GET /static/film/s2.html HTTP/1.1" 200 1143
+[23/Nov/2026 13:10:45] "GET /static/film/base.css HTTP/1.1" 200 1587
+[23/Nov/2026 13:10:45] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 13:10:46] "GET /static/film/pews.jpg HTTP/1.1" 200 364509
+[23/Nov/2026 13:10:46] "GET /static/film/congregation.jpg HTTP/1.1" 200 317497
+[23/Nov/2026 13:10:57] "GET /static/film/s3.html HTTP/1.1" 200 1225
+[23/Nov/2026 13:10:57] "GET /static/film/base.css HTTP/1.1" 200 1587
+[23/Nov/2026 13:10:57] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[23/Nov/2026 13:10:57] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 13:11:02] "GET /static/film/bible.html HTTP/1.1" 200 3602
+[23/Nov/2026 13:11:02] "GET /static/film/base.css HTTP/1.1" 200 1587
+[23/Nov/2026 13:11:02] "GET /static/film/sticker-marites.png HTTP/1.1" 200 47319
+[23/Nov/2026 13:11:02] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 13:11:03] "GET /static/film/pews.jpg HTTP/1.1" 200 364509
+[23/Nov/2026 13:11:11] "GET /static/film/door.html?s=13 HTTP/1.1" 200 1518
+[23/Nov/2026 13:11:11] "GET /static/film/base.css HTTP/1.1" 200 1587
+Not Found: /attendance/services/SERVICE/
+[23/Nov/2026 13:11:11] "GET /attendance/services/SERVICE/ HTTP/1.1" 404 7302
+[23/Nov/2026 13:11:11] "GET /checkin/kiosk/?station=Front%20door HTTP/1.1" 200 17082
+[23/Nov/2026 13:11:11] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[23/Nov/2026 13:11:11] "GET /static/css/app.css HTTP/1.1" 200 69676
+[23/Nov/2026 13:11:11] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[23/Nov/2026 13:11:11] "GET /static/js/vendor/jsQR.js HTTP/1.1" 200 256885
+[23/Nov/2026 13:11:11] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[23/Nov/2026 13:11:11] "GET /static/fonts/material-symbols-outlined.woff2 HTTP/1.1" 200 4025760
+[23/Nov/2026 13:11:11] "GET /static/fonts/playfair-display-latin-600-normal.woff2 HTTP/1.1" 200 23228
+[23/Nov/2026 13:11:11] "GET /static/fonts/playfair-display-latin-700-normal.woff2 HTTP/1.1" 200 23224
+[23/Nov/2026 13:11:11] "GET /static/fonts/inter-latin-wght-normal.woff2 HTTP/1.1" 200 48256
+[23/Nov/2026 13:11:11] "GET /attendance/services/13/ HTTP/1.1" 200 16436
+[23/Nov/2026 13:11:11] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[23/Nov/2026 13:11:11] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 13:11:16] "GET /attendance/services/13/live/ HTTP/1.1" 200 8652
+[23/Nov/2026 13:11:18] "POST /checkin/kiosk/scan/ HTTP/1.1" 200 343
+[23/Nov/2026 13:11:18] "GET /attendance/services/13/live/ HTTP/1.1" 200 9374
+[23/Nov/2026 13:11:21] "GET /attendance/services/13/live/ HTTP/1.1" 200 9374
+[23/Nov/2026 13:11:26] "GET /attendance/services/13/live/ HTTP/1.1" 200 9374
+[23/Nov/2026 13:11:30] "GET /checkin/modes/ HTTP/1.1" 200 7794
+[23/Nov/2026 13:11:31] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[23/Nov/2026 13:11:31] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[23/Nov/2026 13:11:31] "GET /static/css/app.css HTTP/1.1" 200 69676
+[23/Nov/2026 13:11:31] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[23/Nov/2026 13:11:31] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[23/Nov/2026 13:11:31] "GET /static/fonts/material-symbols-outlined.woff2 HTTP/1.1" 200 4025760
+[23/Nov/2026 13:11:31] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 13:11:31] "GET /static/fonts/playfair-display-latin-700-normal.woff2 HTTP/1.1" 200 23224
+[23/Nov/2026 13:11:31] "GET /static/fonts/inter-latin-wght-normal.woff2 HTTP/1.1" 200 48256
+[23/Nov/2026 13:11:40] "GET /static/film/kinetic.html?w=No%20lines.%7CNo%20logbooks.&at=0.85,1.54&ms=1000 HTTP/1.1" 200 1278
+[23/Nov/2026 13:11:40] "GET /static/film/base.css HTTP/1.1" 200 1587
+[23/Nov/2026 13:11:41] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 13:11:50] "GET / HTTP/1.1" 200 15725
+[23/Nov/2026 13:11:50] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[23/Nov/2026 13:11:50] "GET /static/css/app.css HTTP/1.1" 200 69676
+[23/Nov/2026 13:11:50] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[23/Nov/2026 13:11:50] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[23/Nov/2026 13:11:50] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[23/Nov/2026 13:11:50] "GET /static/fonts/material-symbols-outlined.woff2 HTTP/1.1" 200 4025760
+[23/Nov/2026 13:11:50] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 13:11:50] "GET /static/fonts/playfair-display-latin-700-normal.woff2 HTTP/1.1" 200 23224
+[23/Nov/2026 13:11:50] "GET /static/fonts/playfair-display-latin-600-normal.woff2 HTTP/1.1" 200 23228
+[23/Nov/2026 13:11:50] "GET /static/fonts/inter-latin-wght-normal.woff2 HTTP/1.1" 200 48256
+[23/Nov/2026 13:11:59] "GET /attendance/services/13/ HTTP/1.1" 200 17158
+[23/Nov/2026 13:11:59] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[23/Nov/2026 13:11:59] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[23/Nov/2026 13:11:59] "GET /static/css/app.css HTTP/1.1" 200 69676
+[23/Nov/2026 13:11:59] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[23/Nov/2026 13:11:59] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[23/Nov/2026 13:11:59] "GET /static/fonts/material-symbols-outlined.woff2 HTTP/1.1" 200 4025760
+[23/Nov/2026 13:11:59] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 13:11:59] "GET /static/fonts/playfair-display-latin-700-normal.woff2 HTTP/1.1" 200 23224
+[23/Nov/2026 13:11:59] "GET /static/fonts/playfair-display-latin-600-normal.woff2 HTTP/1.1" 200 23228
+[23/Nov/2026 13:11:59] "GET /static/fonts/inter-latin-wght-normal.woff2 HTTP/1.1" 200 48256
+[23/Nov/2026 13:12:04] "GET /attendance/services/13/live/ HTTP/1.1" 200 9374
+[23/Nov/2026 13:12:06] "GET /members/ HTTP/1.1" 200 34097
+[23/Nov/2026 13:12:07] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[23/Nov/2026 13:12:07] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[23/Nov/2026 13:12:07] "GET /static/css/app.css HTTP/1.1" 200 69676
+[23/Nov/2026 13:12:07] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[23/Nov/2026 13:12:07] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[23/Nov/2026 13:12:07] "GET /static/fonts/material-symbols-outlined.woff2 HTTP/1.1" 200 4025760
+[23/Nov/2026 13:12:07] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 13:12:07] "GET /static/fonts/playfair-display-latin-700-normal.woff2 HTTP/1.1" 200 23224
+[23/Nov/2026 13:12:07] "GET /static/fonts/inter-latin-wght-normal.woff2 HTTP/1.1" 200 48256
+[23/Nov/2026 13:12:13] "GET /members/birthdays/ HTTP/1.1" 200 5768
+[23/Nov/2026 13:12:13] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[23/Nov/2026 13:12:13] "GET /static/css/app.css HTTP/1.1" 200 69676
+[23/Nov/2026 13:12:13] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[23/Nov/2026 13:12:13] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[23/Nov/2026 13:12:13] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[23/Nov/2026 13:12:13] "GET /static/fonts/material-symbols-outlined.woff2 HTTP/1.1" 200 4025760
+[23/Nov/2026 13:12:13] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 13:12:13] "GET /static/fonts/playfair-display-latin-700-normal.woff2 HTTP/1.1" 200 23224
+[23/Nov/2026 13:12:13] "GET /static/fonts/inter-latin-wght-normal.woff2 HTTP/1.1" 200 48256
+[23/Nov/2026 13:12:22] "GET /members/visitation/ HTTP/1.1" 200 12134
+[23/Nov/2026 13:12:22] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[23/Nov/2026 13:12:22] "GET /static/css/app.css HTTP/1.1" 200 69676
+[23/Nov/2026 13:12:22] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[23/Nov/2026 13:12:22] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[23/Nov/2026 13:12:22] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[23/Nov/2026 13:12:22] "GET /static/fonts/material-symbols-outlined.woff2 HTTP/1.1" 200 4025760
+[23/Nov/2026 13:12:22] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 13:12:22] "GET /static/fonts/inter-latin-wght-normal.woff2 HTTP/1.1" 200 48256
+[23/Nov/2026 13:12:22] "GET /static/fonts/playfair-display-latin-700-normal.woff2 HTTP/1.1" 200 23224
+[23/Nov/2026 13:12:22] "GET /static/fonts/playfair-display-latin-600-normal.woff2 HTTP/1.1" 200 23228
+[23/Nov/2026 13:12:22] "GET /static/fonts/playfair-display-latin-400-italic.woff2 HTTP/1.1" 200 21884
+[23/Nov/2026 13:12:32] "GET /static/film/s8.html HTTP/1.1" 200 1470
+[23/Nov/2026 13:12:32] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[23/Nov/2026 13:12:32] "GET /static/film/base.css HTTP/1.1" 200 1587
+[23/Nov/2026 13:12:32] "GET /static/img/logo.png HTTP/1.1" 200 74513
+[23/Nov/2026 13:12:32] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 13:12:49] "GET /login/ HTTP/1.1" 200 4010
+[23/Nov/2026 13:12:49] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[23/Nov/2026 13:12:49] "GET /static/css/app.css HTTP/1.1" 200 69676
+[23/Nov/2026 13:12:49] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[23/Nov/2026 13:12:49] "GET /static/img/logo.png HTTP/1.1" 200 74513
+[23/Nov/2026 13:12:49] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[23/Nov/2026 13:12:49] "GET /static/fonts/material-symbols-outlined.woff2 HTTP/1.1" 200 4025760
+[23/Nov/2026 13:12:49] "GET /static/fonts/playfair-display-latin-400-italic.woff2 HTTP/1.1" 200 21884
+[23/Nov/2026 13:12:49] "GET /static/fonts/playfair-display-latin-700-normal.woff2 HTTP/1.1" 200 23224
+[23/Nov/2026 13:12:49] "GET /static/fonts/inter-latin-wght-normal.woff2 HTTP/1.1" 200 48256
+[23/Nov/2026 13:12:49] "POST /login/ HTTP/1.1" 302 0
+[23/Nov/2026 13:12:49] "GET / HTTP/1.1" 200 15725
+[23/Nov/2026 13:12:49] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[23/Nov/2026 13:12:49] "GET /static/fonts/playfair-display-latin-600-normal.woff2 HTTP/1.1" 200 23228
+[23/Nov/2026 13:12:49] "GET /static/film/s1.html HTTP/1.1" 200 785
+[23/Nov/2026 13:12:49] "GET /static/film/base.css HTTP/1.1" 200 1587
+[23/Nov/2026 13:12:49] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[23/Nov/2026 13:12:49] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 13:12:50] "GET /static/film/auditorium.jpg HTTP/1.1" 200 388167
+[23/Nov/2026 13:12:56] "GET /static/film/s2.html HTTP/1.1" 200 1143
+[23/Nov/2026 13:12:57] "GET /static/film/base.css HTTP/1.1" 200 1587
+[23/Nov/2026 13:12:57] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 13:12:57] "GET /static/film/pews.jpg HTTP/1.1" 200 364509
+[23/Nov/2026 13:12:57] "GET /static/film/congregation.jpg HTTP/1.1" 200 317497
+[23/Nov/2026 13:13:08] "GET /static/film/s3.html HTTP/1.1" 200 1225
+[23/Nov/2026 13:13:08] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[23/Nov/2026 13:13:08] "GET /static/film/base.css HTTP/1.1" 200 1587
+[23/Nov/2026 13:13:08] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 13:13:17] "GET /static/film/bible.html HTTP/1.1" 200 3602
+[23/Nov/2026 13:13:17] "GET /static/film/base.css HTTP/1.1" 200 1587
+[23/Nov/2026 13:13:17] "GET /static/film/sticker-marites.png HTTP/1.1" 200 47319
+[23/Nov/2026 13:13:17] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 13:13:17] "GET /static/film/pews.jpg HTTP/1.1" 200 364509
+[23/Nov/2026 13:13:24] "GET /static/film/door.html?s=13 HTTP/1.1" 200 1518
+[23/Nov/2026 13:13:24] "GET /static/film/base.css HTTP/1.1" 200 1587
+Not Found: /attendance/services/SERVICE/
+[23/Nov/2026 13:13:24] "GET /attendance/services/SERVICE/ HTTP/1.1" 404 7302
+[23/Nov/2026 13:13:24] "GET /checkin/kiosk/?station=Front%20door HTTP/1.1" 200 17082
+[23/Nov/2026 13:13:24] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[23/Nov/2026 13:13:24] "GET /static/css/app.css HTTP/1.1" 200 69676
+[23/Nov/2026 13:13:24] "GET /static/js/vendor/jsQR.js HTTP/1.1" 200 256885
+[23/Nov/2026 13:13:24] "GET /static/fonts/material-symbols-outlined.woff2 HTTP/1.1" 200 4025760
+[23/Nov/2026 13:13:24] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[23/Nov/2026 13:13:24] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[23/Nov/2026 13:13:24] "GET /static/fonts/playfair-display-latin-700-normal.woff2 HTTP/1.1" 200 23224
+[23/Nov/2026 13:13:24] "GET /static/fonts/inter-latin-wght-normal.woff2 HTTP/1.1" 200 48256
+[23/Nov/2026 13:13:24] "GET /static/fonts/playfair-display-latin-600-normal.woff2 HTTP/1.1" 200 23228
+[23/Nov/2026 13:13:26] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 13:13:26] "GET /attendance/services/13/ HTTP/1.1" 200 16436
+[23/Nov/2026 13:13:26] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[23/Nov/2026 13:13:30] "POST /checkin/kiosk/scan/ HTTP/1.1" 200 343
+[23/Nov/2026 13:13:31] "GET /attendance/services/13/live/ HTTP/1.1" 200 9374
+[23/Nov/2026 13:13:31] "GET /attendance/services/13/live/ HTTP/1.1" 200 9374
+[23/Nov/2026 13:13:36] "GET /attendance/services/13/live/ HTTP/1.1" 200 9374
+[23/Nov/2026 13:13:41] "GET /attendance/services/13/live/ HTTP/1.1" 200 9374
+[23/Nov/2026 13:13:43] "GET /checkin/modes/ HTTP/1.1" 200 7794
+[23/Nov/2026 13:13:43] "GET /static/css/app.css HTTP/1.1" 200 69676
+[23/Nov/2026 13:13:43] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[23/Nov/2026 13:13:43] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[23/Nov/2026 13:13:43] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[23/Nov/2026 13:13:43] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[23/Nov/2026 13:13:43] "GET /static/fonts/material-symbols-outlined.woff2 HTTP/1.1" 200 4025760
+[23/Nov/2026 13:13:43] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 13:13:43] "GET /static/fonts/playfair-display-latin-700-normal.woff2 HTTP/1.1" 200 23224
+[23/Nov/2026 13:13:43] "GET /static/fonts/inter-latin-wght-normal.woff2 HTTP/1.1" 200 48256
+[23/Nov/2026 13:13:52] "GET /static/film/kinetic.html?w=No%20lines.%7CNo%20logbooks.&at=0.57,1.30&ms=1000 HTTP/1.1" 200 1278
+[23/Nov/2026 13:13:52] "GET /static/film/base.css HTTP/1.1" 200 1587
+[23/Nov/2026 13:13:53] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 13:14:00] "GET / HTTP/1.1" 200 15725
+[23/Nov/2026 13:14:00] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[23/Nov/2026 13:14:00] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[23/Nov/2026 13:14:00] "GET /static/css/app.css HTTP/1.1" 200 69676
+[23/Nov/2026 13:14:00] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[23/Nov/2026 13:14:00] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[23/Nov/2026 13:14:00] "GET /static/fonts/material-symbols-outlined.woff2 HTTP/1.1" 200 4025760
+[23/Nov/2026 13:14:00] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 13:14:00] "GET /static/fonts/playfair-display-latin-700-normal.woff2 HTTP/1.1" 200 23224
+[23/Nov/2026 13:14:00] "GET /static/fonts/playfair-display-latin-600-normal.woff2 HTTP/1.1" 200 23228
+[23/Nov/2026 13:14:00] "GET /static/fonts/inter-latin-wght-normal.woff2 HTTP/1.1" 200 48256
+[23/Nov/2026 13:14:07] "GET /attendance/services/13/ HTTP/1.1" 200 17158
+[23/Nov/2026 13:14:07] "GET /static/css/app.css HTTP/1.1" 200 69676
+[23/Nov/2026 13:14:07] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[23/Nov/2026 13:14:07] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[23/Nov/2026 13:14:07] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[23/Nov/2026 13:14:07] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[23/Nov/2026 13:14:07] "GET /static/fonts/material-symbols-outlined.woff2 HTTP/1.1" 200 4025760
+[23/Nov/2026 13:14:07] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 13:14:07] "GET /static/fonts/inter-latin-wght-normal.woff2 HTTP/1.1" 200 48256
+[23/Nov/2026 13:14:07] "GET /static/fonts/playfair-display-latin-700-normal.woff2 HTTP/1.1" 200 23224
+[23/Nov/2026 13:14:07] "GET /static/fonts/playfair-display-latin-600-normal.woff2 HTTP/1.1" 200 23228
+[23/Nov/2026 13:14:12] "GET /attendance/services/13/live/ HTTP/1.1" 200 9374
+[23/Nov/2026 13:14:12] "GET /members/ HTTP/1.1" 200 34097
+[23/Nov/2026 13:14:12] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[23/Nov/2026 13:14:12] "GET /static/css/app.css HTTP/1.1" 200 69676
+[23/Nov/2026 13:14:12] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[23/Nov/2026 13:14:13] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[23/Nov/2026 13:14:13] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[23/Nov/2026 13:14:13] "GET /static/fonts/material-symbols-outlined.woff2 HTTP/1.1" 200 4025760
+[23/Nov/2026 13:14:13] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 13:14:13] "GET /static/fonts/playfair-display-latin-700-normal.woff2 HTTP/1.1" 200 23224
+[23/Nov/2026 13:14:13] "GET /static/fonts/inter-latin-wght-normal.woff2 HTTP/1.1" 200 48256
+[23/Nov/2026 13:14:18] "GET /members/birthdays/ HTTP/1.1" 200 5768
+[23/Nov/2026 13:14:18] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[23/Nov/2026 13:14:18] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[23/Nov/2026 13:14:18] "GET /static/css/app.css HTTP/1.1" 200 69676
+[23/Nov/2026 13:14:18] "GET /static/fonts/material-symbols-outlined.woff2 HTTP/1.1" 200 4025760
+[23/Nov/2026 13:14:18] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[23/Nov/2026 13:14:18] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[23/Nov/2026 13:14:18] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 13:14:18] "GET /static/fonts/inter-latin-wght-normal.woff2 HTTP/1.1" 200 48256
+[23/Nov/2026 13:14:18] "GET /static/fonts/playfair-display-latin-700-normal.woff2 HTTP/1.1" 200 23224
+[23/Nov/2026 13:14:25] "GET /members/visitation/ HTTP/1.1" 200 12134
+[23/Nov/2026 13:14:25] "GET /static/img/logo-light.png HTTP/1.1" 200 80882
+[23/Nov/2026 13:14:25] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[23/Nov/2026 13:14:25] "GET /static/css/app.css HTTP/1.1" 200 69676
+[23/Nov/2026 13:14:25] "GET /static/js/vendor/htmx.min.js HTTP/1.1" 200 52182
+[23/Nov/2026 13:14:25] "GET /static/js/vendor/alpine.min.js HTTP/1.1" 200 55935
+[23/Nov/2026 13:14:25] "GET /static/fonts/material-symbols-outlined.woff2 HTTP/1.1" 200 4025760
+[23/Nov/2026 13:14:25] "GET /static/film/overlay.css HTTP/1.1" 200 587
+[23/Nov/2026 13:14:25] "GET /static/fonts/playfair-display-latin-700-normal.woff2 HTTP/1.1" 200 23224
+[23/Nov/2026 13:14:25] "GET /static/fonts/inter-latin-wght-normal.woff2 HTTP/1.1" 200 48256
+[23/Nov/2026 13:14:25] "GET /static/fonts/playfair-display-latin-600-normal.woff2 HTTP/1.1" 200 23228
+[23/Nov/2026 13:14:25] "GET /static/fonts/playfair-display-latin-400-italic.woff2 HTTP/1.1" 200 21884
+[23/Nov/2026 13:14:32] "GET /static/film/s8.html HTTP/1.1" 200 1470
+[23/Nov/2026 13:14:32] "GET /static/film/base.css HTTP/1.1" 200 1587
+[23/Nov/2026 13:14:32] "GET /static/img/flock-logo.svg HTTP/1.1" 200 833
+[23/Nov/2026 13:14:32] "GET /static/img/logo.png HTTP/1.1" 200 74513
+[23/Nov/2026 13:14:32] "GET /static/film/overlay.css HTTP/1.1" 200 587
+/home/marcjerome/bbc-chms/checkin/models.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 5 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): attendance, biometrics, checkin.
+Run 'python manage.py migrate' to apply them.
+November 23, 2026 - 12:39:50
+Django version 6.1.3, using settings 'config.settings.film'
+Starting WSGI development server at http://127.0.0.1:8003/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.1/howto/deployment/
+Watching for file changes with StatReloader
+/home/marcjerome/bbc-chms/checkin/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 23, 2026 - 13:42:10
+Django version 6.1.3, using settings 'config.settings.film'
+Starting WSGI development server at http://127.0.0.1:8003/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.1/howto/deployment/
+Watching for file changes with StatReloader
+/home/marcjerome/bbc-chms/checkin/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 23, 2026 - 13:42:15
+Django version 6.1.3, using settings 'config.settings.film'
+Starting WSGI development server at http://127.0.0.1:8003/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.1/howto/deployment/
+Watching for file changes with StatReloader
+/home/marcjerome/bbc-chms/checkin/services.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 1 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): checkin.
+Run 'python manage.py migrate' to apply them.
+November 23, 2026 - 13:44:19
+Django version 6.1.3, using settings 'config.settings.film'
+Starting WSGI development server at http://127.0.0.1:8003/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.1/howto/deployment/
+Watching for file changes with StatReloader
+/home/marcjerome/bbc-chms/checkin/services.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 1 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): checkin.
+Run 'python manage.py migrate' to apply them.
+November 23, 2026 - 14:02:33
+Django version 6.1.3, using settings 'config.settings.film'
+Starting WSGI development server at http://127.0.0.1:8003/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.1/howto/deployment/
+Watching for file changes with StatReloader

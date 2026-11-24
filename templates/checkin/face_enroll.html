@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Enroll face · {% endblock %}
+{% block content %}
+<a href="{{ member.get_absolute_url }}" class="text-sm text-on-surface-variant hover:underline">← {{ member.display_name }}</a>
+<h1 class="page-title mt-3">Enroll face</h1>
+<p class="mt-3 max-w-2xl text-sm text-on-surface-variant">Ask {{ member.first_name }} to look at the camera, then turn their head a little left and right. Five pictures are read here in the browser and only numbers computed from the face are saved, never a photo.</p>
+<div class="gold-rule"></div>
+
+<div class="mt-8 grid max-w-4xl gap-6 md:grid-cols-[3fr_2fr]">
+  <div class="relative overflow-hidden rounded-3xl bg-ink shadow-xl">
+    <video id="video" class="aspect-[4/3] w-full object-cover" style="transform:scaleX(-1)" playsinline muted></video>
+    <div id="camera-msg" class="absolute inset-0 hidden flex-col items-center justify-center gap-2 px-8 text-center text-white">
+      <span aria-hidden="true" class="material-symbols-outlined text-5xl text-secondary-fixed-dim">no_photography</span>
+      <p class="font-serif text-lg" id="camera-msg-text"></p>
+      <p class="text-xs text-white/60">On plain http, allow this address once in <span class="font-mono">chrome://flags/#unsafely-treat-insecure-origin-as-secure</span>, or enroll on the church computer itself (localhost).</p>
+    </div>
+  </div>
+  <div class="card p-6">
+    <p class="label">Progress</p>
+    <p class="mt-2 font-serif text-4xl font-bold"><span id="count">0</span> / 5</p>
+    <div class="mt-3 h-2 overflow-hidden rounded-full bg-surface-container"><div id="bar" class="h-full w-0 bg-tertiary transition-all"></div></div>
+    <p id="status" class="mt-4 text-sm text-on-surface-variant" aria-live="polite">Starting the camera…</p>
+    <form id="form" method="post" class="mt-6">{% csrf_token %}
+      <input type="hidden" name="descriptors" id="descriptors">
+      <button id="save" class="btn-primary w-full" disabled><span aria-hidden="true" class="material-symbols-outlined">face</span>Save face</button>
+    </form>
+    <button type="button" id="restart" class="mt-3 w-full text-sm font-semibold text-secondary hover:underline">Start over</button>
+  </div>
+</div>
+
+<script src="{% static 'js/vendor/face-api.js' %}"></script><script src="{% static 'js/face.js' %}"></script>
+<script>
+(() => {
+  const MODELS = "{% static 'models/face/' %}", NEEDED = 5;
+  const video = document.getElementById("video"), status = document.getElementById("status");
+  const count = document.getElementById("count"), bar = document.getElementById("bar"), save = document.getElementById("save");
+  let samples = [];
+  const dist = (a, b) => Math.hypot(...a.map((x, i) => x - b[i]));
+  const say = (t) => { status.textContent = t; };
+  function progress() {
+    count.textContent = samples.length; bar.style.width = `${samples.length / NEEDED * 100}%`;
+    save.disabled = samples.length < NEEDED;
+    document.getElementById("descriptors").value = JSON.stringify(samples);
+  }
+  function cameraMessage(text) {
+    document.getElementById("camera-msg-text").textContent = text;
+    document.getElementById("camera-msg").classList.replace("hidden", "flex");
+    say(text);
+  }
+
+  async function capture() {
+    if (samples.length >= NEEDED) return;
+    try {
+      const all = await faceapi.detectAllFaces(video, new faceapi.TinyFaceDetectorOptions({ inputSize: 416, scoreThreshold: 0.6 }))
+        .withFaceLandmarks(true).withFaceDescriptors();
+      if (all.length === 0) say("Looking for a face…");
+      else if (all.length > 1) say("Only one person in the picture, please.");
+      else if (all[0].detection.box.width < video.videoWidth * 0.25) say("Come a little closer to the camera.");
+      else {
+        const d = Array.from(all[0].descriptor);
+        if (samples.length && dist(d, samples[0]) > 0.6) {
+          say("That looks like someone else. Start over if the person changed.");
+        } else if (samples.some((s) => dist(s, d) < 0.06)) {
+          say("Good. Now turn your head a little.");
+        } else {
+          samples.push(d); progress();
+          say(samples.length < NEEDED ? "Good. Turn your head a little." : "Done! Press Save face.");
+        }
+      }
+    } catch (e) {}
+    setTimeout(capture, 600);
+  }
+
+  async function start() {
+    if (!window.isSecureContext || !navigator.mediaDevices) return cameraMessage("This browser blocks the camera on http addresses.");
+    try {
+      video.srcObject = await navigator.mediaDevices.getUserMedia({ video: { facingMode: "user", width: { ideal: 1280 } }, audio: false });
+      await video.play();
+    } catch (e) { return cameraMessage("No camera available, or permission was denied."); }
+    say("Loading face recognition…");
+    try {
+      await flockFace.load(MODELS);
+    } catch (e) { return say("Face recognition could not start on this device."); }
+    say("Look at the camera.");
+    capture();
+  }
+  document.getElementById("restart").addEventListener("click", () => { samples = []; progress(); say("Look at the camera."); });
+  start();
+})();
+</script>
+{% endblock %}

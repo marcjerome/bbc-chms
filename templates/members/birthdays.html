@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}Birthdays · {% endblock %}
+{% block content %}
+<div class="flex flex-wrap items-end justify-between gap-4 print:hidden">
+  <div><h1 class="page-title">Birthdays</h1><div class="gold-rule"></div></div>
+  <div class="flex gap-2">
+    <a href="?week={{ prev_week|date:'Y-m-d' }}" class="btn-ghost"><span aria-hidden="true" class="material-symbols-outlined">chevron_left</span>Previous</a>
+    {% if not is_this_week %}<a href="{% url 'members:birthdays' %}" class="btn-ghost">This week</a>{% endif %}
+    <a href="?week={{ next_week|date:'Y-m-d' }}" class="btn-ghost">Next<span aria-hidden="true" class="material-symbols-outlined">chevron_right</span></a>
+    <button onclick="window.print()" class="btn-primary"><span aria-hidden="true" class="material-symbols-outlined">print</span>Print</button>
+  </div>
+</div>
+<section class="card mt-6 p-6 print:border-0 print:shadow-none">
+  <p class="label !text-secondary">{{ CHURCH_NAME }} · Sunday announcement &amp; prayer</p>
+  <h2 class="mt-1 text-2xl font-bold">Birthdays, {{ start|date:"F j" }} – {{ end|date:"F j, Y" }}</h2>
+  <table class="table mt-4">
+    <thead><tr><th>Day</th><th>Name</th><th class="text-right">Turning</th></tr></thead>
+    <tbody>
+      {% for b in people %}
+      <tr><td class="whitespace-nowrap">{{ b.date|date:"l, M j" }}</td><td class="font-medium">{{ b.member.display_name }}</td><td class="text-right">{{ b.turning }}</td></tr>
+      {% empty %}
+      <tr><td colspan="3" class="py-8 text-center font-serif italic text-on-surface-variant">No birthdays this week.</td></tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</section>
+{% endblock %}

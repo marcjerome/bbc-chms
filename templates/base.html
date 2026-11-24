@@ -1,0 +1,74 @@
+{% load static chms %}<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}{% endblock %}{{ APP_NAME }} · {{ CHURCH_SHORT_NAME }}</title>
+  <link rel="preload" href="{% static 'fonts/material-symbols-outlined.woff2' %}" as="font" type="font/woff2" crossorigin>
+  <link rel="icon" type="image/svg+xml" href="{% static 'img/flock-logo.svg' %}">
+  <link rel="apple-touch-icon" href="{% static 'img/flock-icon-192.png' %}">
+  <link rel="stylesheet" href="{% static 'css/app.css' %}">
+  <script src="{% static 'js/vendor/htmx.min.js' %}" defer></script>
+  <script src="{% static 'js/vendor/alpine.min.js' %}" defer></script>
+</head>
+<body hx-headers='{"X-CSRFToken": "{{ csrf_token }}"}' class="min-h-screen">
+{% block body %}
+<div x-data="{ nav: false }" class="min-h-screen md:flex">
+  {# Mobile top bar #}
+  <header class="sticky top-0 z-30 flex items-center print:hidden justify-between bg-primary px-4 py-3 text-white md:hidden">
+    <button @click="nav = true" class="-ml-2 p-2" aria-label="Open menu"><span aria-hidden="true" class="material-symbols-outlined">menu</span></button>
+    <span class="flex items-center gap-2 font-serif text-lg font-semibold"><img src="{% static 'img/flock-logo.svg' %}" alt="" class="h-8 w-8 rounded-lg ring-1 ring-white/20">{{ APP_NAME }}</span>
+    <span class="w-8"></span>
+  </header>
+  <div x-show="nav" x-cloak @click="nav = false" class="fixed inset-0 z-40 bg-ink/50 md:hidden"></div>
+
+  {# Sidebar #}
+  <aside :class="nav ? 'translate-x-0' : '-translate-x-full'"
+         class="fixed inset-y-0 left-0 z-50 flex w-64 print:hidden flex-col bg-primary text-white transition-transform md:sticky md:top-0 md:h-screen md:translate-x-0">
+    <div class="flex items-center gap-3 border-b border-white/10 px-5 py-5">
+      <img src="{% static 'img/flock-logo.svg' %}" alt="" class="h-12 w-12 shrink-0 rounded-xl ring-1 ring-white/20">
+      <div>
+      <p class="font-serif text-2xl font-bold leading-none">{{ APP_NAME }}</p>
+      <p class="mt-1.5 text-[10px] uppercase tracking-widest text-secondary-fixed-dim">A ministry of {{ CHURCH_SHORT_NAME }}</p>
+      </div>
+    </div>
+    <nav class="flex-1 space-y-1 px-3 py-4">
+      <a href="{% url 'dashboard' %}" class="nav-link {% nav_active '/' %}"><span aria-hidden="true" class="material-symbols-outlined">space_dashboard</span>Dashboard</a>
+      {% if perms.members.view_member %}
+      <a href="{% url 'members:member_list' %}" class="nav-link {% if '/members/households' in request.path or '/members/visitation' in request.path or '/members/birthdays' in request.path %}{% else %}{% nav_active '/members/' %}{% endif %}"><span aria-hidden="true" class="material-symbols-outlined">group</span>Members</a>
+      <a href="{% url 'members:birthdays' %}" class="nav-link {% nav_active '/members/birthdays' %}"><span aria-hidden="true" class="material-symbols-outlined">cake</span>Birthdays</a>
+      <a href="{% url 'members:followups' %}" class="nav-link {% nav_active '/members/visitation' %}"><span aria-hidden="true" class="material-symbols-outlined">volunteer_activism</span>Visitation</a>
+      <a href="{% url 'members:household_list' %}" class="nav-link {% nav_active '/members/households' %}"><span aria-hidden="true" class="material-symbols-outlined">family_restroom</span>Households</a>
+      {% endif %}
+      {% if perms.attendance.view_service %}
+      <a href="{% url 'attendance:service_list' %}" class="nav-link {% nav_active '/attendance' %}"><span aria-hidden="true" class="material-symbols-outlined">how_to_reg</span>Attendance</a>
+      {% endif %}
+      {% if CHECKIN_AVAILABLE and perms.checkin.view_scan %}
+      <a href="{% url 'checkin:overview' %}" class="nav-link {% nav_active '/checkin' %}"><span aria-hidden="true" class="material-symbols-outlined">qr_code_scanner</span>Self check-in</a>
+      {% endif %}
+      {% if TERMINALS_ON and perms.biometrics.view_scan %}
+      <a href="{% url 'biometrics:overview' %}" class="nav-link {% nav_active '/biometrics' %}"><span aria-hidden="true" class="material-symbols-outlined">fingerprint</span>Door terminals</a>
+      {% endif %}
+      {% if user.is_staff %}
+      <a href="{% url 'admin:index' %}" class="nav-link"><span aria-hidden="true" class="material-symbols-outlined">admin_panel_settings</span>Admin</a>
+      {% endif %}
+    </nav>
+    <div class="flex items-center gap-2 border-t border-white/10 px-6 py-3 opacity-80"><img src="{% static 'img/logo-light.png' %}" alt="" class="h-8 w-auto"><span class="text-[11px] leading-tight text-white/70">{{ CHURCH_NAME }}</span></div>
+    <div class="border-t border-white/10 px-6 py-4">
+      <p class="text-sm font-medium">{{ user.get_full_name|default:user.username }}</p>
+      <form method="post" action="{% url 'logout' %}" class="mt-1">{% csrf_token %}
+        <button class="text-xs text-white/60 hover:text-white">Log out</button>
+      </form>
+    </div>
+  </aside>
+
+  <main class="min-w-0 flex-1">
+    <div class="mx-auto max-w-7xl px-4 py-6 md:px-8 md:py-10">
+      {% include "partials/messages.html" %}
+      {% block content %}{% endblock %}
+    </div>
+  </main>
+</div>
+{% endblock %}
+</body>
+</html>

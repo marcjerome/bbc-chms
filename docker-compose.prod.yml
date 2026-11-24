@@ -1,0 +1,40 @@
+# Production on the church computer: gunicorn + whitenoise, reachable on the church network at port 8002.
+#   docker compose -f docker-compose.prod.yml up -d --build
+# Kiosk tablets open http://<this computer's LAN address>:8002. Never port-forward it on the router.
+services:
+  db:
+    image: postgres:17
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: chms
+      POSTGRES_USER: chms
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U chms -d chms"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  web:
+    build: .
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      DJANGO_SETTINGS_MODULE: config.settings.production
+      DATABASE_URL: postgres://chms:${POSTGRES_PASSWORD}@db:5432/chms
+      SEED_DEMO: "false"
+    volumes:
+      - media:/app/media
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      # Listens on every network card so tablets on the church Wi-Fi can reach it.
+      # Set BIND_ADDRESS=127.0.0.1 in .env if a reverse proxy on this machine sits in front.
+      - "${BIND_ADDRESS:-0.0.0.0}:8002:8000"
+
+volumes:
+  pgdata:
+  media:

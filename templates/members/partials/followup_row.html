@@ -1,0 +1,8 @@
+<li class="flex items-center gap-3 px-5 py-3">
+  {% include "partials/avatar.html" with member=m %}
+  <div class="min-w-0 flex-1">
+    <a href="{{ m.get_absolute_url }}" class="font-medium hover:underline">{{ m.display_name }}</a>
+    <p class="text-xs text-on-surface-variant">{% if when %}{{ prefix }} {{ when|date:"M j" }}{% else %}Never checked in{% endif %}{% if m.household %} · {{ m.household }}{% endif %}</p>
+  </div>
+  {% if m.phone %}<a href="tel:{{ m.phone }}" class="btn-ghost !min-h-9 !px-2 text-primary" title="Call {{ m.phone }}"><span aria-hidden="true" class="material-symbols-outlined">call</span></a>{% endif %}
+</li>

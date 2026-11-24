@@ -1,0 +1,10 @@
+<div class="{% if field.name == 'notes' or field.name == 'address' %}md:col-span-2{% endif %}">
+  {% if field.field.widget.input_type == 'checkbox' %}
+  <label class="flex min-h-11 items-center gap-3 text-sm font-medium">{{ field }} {{ field.label }}</label>
+  {% else %}
+  <label for="{{ field.id_for_label }}" class="mb-1 block text-sm font-medium text-ink">{{ field.label }}{% if field.field.required %} <span class="text-error">*</span>{% endif %}</label>
+  {{ field }}
+  {% endif %}
+  {% if field.help_text %}<p class="mt-1 text-xs text-on-surface-variant">{{ field.help_text }}</p>{% endif %}
+  {{ field.errors }}
+</div>

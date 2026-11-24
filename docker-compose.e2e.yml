@@ -1,0 +1,36 @@
+# Throwaway copy of the app for the Playwright end-to-end tests (see e2e/README.md).
+# Its own database (kept in memory), so tests never touch dev or production data.
+#   docker compose -f docker-compose.e2e.yml -p flock-e2e up -d --build
+#   cd e2e && npm test
+name: flock-e2e
+services:
+  db:
+    image: postgres:17
+    environment:
+      POSTGRES_DB: chms
+      POSTGRES_USER: chms
+      POSTGRES_PASSWORD: chms
+    tmpfs:
+      - /var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U chms -d chms"]
+      interval: 2s
+      timeout: 5s
+      retries: 20
+
+  web:
+    build: .
+    command: python manage.py runserver 0.0.0.0:8000
+    environment:
+      DJANGO_SETTINGS_MODULE: config.settings.dev
+      DATABASE_URL: postgres://chms:chms@db:5432/chms
+      SEED_DEMO: "false"
+      E2E: "1"  # allows `manage.py seed_e2e`, which wipes this database
+    volumes:
+      - .:/app
+      - /app/tailwind/node_modules
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "8004:8000"

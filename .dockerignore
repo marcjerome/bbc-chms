@@ -1,0 +1,12 @@
+.git
+.env
+**/__pycache__
+*.pyc
+db.sqlite3
+media/
+staticfiles/
+tailwind/node_modules
+.venv
+docs/
+video/
+e2e/

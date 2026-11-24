@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}Service types · {% endblock %}
+{% block content %}
+<a href="{% url 'attendance:service_list' %}" class="text-sm text-on-surface-variant hover:underline">← Services</a>
+<div class="mt-3 flex flex-wrap items-end justify-between gap-4">
+  <div><h1 class="page-title">Service types</h1><div class="gold-rule"></div>
+    <p class="mt-3 text-sm text-on-surface-variant">The church's regular gatherings and their usual day and time.</p></div>
+  {% if perms.attendance.add_servicetype %}<a href="{% url 'attendance:servicetype_create' %}" class="btn-primary"><span aria-hidden="true" class="material-symbols-outlined">add</span>Add service type</a>{% endif %}
+</div>
+<div class="card mt-6 overflow-x-auto">
+  <table class="table">
+    <thead><tr><th>Name</th><th>Usual day</th><th>Usual time</th><th class="text-right">Services held</th><th>Status</th><th></th></tr></thead>
+    <tbody>
+    {% for t in types %}
+      <tr>
+        <td class="font-medium">{{ t.name }}{% if forloop.first and t.is_active %} <span class="pill bg-primary-fixed text-primary">Main</span>{% endif %}</td>
+        <td>{{ t.get_weekday_display|default:"Varies" }}</td>
+        <td>{{ t.start_time|time:"g:i A"|default:"—" }}</td>
+        <td class="text-right">{{ t.service_count }}</td>
+        <td>{% if t.is_active %}<span class="pill bg-tertiary-fixed text-tertiary">Active</span>{% else %}<span class="pill-inactive">Inactive</span>{% endif %}</td>
+        <td class="text-right">{% if perms.attendance.change_servicetype %}<a href="{% url 'attendance:servicetype_update' t.pk %}" class="text-sm font-semibold text-secondary hover:underline">Edit</a>{% endif %}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock %}

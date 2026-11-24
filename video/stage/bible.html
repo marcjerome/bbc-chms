@@ -1,0 +1,24 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"><style>
+body{background:radial-gradient(ellipse at 50% 40%,#3b2a1a 0%,#1d140c 75%)}
+.bg{position:absolute;inset:-40px;background:url(pews.jpg) center/cover;filter:blur(14px) brightness(.35);animation:kb 10s ease-out forwards}
+@keyframes kb{from{transform:scale(1.1)}to{transform:scale(1)}}
+.book{position:absolute;left:50%;top:54%;width:1360px;height:820px;transform:translate(-50%,-50%) rotate(-2deg);animation:bk 9s ease-out forwards}
+@keyframes bk{from{transform:translate(-50%,-50%) rotate(-2deg) scale(1.0)}to{transform:translate(-50%,-50%) rotate(-1deg) scale(1.08)}}
+.cover{position:absolute;inset:-18px;border-radius:18px;background:#2a1b10;box-shadow:0 40px 90px rgba(0,0,0,.6)}
+.page{position:absolute;top:0;bottom:0;width:50%;background:linear-gradient(90deg,#efe6d2,#f7f0e1 12%,#f7f0e1 88%,#e6dcc5);padding:60px 70px;box-sizing:border-box;
+ font:400 21px/1.62 "Playfair Display",serif;color:#3a2c1d;column-count:2;column-gap:40px;text-align:justify;overflow:hidden}
+.page.l{left:0;border-radius:10px 0 0 10px;box-shadow:inset -30px 0 40px -20px rgba(80,50,20,.35)}
+.page.r{right:0;border-radius:0 10px 10px 0;box-shadow:inset 30px 0 40px -20px rgba(80,50,20,.35)}
+.page h3{column-span:all;margin:0 0 18px;font:700 26px "Playfair Display";letter-spacing:.2em;text-align:center;color:#6b4310}
+.page b{color:#8a2a1a;font-weight:600}
+.sticker{position:absolute;left:820px;top:410px;width:470px;border-radius:10px;opacity:0;box-shadow:0 18px 40px rgba(40,25,10,.45);
+ transform:translateY(-260px) rotate(-9deg) scale(1.25);animation:drop .75s cubic-bezier(.2,.9,.3,1.1) 1.1s forwards}
+@keyframes drop{to{opacity:1;transform:rotate(-3deg)}}
+.label{position:absolute;left:50%;top:70px;transform:translateX(-50%);font:700 22px Inter;letter-spacing:.3em;text-transform:uppercase;color:#e9c176;opacity:0;animation:in 1s ease 2s forwards}
+</style></head><body><div class="bg"></div>
+<div class="label">A sticker in every Bible</div>
+<div class="book"><div class="cover"></div>
+<div class="page l"><h3>JOHN 10</h3>Verily, verily, I say unto you, He that entereth not by the door into the sheepfold, but climbeth up some other way, the same is a thief and a robber. But he that entereth in by the door is the shepherd of the sheep. <b>To him the porter openeth; and the sheep hear his voice: and he calleth his own sheep by name, and leadeth them out.</b> And when he putteth forth his own sheep, he goeth before them, and the sheep follow him: for they know his voice. And a stranger will they not follow, but will flee from him: for they know not the voice of strangers. This parable spake Jesus unto them: but they understood not what things they were which he spake unto them. Then said Jesus unto them again, Verily, verily, I say unto you, I am the door of the sheep.</div>
+<div class="page r"><h3>JOHN 10</h3>All that ever came before me are thieves and robbers: but the sheep did not hear them. I am the door: by me if any man enter in, he shall be saved, and shall go in and out, and find pasture. The thief cometh not, but for to steal, and to kill, and to destroy: I am come that they might have life, and that they might have it more abundantly. <b>I am the good shepherd: the good shepherd giveth his life for the sheep.</b> But he that is an hireling, and not the shepherd, whose own the sheep are not, seeth the wolf coming, and leaveth the sheep, and fleeth. I am the good shepherd, and know my sheep, and am known of mine.</div>
+<img class="sticker" src="sticker-marites.png"></div>
+</body></html>

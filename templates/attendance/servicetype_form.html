@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<a href="{% url 'attendance:servicetype_list' %}" class="text-sm text-on-surface-variant hover:underline">← Service types</a>
+<h1 class="page-title mt-3">{% if servicetype.pk %}Edit {{ servicetype.name }}{% else %}Add service type{% endif %}</h1>
+<div class="gold-rule"></div>
+<form method="post" class="card mt-8 max-w-2xl p-6">{% csrf_token %}
+  <div class="grid gap-4 md:grid-cols-2">{% for field in form %}{% include "partials/form_field.html" %}{% endfor %}</div>
+  <p class="mt-4 text-xs text-on-surface-variant">Turn off "Active" instead of deleting, so past attendance is kept.</p>
+  <div class="mt-6 flex justify-end gap-2"><a href="{% url 'attendance:servicetype_list' %}" class="btn-ghost">Cancel</a><button class="btn-primary">Save</button></div>
+</form>
+{% endblock %}

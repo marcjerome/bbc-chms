@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% block title %}Check-in modes · {% endblock %}
+{% block content %}
+<a href="{% url 'checkin:overview' %}" class="text-sm text-on-surface-variant hover:underline">← Self check-in</a>
+<h1 class="page-title mt-3">Check-in modes</h1>
+<p class="mt-3 max-w-2xl text-sm text-on-surface-variant">Choose how people can check themselves in. Several modes can be on at the same time, for example QR stickers at the main door and a fingerprint terminal at the side door. Ushers can always check anyone in by name.</p>
+<div class="gold-rule"></div>
+
+<form method="post" class="mt-8 max-w-2xl space-y-4">{% csrf_token %}
+  {% if form.non_field_errors %}<p class="text-sm text-error">{{ form.non_field_errors|join:" " }}</p>{% endif %}
+
+  <label class="card flex cursor-pointer gap-4 p-5">
+    <input type="checkbox" name="qr_enabled" id="id_qr_enabled" class="mt-1 h-5 w-5 rounded" {% if form.qr_enabled.value %}checked{% endif %}>
+    <span class="flex-1">
+      <span class="flex items-center gap-2 font-semibold"><span aria-hidden="true" class="material-symbols-outlined text-secondary">qr_code_2</span>QR stickers <span class="pill bg-surface-container text-on-surface-variant">Default</span></span>
+      <span class="mt-1 block text-sm text-on-surface-variant">A QR sticker in each Bible, read by the kiosk tablet's camera. No personal data on the sticker, no consent form needed.</span>
+    </span>
+  </label>
+
+  <label class="card flex cursor-pointer gap-4 p-5">
+    <input type="checkbox" name="fingerprint_enabled" id="id_fingerprint_enabled" class="mt-1 h-5 w-5 rounded" {% if form.fingerprint_enabled.value %}checked{% endif %}>
+    <span class="flex-1">
+      <span class="flex items-center gap-2 font-semibold"><span aria-hidden="true" class="material-symbols-outlined text-secondary">fingerprint</span>Fingerprint</span>
+      <span class="mt-1 block text-sm text-on-surface-variant">A ZKTeco-type terminal at the door. Fingerprints stay on the terminal; Flock only learns who checked in. Needs each person's signed consent (RA 10173).</span>
+    </span>
+  </label>
+
+  <div class="card p-5">
+    <label class="flex cursor-pointer gap-4">
+      <input type="checkbox" name="face_enabled" id="id_face_enabled" class="mt-1 h-5 w-5 rounded" {% if form.face_enabled.value %}checked{% endif %}>
+      <span class="flex-1">
+        <span class="flex items-center gap-2 font-semibold"><span aria-hidden="true" class="material-symbols-outlined text-secondary">face</span>Face recognition</span>
+        <span class="mt-1 block text-sm text-on-surface-variant">Two ways, use either or both: a face terminal at the door (the face stays on the terminal), or the kiosk tablet's camera (Flock keeps numbers computed from the face, never a photo). Needs each person's signed consent (RA 10173).</span>
+      </span>
+    </label>
+    <div class="mt-4 border-t border-outline-variant/40 pt-4 pl-9">
+      <label for="id_face_match_threshold" class="text-sm font-semibold">Kiosk face match strictness</label>
+      <div class="mt-1 flex items-center gap-3">
+        <input type="number" name="face_match_threshold" id="id_face_match_threshold" step="0.01" min="0.3" max="0.7" value="{{ form.face_match_threshold.value }}" class="w-28" aria-describedby="threshold-help">
+        <span id="threshold-help" class="text-xs text-on-surface-variant">0.30 strict … 0.70 loose. 0.45 suits most churches. Lower it if the kiosk mixes up relatives; raise it a little if it often fails to recognise people.</span>
+      </div>
+      {% if form.face_match_threshold.errors %}<p class="mt-1 text-sm text-error">{{ form.face_match_threshold.errors|join:" " }}</p>{% endif %}
+      <p class="mt-3 flex gap-2 text-xs text-on-surface-variant"><span aria-hidden="true" class="material-symbols-outlined text-base">info</span>The tablet cannot tell a real face from a good photo of it. That's fine for attendance; don't use it to guard anything.</p>
+    </div>
+  </div>
+
+  <fieldset class="card p-5">
+    <legend class="sr-only">Kiosk decorations</legend>
+    <p class="flex items-center gap-2 font-semibold"><span aria-hidden="true" class="material-symbols-outlined text-secondary">park</span>Kiosk decorations</p>
+    <p class="mt-1 text-sm text-on-surface-variant">Christmas lights, gentle snow, the nativity under the star of Bethlehem and Luke 2:11 around the kiosk, and "Merry Christmas!" with each welcome. The camera picture is never covered.</p>
+    <div class="mt-3 space-y-2">
+      {% for value, label in form.kiosk_season.field.choices %}
+      <label class="flex cursor-pointer items-center gap-3 text-sm"><input type="radio" name="kiosk_season" value="{{ value }}" {% if form.kiosk_season.value == value %}checked{% endif %}> {{ label }}</label>
+      {% endfor %}
+    </div>
+  </fieldset>
+
+  <div class="flex justify-end gap-2"><a href="{% url 'checkin:overview' %}" class="btn-ghost">Cancel</a><button class="btn-primary">Save modes</button></div>
+</form>
+{% endblock %}

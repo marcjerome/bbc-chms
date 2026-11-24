@@ -1,0 +1,17 @@
+{% load chms %}<li id="member-row-{{ member.pk }}" {% if oob %}hx-swap-oob="true"{% endif %} class="card flex items-center gap-3 px-4 py-2.5 {% if member.pk in present_ids %}!bg-surface-low{% endif %}">
+  {% include "partials/avatar.html" with size="h-10 w-10 text-sm" %}
+  <div class="min-w-0 flex-1">
+    <p class="truncate font-medium">{{ member.display_name }}{% if member.church_role %} <span class="pill ml-1 bg-secondary-container text-secondary">{{ member.church_role }}</span>{% endif %}</p>
+    <p class="truncate text-xs text-on-surface-variant">{{ member.get_status_display }}{% if member.household %} · {{ member.household }}{% endif %}</p>
+  </div>
+  {% if perms.attendance.add_attendance %}
+  <div class="flex flex-col items-end gap-1">
+    <button hx-post="{% url 'attendance:toggle' service.pk member.pk %}" hx-swap="none" hx-disabled-elt="this"
+            {% if member.pk in present_ids %}disabled{% endif %}
+            class="{% if member.pk in present_ids %}btn-present disabled:!opacity-100{% else %}btn-outline{% endif %} min-w-28">
+      {% if member.pk in present_ids %}<span aria-hidden="true" class="material-symbols-outlined icon-filled">check_circle</span>Present · {{ present_ids|get_item:member.pk|time:"g:i A" }}{% else %}<span aria-hidden="true" class="material-symbols-outlined">how_to_reg</span>Check in{% endif %}
+    </button>
+    {% if member.pk in present_ids %}<button hx-post="{% url 'attendance:toggle' service.pk member.pk %}" hx-swap="none" class="text-xs font-semibold text-error hover:underline">Undo check-in</button>{% endif %}
+  </div>
+  {% elif member.pk in present_ids %}<span class="pill bg-tertiary-fixed text-tertiary">Present</span>{% endif %}
+</li>

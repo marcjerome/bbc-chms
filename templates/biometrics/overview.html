@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% load chms %}
+{% block title %}Door terminals · {% endblock %}
+{% block content %}
+<div class="flex flex-wrap items-end justify-between gap-4">
+  <div><p class="label !text-secondary">Phase 2</p><h1 class="page-title mt-1">Door terminals</h1>
+    <p class="mt-3 text-sm text-on-surface-variant">Fingerprint and face terminals at the door. Each person enrolls once at the terminal, with their written consent.</p><div class="gold-rule"></div></div>
+  {% if perms.biometrics.change_device %}<a href="{% url 'biometrics:simulator' %}" class="btn-primary"><span aria-hidden="true" class="material-symbols-outlined">fingerprint</span>Open device simulator</a>{% endif %}
+</div>
+
+<div class="mt-8 grid grid-cols-2 gap-4 lg:grid-cols-4">
+  {% include "core/partials/stat_card.html" with label="Active congregation" value=active_people note="People who could enroll" pct=100 bar="bg-primary" color="text-primary" %}
+  {% include "core/partials/stat_card.html" with label="Signed consent" value=consented note="RA 10173 written consent" pct=consented|percent:active_people bar="bg-secondary" color="text-secondary" %}
+  {% include "core/partials/stat_card.html" with label="Registered on devices" value=registered note="Has a device user number" pct=registered|percent:active_people bar="bg-primary-container" color="text-primary" %}
+  {% include "core/partials/stat_card.html" with label="Enrolled" value=enrolled note="Finger or face on the terminal" pct=enrolled|percent:active_people bar="bg-tertiary" color="text-tertiary" %}
+</div>
+
+<div class="mt-6 grid gap-6 lg:grid-cols-3">
+  <section class="card lg:col-span-1">
+    <h2 class="border-b border-outline-variant/40 px-5 py-4 text-lg font-semibold">Terminals</h2>
+    <ul class="divide-y divide-outline-variant/40">
+      {% for d in devices %}
+      <li class="flex items-center gap-3 px-5 py-3">
+        <span class="h-2.5 w-2.5 rounded-full {% if d.is_online %}bg-green-600{% else %}bg-outline-variant{% endif %}" title="{% if d.is_online %}Online{% else %}Offline{% endif %}"></span>
+        <div class="min-w-0 flex-1"><p class="font-medium">{{ d }}</p><p class="text-xs text-on-surface-variant">{{ d.serial_number }}{% if d.last_seen %} · seen {{ d.last_seen|timesince }} ago{% endif %}</p></div>
+        {% if not d.is_active %}<span class="pill bg-secondary-container text-secondary">Needs approval</span>{% endif %}
+        {% if perms.biometrics.change_device %}<a href="{% url 'biometrics:device_update' d.pk %}" class="text-sm font-semibold text-secondary hover:underline">Edit</a>{% endif %}
+      </li>
+      {% empty %}
+      <li class="px-5 py-6 text-sm text-on-surface-variant"><p class="font-serif italic">No terminals yet.</p><p class="mt-2">Set the terminal's Cloud/ADMS server to this site's address. It will appear here to approve.</p></li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section class="card lg:col-span-2">
+    <h2 class="border-b border-outline-variant/40 px-5 py-4 text-lg font-semibold">Live scans</h2>
+    <div hx-get="{% url 'biometrics:overview' %}" hx-trigger="every 5s" hx-swap="innerHTML">
+    {% partialdef scan_feed inline %}
+    <ul class="divide-y divide-outline-variant/40">
+      {% for s in scans %}
+      <li class="flex items-center gap-3 px-5 py-2.5 text-sm">
+        <span aria-hidden="true" class="material-symbols-outlined {% if s.result == 'checked_in' %}text-tertiary{% elif s.result == 'duplicate' %}text-outline{% else %}text-error{% endif %}">{% if s.verify_mode == '15' %}face{% else %}fingerprint{% endif %}</span>
+        <div class="min-w-0 flex-1"><p class="font-medium">{% if s.member %}{{ s.member.display_name }}{% else %}Unknown user #{{ s.pin }}{% endif %}</p>
+          <p class="text-xs text-on-surface-variant">{{ s.get_result_display }}{% if s.service %} · {{ s.service.title|default:s.service.service_type.name }}{% endif %} · {{ s.device }}</p></div>
+        <span class="text-xs text-on-surface-variant">{{ s.scanned_at|date:"M j, g:i A" }}</span>
+      </li>
+      {% empty %}
+      <li class="px-5 py-8 text-center font-serif italic text-on-surface-variant">No scans yet.</li>
+      {% endfor %}
+    </ul>
+    {% endpartialdef %}
+    </div>
+  </section>
+</div>
+
+<section class="card mt-6 p-6 text-sm text-on-surface-variant">
+  <h2 class="flex items-center gap-2 text-lg font-semibold"><span aria-hidden="true" class="material-symbols-outlined text-secondary">shield_person</span>Data privacy (RA 10173)</h2>
+  <ul class="mt-3 list-disc space-y-1 pl-5">
+    <li>Nobody can be registered on a terminal without their signed written consent recorded here.</li>
+    <li>Fingerprint and face templates stay on the terminal. This system stores only a user number, never the biometric data itself.</li>
+    <li>Withdrawing consent removes the person from every terminal automatically.</li>
+  </ul>
+</section>
+{% endblock %}

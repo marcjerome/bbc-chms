@@ -1,0 +1,15 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"><style>
+html,body{width:100%;height:100%}body{background:#efeeea}.pane{position:absolute;top:58px;height:770px;border:0;border-radius:16px;box-shadow:0 10px 40px rgba(4,22,50,.15);background:#fbf9f5}
+#l{left:24px;width:640px;background:#041632}#r{left:680px;width:832px}.lab{position:absolute;top:20px;font:700 16px Inter;letter-spacing:.2em;text-transform:uppercase;color:#775a19}
+#cam{position:absolute;inset:0;transform-origin:0 0;transition:transform 1s cubic-bezier(.45,0,.2,1)}</style></head><body>
+<div id="cam"><div class="lab" style="left:28px">At the door · the kiosk camera</div><div class="lab" style="left:684px">The usher's check-in list · live</div>
+<iframe id="l" class="pane" allow="camera" src="/checkin/kiosk/?station=Front%20door"></iframe>
+<iframe id="r" class="pane" src="/attendance/services/SERVICE/"></iframe>
+</div>
+<script>document.getElementById('r').src=document.getElementById('r').src.replace('SERVICE',new URLSearchParams(location.search).get('s'));
+const POS={l:[24,58],r:[680,58]};
+window.cam=(id,sel,sc,dy)=>{const w=document.getElementById('cam');if(!id){w.style.transform='none';return}
+ const r=document.getElementById(id).contentDocument.querySelector(sel).getBoundingClientRect();
+ const x=POS[id][0]+r.left+r.width/2, y=POS[id][1]+(dy!=null?r.top+dy:r.top+r.height/2);
+ w.style.transform=`translate(${innerWidth/2-sc*x}px,${innerHeight/2-sc*y}px) scale(${sc})`};
+</script></body></html>

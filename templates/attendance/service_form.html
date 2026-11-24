@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<a href="{{ service.get_absolute_url }}" class="text-sm text-on-surface-variant hover:underline">← Back</a>
+<h1 class="page-title mt-3">Change {{ service.service_type.name }}</h1>
+<div class="gold-rule"></div>
+<form method="post" class="card mt-8 max-w-2xl p-6">{% csrf_token %}
+  {% if form.non_field_errors %}<div class="mb-4 rounded-lg bg-error-container px-3 py-2 text-sm text-error">{{ form.non_field_errors|join:" " }}</div>{% endif %}
+  <div class="grid gap-4 md:grid-cols-2">{% for field in form %}{% include "partials/form_field.html" %}{% endfor %}</div>
+  <p class="mt-4 text-xs text-on-surface-variant">Changing the date or time affects only this occurrence. To change the usual schedule, edit the service type.</p>
+  <div class="mt-6 flex justify-end gap-2"><a href="{{ service.get_absolute_url }}" class="btn-ghost">Cancel</a><button class="btn-primary">Save</button></div>
+</form>
+{% endblock %}

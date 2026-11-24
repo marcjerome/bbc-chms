@@ -1,0 +1,10 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"><style>
+body{background:linear-gradient(135deg,#fbf9f5,#efeeea)}
+.phone{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:430px;height:900px;border-radius:56px;background:#121c2f;padding:16px;box-shadow:0 30px 80px rgba(4,22,50,.3)}
+.phone iframe{width:430px;height:900px;border:0;border-radius:42px;background:#fbf9f5}
+.side{position:absolute;top:50%;transform:translateY(-50%);width:560px;font:700 54px/1.15 "Playfair Display";color:#041632}
+</style></head><body>
+<div class="side" style="left:110px" id="t"></div>
+<div class="phone"><iframe id="f"></iframe></div>
+<script>const q=new URLSearchParams(location.search);document.getElementById('f').src=q.get('u');document.getElementById('t').innerHTML=q.get('t')||'';</script>
+</body></html>

@@ -1,0 +1,14 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"><style>
+#a{animation:in 1s ease .2s forwards,out .8s ease 2.6s forwards;opacity:0}@keyframes out{to{opacity:0}}
+#b{opacity:0;animation:in 1s ease 3.2s forwards}
+#b img.f{width:200px;height:200px;border-radius:44px;box-shadow:0 20px 60px rgba(4,22,50,.25)}
+#b h1{margin:26px 0 0;font:700 110px "Playfair Display";color:#041632}
+.glow{position:relative;display:inline-block;border-radius:24%;overflow:hidden;line-height:0}
+.glow::after{content:"";position:absolute;inset:-20%;background:linear-gradient(105deg,transparent 40%,rgba(255,236,190,.75) 50%,transparent 60%);transform:translateX(-120%);animation:sheen 1.1s ease-in-out 3.9s forwards}
+@keyframes sheen{to{transform:translateX(120%)}}
+.halo{animation:halo 2.2s ease-out 3.9s forwards}
+@keyframes halo{0%{filter:drop-shadow(0 0 0 rgba(233,193,118,0))}35%{filter:drop-shadow(0 0 38px rgba(233,193,118,.85))}100%{filter:drop-shadow(0 0 14px rgba(233,193,118,.35))}}
+</style></head><body>
+<div class="center" id="a"><p class="verse">“Redeeming the time, because the days are evil.”</p><div class="ref">Ephesians 5:16</div></div>
+<div class="center" id="b"><span class="halo"><span class="glow"><img class="f" src="/static/img/flock-logo.svg"></span></span><h1>Flock</h1><div class="ref">A ministry of Bible Baptist Church Barani</div>
+<img src="/static/img/logo.png" style="height:120px;margin-top:46px"></div></body></html>

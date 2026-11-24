@@ -1,0 +1,37 @@
+{% if QR_ON and perms.checkin.view_checkincard %}
+<section class="card p-6">
+  <h2 class="flex items-center gap-2 text-lg font-semibold"><span aria-hidden="true" class="material-symbols-outlined text-secondary">qr_code_2</span>Self check-in</h2>
+  {% with card=member.checkin_card %}
+  {% if card %}
+    <div class="mt-3 flex items-center gap-4">
+      <img src="{% url 'checkin:qr' member.pk %}" alt="QR code for {{ member.display_name }}" class="h-36 w-auto rounded-lg border border-outline-variant/50 bg-white">
+      <div class="text-sm">
+        <p class="font-mono font-semibold tracking-wider">{{ card.qr_text }}</p>
+        <p class="mt-1 text-xs text-on-surface-variant">Issued {{ card.issued_at|date:"M j, Y" }}</p>
+        <p class="mt-1">{% if card.printed_at %}<span class="pill bg-tertiary-fixed text-tertiary">Sticker printed</span>{% else %}<span class="pill bg-secondary-container text-secondary">Not printed yet</span>{% endif %}</p>
+      </div>
+    </div>
+    <a href="{% url 'checkin:stickers' %}?member={{ member.pk }}" class="btn-outline mt-4 w-full"><span aria-hidden="true" class="material-symbols-outlined">print</span>Print sticker</a>
+    <div class="mt-3 flex justify-between text-xs">
+      {% if perms.checkin.add_checkincard %}
+      <form method="post" action="{% url 'checkin:issue' member.pk %}" onsubmit="return confirm('Make a new QR code? Their current sticker will stop working.')">{% csrf_token %}
+        <button class="font-semibold text-secondary hover:underline">Lost sticker? New code</button>
+      </form>
+      {% endif %}
+      {% if perms.checkin.delete_checkincard %}
+      <form method="post" action="{% url 'checkin:revoke' member.pk %}" onsubmit="return confirm('Remove this QR code? Their sticker will stop working.')">{% csrf_token %}
+        <button class="font-semibold text-error hover:underline">Remove</button>
+      </form>
+      {% endif %}
+    </div>
+  {% else %}
+    <p class="mt-2 text-sm text-on-surface-variant">No QR code yet. Give them one, print the sticker and put it inside their Bible. They check themselves in at the door.</p>
+    {% if perms.checkin.add_checkincard %}
+    <form method="post" action="{% url 'checkin:issue' member.pk %}" class="mt-3">{% csrf_token %}
+      <button class="btn-primary w-full"><span aria-hidden="true" class="material-symbols-outlined">qr_code_2</span>Give QR code</button>
+    </form>
+    {% endif %}
+  {% endif %}
+  {% endwith %}
+</section>
+{% endif %}

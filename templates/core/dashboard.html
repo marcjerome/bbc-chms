@@ -1,0 +1,104 @@
+{% extends "base.html" %}
+{% load humanize %}
+{% block content %}
+<div class="flex flex-wrap items-end justify-between gap-4">
+  <div>
+    <p class="label">{{ today|date:"l, F j, Y" }}</p>
+    <h1 class="page-title mt-1">Good day, {{ user.first_name|default:user.username }}</h1>
+    <div class="gold-rule"></div>
+  </div>
+  <div class="flex flex-wrap gap-2">
+    {% if perms.members.add_member %}<a href="{% url 'members:member_create' %}" class="btn-outline"><span aria-hidden="true" class="material-symbols-outlined">person_add</span>Add member</a>{% endif %}
+    {% if perms.attendance.view_service %}<a href="{% url 'attendance:service_list' %}" class="btn-primary"><span aria-hidden="true" class="material-symbols-outlined">how_to_reg</span>Take attendance</a>{% endif %}
+  </div>
+</div>
+
+<div class="mt-8 grid grid-cols-2 gap-4 lg:grid-cols-4">
+  {% include "core/partials/stat_card.html" with label="Active congregation" value=stats.active note="Members, attendees & visitors" pct=100 bar="bg-primary" color="text-primary" %}
+  {% include "core/partials/stat_card.html" with label="Members" value=stats.members note="Received into membership" pct=stats.members_pct bar="bg-secondary" color="text-primary" %}
+  {% include "core/partials/stat_card.html" with label="New visitors this month" value=stats.visitors_month note="First-time guests" pct=stats.visitors_pct bar="bg-secondary-container" color="text-secondary" %}
+  {% include "core/partials/stat_card.html" with label="Last service" value=stats.last_service|default_if_none:"—" note=stats.last_service_date|date:"D, M j"|default:"No services yet" pct=stats.last_pct bar="bg-secondary" color="text-primary" %}
+</div>
+
+<div class="mt-6 grid gap-6 lg:grid-cols-3">
+  <section class="card p-6 lg:col-span-2">
+    <h2 class="text-xl font-semibold">{{ main_type.name|default:"Attendance" }} · last 8 weeks</h2>
+    {% if trend %}
+    <div class="mt-6 flex h-48 items-end gap-2 sm:gap-4">
+      {% for t in trend %}
+      <a href="{% url 'attendance:service_checkin' t.pk %}" class="group flex h-full flex-1 flex-col items-center justify-end gap-1" title="{{ t.date|date:'M j' }}: {{ t.total }}">
+        <span class="text-xs font-semibold text-on-surface-variant">{{ t.total }}</span>
+        <span class="w-full rounded-t {% if t.is_today %}bg-secondary-container{% elif forloop.last %}bg-secondary{% else %}bg-primary-container group-hover:bg-primary{% endif %}" style="height: {{ t.pct }}%"></span>
+        <span class="text-[11px] {% if t.is_today %}font-bold text-secondary{% else %}text-on-surface-variant{% endif %}">{% if t.is_today %}Today{% else %}{{ t.date|date:"M j" }}{% endif %}</span>
+      </a>
+      {% endfor %}
+    </div>
+    <dl class="mt-6 grid grid-cols-3 rounded-lg bg-surface-low py-3 text-center">
+      <div><dt class="label">8-week average</dt><dd class="font-serif text-2xl font-bold text-primary">{{ summary.average }}</dd></div>
+      <div><dt class="label">Peak</dt><dd class="font-serif text-2xl font-bold text-secondary">{{ summary.peak }}</dd></div>
+      <div><dt class="label">Guest ratio</dt><dd class="font-serif text-2xl font-bold text-primary">{{ summary.guest_ratio }}%</dd></div>
+    </dl>
+    {% else %}
+    <p class="mt-6 font-serif italic text-on-surface-variant">No services recorded yet. Attendance trends will appear here.</p>
+    {% endif %}
+  </section>
+
+  <section class="card p-6">
+    <div class="flex items-start justify-between gap-2">
+      <div><h2 class="text-xl font-semibold">Birthdays this week</h2><p class="text-xs text-on-surface-variant">{{ week_start|date:"D M j" }} – {{ week_end|date:"D M j" }}</p></div>
+      <a href="{% url 'members:birthdays' %}" class="text-sm font-semibold text-secondary hover:underline">Print list</a>
+    </div>
+    <ul class="mt-4 divide-y divide-outline-variant/40">
+      {% for b in birthdays %}
+      <li class="flex items-center gap-3 py-2.5">
+        {% include "partials/avatar.html" with member=b.member %}
+        <a href="{{ b.member.get_absolute_url }}" class="min-w-0 flex-1 text-sm font-medium hover:underline">{{ b.member.display_name }}<span class="block text-xs font-normal text-on-surface-variant">turning {{ b.turning }}</span></a>
+        <span class="text-sm {% if b.date == today %}font-bold text-secondary{% else %}text-on-surface-variant{% endif %}">{% if b.date == today %}Today{% else %}{{ b.date|date:"D j" }}{% endif %}</span>
+      </li>
+      {% empty %}
+      <li class="py-2 font-serif text-sm italic text-on-surface-variant">No birthdays this week.</li>
+      {% endfor %}
+    </ul>
+  </section>
+</div>
+
+{% if perms.members.view_member %}
+<section class="card mt-6 p-6">
+  <div class="flex items-center justify-between">
+    <h2 class="flex items-center gap-2 text-xl font-semibold"><span aria-hidden="true" class="material-symbols-outlined text-secondary">volunteer_activism</span>Visitation</h2>
+    <a href="{% url 'members:followups' %}" class="text-sm font-semibold text-secondary hover:underline">Open list →</a>
+  </div>
+  <div class="mt-4 grid gap-3 sm:grid-cols-2">
+    <a href="{% url 'members:followups' %}" class="rounded-lg bg-surface-low p-4 hover:bg-surface-container">
+      <p class="font-semibold text-ink">{{ followup_visitors }} first-time visitor{{ followup_visitors|pluralize }} in the last 14 days</p>
+      <p class="text-sm text-on-surface-variant">Awaiting a welcome call or visit.</p>
+    </a>
+    <a href="{% url 'members:followups' %}" class="rounded-lg bg-surface-low p-4 hover:bg-surface-container">
+      <p class="font-semibold text-ink">{% if followup_absent %}We missed {{ followup_absent }} at the last {{ absent_service.service_type.name|default:"service" }}{% else %}Everyone was at the last {{ absent_service.service_type.name|default:"service" }}{% endif %}</p>
+      <p class="text-sm text-on-surface-variant">A call or a visit lets them know they were missed.</p>
+    </a>
+  </div>
+</section>
+{% endif %}
+
+<section class="card mt-6 overflow-hidden">
+  <h2 class="px-6 pt-6 text-xl font-semibold">Recent services</h2>
+  <div class="overflow-x-auto">
+  <table class="table mt-3">
+    <thead><tr><th>Date</th><th>Service</th><th class="text-right">Checked in</th><th class="text-right">Guests</th><th class="text-right">Total</th></tr></thead>
+    <tbody>
+      {% for s in recent_services %}
+      <tr>
+        <td><a class="font-medium hover:underline" href="{{ s.get_absolute_url }}">{{ s.date|date:"M j, Y" }}</a></td>
+        <td>{{ s.title|default:s.service_type.name }}</td>
+        <td class="text-right">{{ s.present }}</td><td class="text-right">{{ s.guest_headcount }}</td>
+        <td class="text-right font-semibold">{{ s.present|add:s.guest_headcount }}</td>
+      </tr>
+      {% empty %}
+      <tr><td colspan="5" class="font-serif italic text-on-surface-variant">No services yet.</td></tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  </div>
+</section>
+{% endblock %}

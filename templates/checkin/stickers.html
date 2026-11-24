@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}QR stickers · {% endblock %}
+{% block content %}
+<style>
+  /* Each sticker is 2.5 x 1.4 inch: the branded QR (sheep + church name) on the left, the name on the right.
+     Fits inside a Bible's front cover. The code is 1.1 in wide so a tablet camera reads it easily. */
+  .sticker-sheet { display: grid; grid-template-columns: repeat(auto-fill, 2.5in); gap: 0.15in; }
+  .sticker { width: 2.5in; height: 1.4in; display: flex; align-items: center; gap: 0.1in; padding: 0.06in 0.1in 0.06in 0.06in;
+             border: 1px dashed #c5c6ce; border-radius: 0.1in; background: #fff; overflow: hidden; break-inside: avoid; }
+  .sticker > svg { width: 1.1in; height: 1.3in; flex-shrink: 0; }
+  @media print {
+    @page { size: A4; margin: 0.4in; }
+    body { background: #fff !important; }
+    main > div { padding: 0 !important; max-width: none !important; }
+  }
+</style>
+
+<div class="print:hidden">
+  <a href="{% url 'checkin:overview' %}" class="text-sm text-on-surface-variant hover:underline">← Self check-in</a>
+  <div class="mt-3 flex flex-wrap items-end justify-between gap-4">
+    <div><h1 class="page-title">QR stickers</h1><div class="gold-rule"></div>
+      <p class="mt-3 max-w-2xl text-sm text-on-surface-variant">Print on sticker paper (or plain paper and tape), cut along the dashed lines, and put one inside each person's Bible.</p></div>
+    {% if people %}
+    <button type="button" id="print" class="btn-primary"><span aria-hidden="true" class="material-symbols-outlined">print</span>Print {{ people|length }} sticker{{ people|length|pluralize }}</button>
+    {% endif %}
+  </div>
+
+  {% if not picked %}
+  <form method="get" class="card mt-6 grid gap-3 p-4 sm:grid-cols-4 sm:items-end">
+    <div><label class="mb-1 block text-xs font-medium" for="show">Show</label>
+      <select name="show" id="show"><option value="unprinted" {% if filters.show == "unprinted" %}selected{% endif %}>Not printed yet</option><option value="all" {% if filters.show == "all" %}selected{% endif %}>Everyone</option></select></div>
+    <div><label class="mb-1 block text-xs font-medium" for="status">Status</label>
+      <select name="status" id="status"><option value="active">All active</option>{% for v, l in statuses %}<option value="{{ v }}" {% if filters.status == v %}selected{% endif %}>{{ l }}</option>{% endfor %}<option value="any" {% if filters.status == "any" %}selected{% endif %}>Any status</option></select></div>
+    <div><label class="mb-1 block text-xs font-medium" for="household">Household</label>
+      <select name="household" id="household"><option value="">All households</option>{% for h in households %}<option value="{{ h.pk }}" {% if filters.household == h.pk|stringformat:"d" %}selected{% endif %}>{{ h }}</option>{% endfor %}</select></div>
+    <button class="btn-outline">Show</button>
+  </form>
+  {% endif %}
+
+  {% if without_card %}
+  <div class="card mt-6 p-5">
+    <p class="font-semibold">{{ without_card|length }} {{ without_card|length|pluralize:"person has,people have" }} no QR code yet</p>
+    <p class="mt-1 text-sm text-on-surface-variant">{% for m in without_card|slice:":12" %}{{ m.display_name }}{% if not forloop.last %}, {% endif %}{% endfor %}{% if without_card|length > 12 %} and {{ without_card|length|add:"-12" }} more{% endif %}</p>
+    {% if perms.checkin.add_checkincard %}
+    <form method="post" action="{% url 'checkin:issue_many' %}" class="mt-3">{% csrf_token %}
+      <input type="hidden" name="next" value="{{ request.get_full_path }}">
+      {% for m in without_card %}<input type="hidden" name="member" value="{{ m.pk }}">{% endfor %}
+      <button class="btn-primary"><span aria-hidden="true" class="material-symbols-outlined">qr_code_2</span>Give them QR codes</button>
+    </form>
+    {% endif %}
+  </div>
+  {% endif %}
+</div>
+
+{% if people %}
+<div class="sticker-sheet mt-6 print:mt-0">
+  {% for m in people %}
+  <div class="sticker">
+    {{ m.qr }}
+    <div class="min-w-0 leading-tight">
+      <p class="font-serif text-[13pt] font-bold text-primary">{{ m.title }} {{ m.first_name }}</p>
+      <p class="truncate text-[9.5pt] text-on-surface">{{ m.last_name }}{% if m.suffix %} {{ m.suffix }}{% endif %}</p>
+      <p class="mt-2 font-mono text-[7pt] tracking-wide text-on-surface-variant">{{ m.checkin_card.qr_text }}</p>
+      <p class="mt-1 text-[6.5pt] text-on-surface-variant">Hold up to the camera at the door</p>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% elif not without_card %}
+<p class="mt-10 text-center font-serif italic text-on-surface-variant print:hidden">Nobody to print here. Every sticker is printed already; choose "Everyone" to reprint.</p>
+{% endif %}
+
+{% if people %}
+<script>
+  document.getElementById("print").addEventListener("click", () => {
+    {% if perms.checkin.change_checkincard %}
+    const body = new FormData();
+    {% for m in people %}body.append("member", "{{ m.pk }}");{% endfor %}
+    fetch("{% url 'checkin:mark_printed' %}", { method: "POST", body, headers: { "X-CSRFToken": "{{ csrf_token }}" } });
+    {% endif %}
+    window.print();
+  });
+</script>
+{% endif %}
+{% endblock %}

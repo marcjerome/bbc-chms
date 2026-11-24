@@ -1,0 +1,16 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"><style>
+body{background:radial-gradient(ellipse at center,#0d2a55 0%,#041632 70%)}
+.w{font:700 150px/1.05 "Playfair Display",serif;color:#fbf9f5;opacity:0;margin:0}
+.w.gold{color:#e9c176;font-style:italic}
+.w.on{animation:slam .32s cubic-bezier(.2,.9,.25,1.15) forwards}
+@keyframes slam{from{opacity:0;transform:scale(1.35);filter:blur(10px)}to{opacity:1;transform:none;filter:none}}
+.bar{height:6px;width:0;background:#e9c176;margin:34px auto 0;border-radius:3px;transition:width .5s cubic-bezier(.2,.8,.2,1)}
+</style></head><body><div class="center" id="c"></div>
+<script>
+const q=new URLSearchParams(location.search), words=q.get('w').split('|'), beats=(q.get('at')||'0').split(',').map(Number);
+const c=document.getElementById('c');
+words.forEach((w,i)=>{const p=document.createElement('p');p.className='w'+(i%2?' gold':'');p.textContent=w;c.appendChild(p)});
+const bar=document.createElement('div');bar.className='bar';c.appendChild(bar);
+window.start=()=>{[...c.querySelectorAll('.w')].forEach((p,i)=>setTimeout(()=>p.classList.add('on'),beats[i]*(+q.get("ms")||418)));
+  setTimeout(()=>bar.style.width='220px',beats[beats.length-1]*(+q.get("ms")||418)+250)};
+</script></body></html>

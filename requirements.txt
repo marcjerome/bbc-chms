@@ -1,0 +1,9 @@
+Django>=6.1,<6.2
+django-unfold>=0.110,<0.111
+django-htmx>=1.29,<2
+django-environ>=0.14
+psycopg[binary]>=3.3
+gunicorn>=27.0
+whitenoise>=6.12
+pillow>=13.0
+segno>=1.6,<2

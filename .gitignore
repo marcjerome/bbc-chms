@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.env
+db.sqlite3
+media/
+staticfiles/
+tailwind/node_modules/
+static/css/app.css
+static/js/vendor/
+static/fonts/
+static/models/
+.venv/
+video/.env
+video/out/
+*.y4m

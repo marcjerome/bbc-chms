@@ -1,0 +1,24 @@
+{
+  "name": "bbc-chms-frontend",
+  "private": true,
+  "scripts": {
+    "vendor": "mkdir -p ../static/js/vendor && cp node_modules/htmx.org/dist/htmx.min.js node_modules/alpinejs/dist/cdn.min.js node_modules/jsqr/dist/jsQR.js ../static/js/vendor/ && mv ../static/js/vendor/cdn.min.js ../static/js/vendor/alpine.min.js && cp node_modules/@vladmandic/face-api/dist/face-api.js ../static/js/vendor/ && mkdir -p ../static/models/face && cp node_modules/@vladmandic/face-api/model/tiny_face_detector_model* node_modules/@vladmandic/face-api/model/face_landmark_68_tiny_model* node_modules/@vladmandic/face-api/model/face_recognition_model* ../static/models/face/",
+    "build": "npm run vendor && npm run fonts && tailwindcss -i ./src/input.css -o ../static/css/app.css --minify",
+    "watch": "npm run vendor && npm run fonts && tailwindcss -i ./src/input.css -o ../static/css/app.css --watch=always",
+    "fonts": "mkdir -p ../static/fonts && cp node_modules/@fontsource-variable/inter/files/inter-latin-wght-normal.woff2 node_modules/@fontsource/playfair-display/files/playfair-display-latin-600-normal.woff2 node_modules/@fontsource/playfair-display/files/playfair-display-latin-700-normal.woff2 node_modules/@fontsource/playfair-display/files/playfair-display-latin-400-italic.woff2 node_modules/material-symbols/material-symbols-outlined.woff2 ../static/fonts/"
+  },
+  "dependencies": {
+    "@fontsource-variable/inter": "5.3.0",
+    "@fontsource/playfair-display": "5.3.0",
+    "@vladmandic/face-api": "1.7.15",
+    "alpinejs": "3.17.5",
+    "htmx.org": "2.0.11",
+    "jsqr": "^1.4.0",
+    "material-symbols": "0.49.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "4.3.5",
+    "@tailwindcss/forms": "0.5.11",
+    "tailwindcss": "4.3.5"
+  }
+}

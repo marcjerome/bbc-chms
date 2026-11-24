@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-secondary-fixed":"#261900","surface-container-lowest":"#ffffff","secondary-fixed-dim":"#e8c176","on-tertiary":"#ffffff","background":"#fbf9f5","on-surface-variant":"#44474d","error-container":"#ffdad6","surface-variant":"#e4e2de","surface-tint":"#4f5e7e","surface-bright":"#fbf9f5","on-primary-fixed":"#091b37","surface-container-high":"#eae8e4","secondary-container":"#fdd587","on-error":"#ffffff","outline-variant":"#c5c6ce","surface":"#fbf9f5","on-surface":"#1b1c1a","tertiary-fixed-dim":"#aeceb7","on-error-container":"#93000a","inverse-surface":"#30312e","tertiary-container":"#042012","secondary":"#775a19","on-primary-container":"#7484a5","surface-dim":"#dbdad6","on-secondary":"#ffffff","on-tertiary-fixed":"#042012","inverse-primary":"#b7c7eb","surface-container":"#efeeea","on-tertiary-container":"#6d8b76","surface-container-highest":"#e4e2de","primary-fixed-dim":"#b7c7eb","secondary-fixed":"#ffdea3","primary":"#000000","error":"#ba1a1a","tertiary":"#000000","surface-container-low":"#f5f3ef","on-secondary-container":"#785a19","inverse-on-surface":"#f2f0ed","on-background":"#1b1c1a","outline":"#75777e","on-secondary-fixed-variant":"#5c4200","on-tertiary-fixed-variant":"#314d3b","on-primary":"#ffffff","tertiary-fixed":"#caead2","primary-container":"#091b37","primary-fixed":"#d7e2ff","on-primary-fixed-variant":"#374765"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"margin-mobile":"1rem","space-xs":"0.25rem","space-lg":"1.5rem","gutter-mobile":"1rem","margin":"2rem","space-md":"1rem","space-sm":"0.5rem","space-xl":"2.5rem","gutter":"1.5rem"},"fontFamily":{"body-lg":["Inter"],"body-md":["Inter"],"label-sm":["Inter"],"display-lg":["Playfair Display"],"headline-lg":["Playfair Display"],"title-lg":["Inter"],"display-lg-mobile":["Playfair Display"],"headline-sm":["Playfair Display"],"title-md":["Inter"],"body-sm":["Inter"],"headline-lg-mobile":["Playfair Display"],"label-lg":["Inter"],"headline-md":["Playfair Display"],"label-md":["Inter"]},"fontSize":{"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.1em","fontWeight":"600"}],"display-lg":["48px",{"lineHeight":"56px","fontWeight":"600"}],"headline-lg":["32px",{"lineHeight":"40px","fontWeight":"600"}],"title-lg":["18px",{"lineHeight":"26px","fontWeight":"600"}],"display-lg-mobile":["32px",{"lineHeight":"40px","fontWeight":"600"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"500"}],"title-md":["16px",{"lineHeight":"24px","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","fontWeight":"500"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"500"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.08em","fontWeight":"600"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-[260px] bg-primary-container z-50 flex flex-col justify-between select-none"><div class="flex flex-col"><div class="px-space-md py-space-lg flex items-center gap-space-sm"><img alt="BBC Seal" class="w-10 h-10 rounded-full object-cover shrink-0" src="https://lh3.googleusercontent.com/aida/ALJJyrDn6O3TNvZJ1ByshWgxzWWiZbiPWWE4aZdIe3x8MAjbZw1e8URQz5iVDYYC8PwEsvDDINFlPm5U7Dy9mitbcPrZZM7_bmXdEYqZ2B8XrRJu02LBnN_T49l20guwK7ZKgcZwnREBST8En-e8Z6VTNKasckkoLI8B8BFl_XMxybWJqOrE1okyDA088fM-oxUtuoX7xRdhsVC6pIFA4Tz6wlToTON9kaXoMVynb6nADfU"/><div class="flex flex-col min-w-0"><span class="font-headline-sm text-headline-sm text-surface-container-lowest leading-none tracking-tight truncate">BBC Barani</span><span class="font-label-sm text-label-sm text-secondary-fixed-dim uppercase tracking-wider mt-space-xs truncate">CHMS • Batac City</span></div></div><nav class="flex flex-col gap-space-xs px-space-sm mt-space-sm" data-active-classes="bg-on-primary-fixed/40 text-surface-container-lowest border-l-[3px] border-secondary-container font-semibold pl-[13px]"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-on-primary-fixed/20 transition-all font-body-md text-body-md" data-path="dashboard" href="#"><span class="material-symbols-outlined shrink-0 text-[20px]">space_dashboard</span><span>Dashboard</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg transition-all bg-on-primary-fixed/40 text-surface-container-lowest border-l-[3px] border-secondary-container font-semibold pl-[13px]" data-path="members" href="#"><span class="material-symbols-outlined shrink-0 text-[20px]">group</span><span>Members</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-on-primary-fixed/20 transition-all font-body-md text-body-md" data-path="households" href="#"><span class="material-symbols-outlined shrink-0 text-[20px]">family_restroom</span><span>Households</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-on-primary-fixed/20 transition-all font-body-md text-body-md" data-path="attendance" href="#"><span class="material-symbols-outlined shrink-0 text-[20px]">fact_check</span><span>Attendance</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-on-primary-fixed/20 transition-all font-body-md text-body-md" data-path="admin" href="#"><span class="material-symbols-outlined shrink-0 text-[20px]">admin_panel_settings</span><span>Admin</span></a></nav></div><div class="p-space-sm"><div class="bg-on-primary-fixed/30 rounded-xl p-space-sm flex flex-col gap-space-xs"><div class="flex items-center gap-space-sm"><img alt="Pastor Noel Navarro" class="w-9 h-9 rounded-full object-cover shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCC8q8nuOYfv2lKYKnghfvaBxRSJDin6tPs6nje4sT7DOio10ZjG1VPz5ptmXYt1qZp7DleZPJ8VgNZG8PBejMdgqZJ2WE1_8dxGJQKvIVM0nL1U2x8f9fhxYNLrJqKu1dfbBpqJ9fr0-F9l6rYaaAFICHYAS32ZA7rPNrVuGvtraJBSMu--AFCUNvsgVP4iBe48o2wSk0tZr-rbch8r11eacBFX_jNmn6j7GnAsGU"/><div class="flex flex-col min-w-0"><span class="font-title-md text-body-sm text-surface-container-lowest truncate">Pastor Noel Navarro</span><span class="font-label-sm text-label-sm text-primary-fixed-dim truncate">Senior Pastor</span></div></div><div class="flex items-center justify-between pt-space-xs"><span class="font-label-sm text-label-sm text-secondary-fixed-dim uppercase tracking-wider">Ilocos Norte</span><a class="flex items-center gap-space-xs font-label-md text-label-md text-primary-fixed-dim hover:text-secondary-fixed transition-colors" data-path="login" href="#"><span class="material-symbols-outlined text-[16px]">logout</span><span>Log out</span></a></div></div></div></aside><div class="pl-[260px]"><header class="fixed top-0 left-[260px] right-0 h-16 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(4,22,50,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md"><span class="material-symbols-outlined text-[18px] text-secondary">calendar_today</span><span>Lord's Day Service • Batac City</span></div></div><div class="flex items-center gap-space-md"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-space-sm text-outline text-[18px]">search</span><input class="w-64 pl-space-xl pr-space-md py-space-xs font-body-sm text-body-sm bg-surface-container-low rounded-full text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest transition-colors" placeholder="Search records, families, tags..." type="search"/></div><button class="w-9 h-9 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span></button><div class="h-6 w-px bg-surface-variant"></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover shrink-0" src="https://lh3.googleusercontent.com/aida/ALJJyrDn6O3TNvZJ1ByshWgxzWWiZbiPWWE4aZdIe3x8MAjbZw1e8URQz5iVDYYC8PwEsvDDINFlPm5U7Dy9mitbcPrZZM7_bmXdEYqZ2B8XrRJu02LBnN_T49l20guwK7ZKgcZwnREBST8En-e8Z6VTNKasckkoLI8B8BFl_XMxybWJqOrE1okyDA088fM-oxUtuoX7xRdhsVC6pIFA4Tz6wlToTON9kaXoMVynb6nADfU"/></div></header><main class="relative pt-16 bg-surface min-h-screen"><div class="max-w-7xl mx-auto px-space-lg py-space-lg"><div class="flex flex-col w-full">
+<!-- Pastoral Header & Atmospheric Banner -->
+<div class="relative bg-surface-container-low rounded-xl p-space-lg mb-space-lg shadow-sm overflow-hidden">
+<div class="absolute -right-12 -bottom-16 w-80 h-80 rounded-full bg-secondary-fixed/20 blur-3xl pointer-events-none"></div>
+<div class="absolute left-1/3 -top-20 w-64 h-64 rounded-full bg-primary-fixed/30 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs max-w-2xl">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold">Parish Roll &amp; Record</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">Batac City Diocese</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary-container tracking-tight">Church Directory &amp; Membership</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Total Records: <strong class="text-on-surface font-semibold">348 active believers</strong>, attendees, and visiting souls under shepherd care in Barani, Batac City.
+        </p>
+</div>
+<!-- Action Cluster -->
+<div class="flex items-center gap-space-sm self-start md:self-auto shrink-0">
+<button class="inline-flex items-center gap-space-xs px-space-md py-space-sm bg-surface-container-lowest hover:bg-surface-container text-on-surface rounded-lg shadow-sm transition-all text-label-lg font-label-lg" id="exportCsvBtn" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">download</span>
+<span>Export Roll (CSV)</span>
+</button>
+<button class="inline-flex items-center gap-space-xs px-space-md py-space-sm bg-primary-container hover:bg-on-primary-fixed-variant text-surface-container-lowest rounded-lg shadow-md hover:shadow-lg transition-all text-label-lg font-label-lg" id="openAddModalBtn" type="button">
+<span class="material-symbols-outlined text-[18px]">person_add</span>
+<span>Enroll Believer</span>
+</button>
+</div>
+</div>
+<!-- Quick Vitality Metrics Mosaic -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm mt-space-lg pt-space-md border-t-0">
+<div class="bg-surface-container-lowest/80 backdrop-blur rounded-lg p-space-sm flex items-center justify-between shadow-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Baptized Roll</span>
+<span class="font-headline-sm text-headline-sm text-primary-container">215</span>
+</div>
+<span class="material-symbols-outlined text-secondary text-[24px]">water_drop</span>
+</div>
+<div class="bg-surface-container-lowest/80 backdrop-blur rounded-lg p-space-sm flex items-center justify-between shadow-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Regular Seekers</span>
+<span class="font-headline-sm text-headline-sm text-primary-container">76</span>
+</div>
+<span class="material-symbols-outlined text-secondary text-[24px]">diversity_1</span>
+</div>
+<div class="bg-surface-container-lowest/80 backdrop-blur rounded-lg p-space-sm flex items-center justify-between shadow-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Guest Attendees</span>
+<span class="font-headline-sm text-headline-sm text-tertiary-container">38</span>
+</div>
+<span class="material-symbols-outlined text-tertiary-container text-[24px]">person_search</span>
+</div>
+<div class="bg-surface-container-lowest/80 backdrop-blur rounded-lg p-space-sm flex items-center justify-between shadow-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Pastoral Oversight</span>
+<span class="font-headline-sm text-headline-sm text-error">14</span>
+</div>
+<span class="material-symbols-outlined text-error text-[24px]">favorite</span>
+</div>
+</div>
+</div>
+<!-- Search & Pastoral Segment Rail -->
+<div class="flex flex-col gap-space-md mb-space-lg">
+<div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-sm">
+<!-- Search Input with High Visibility -->
+<div class="relative flex-1 max-w-2xl">
+<span class="material-symbols-outlined absolute left-space-md top-1/2 -translate-y-1/2 text-outline text-[20px] pointer-events-none">manage_search</span>
+<input class="w-full pl-12 pr-space-lg py-3 rounded-full bg-surface-container-lowest shadow-sm text-on-surface placeholder:text-outline font-body-md text-body-md focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary/50 focus:outline-none transition-all" id="memberSearchInput" placeholder="Search by name, nickname, barangay, mobile, or household head..." type="search"/>
+</div>
+<!-- Quick Filter Toggle for Demonstration of Empty State -->
+<div class="flex items-center gap-space-xs self-end lg:self-center">
+<button class="text-label-sm font-label-sm uppercase tracking-wider text-secondary hover:text-on-secondary-fixed bg-secondary-fixed/30 hover:bg-secondary-fixed/50 px-space-md py-space-xs rounded-full transition-colors flex items-center gap-space-xs" id="simulateEmptyToggle">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span>Toggle Empty Query</span>
+</button>
+</div>
+</div>
+<!-- Segment Filter Pills -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-space-xs scrollbar-none">
+<button class="filter-pill whitespace-nowrap px-space-md py-1.5 rounded-full font-label-md text-label-md bg-primary-container text-surface-container-lowest shadow-sm transition-all flex items-center gap-1.5" data-filter="all">
+<span>All Active</span>
+<span class="px-1.5 py-0.5 rounded-full bg-surface-container-lowest/20 text-[10px]">348</span>
+</button>
+<button class="filter-pill whitespace-nowrap px-space-md py-1.5 rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-all flex items-center gap-1.5 shadow-sm" data-filter="member">
+<span>Member</span>
+<span class="px-1.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant text-[10px]">215</span>
+</button>
+<button class="filter-pill whitespace-nowrap px-space-md py-1.5 rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-all flex items-center gap-1.5 shadow-sm" data-filter="regular">
+<span>Regular Attendee</span>
+<span class="px-1.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant text-[10px]">76</span>
+</button>
+<button class="filter-pill whitespace-nowrap px-space-md py-1.5 rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-all flex items-center gap-1.5 shadow-sm" data-filter="visitor">
+<span>Visitor</span>
+<span class="px-1.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant text-[10px]">38</span>
+</button>
+<button class="filter-pill whitespace-nowrap px-space-md py-1.5 rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-all flex items-center gap-1.5 shadow-sm" data-filter="inactive">
+<span>Inactive</span>
+<span class="px-1.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant text-[10px]">14</span>
+</button>
+<button class="filter-pill whitespace-nowrap px-space-md py-1.5 rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-all flex items-center gap-1.5 shadow-sm" data-filter="transferred">
+<span>Transferred</span>
+<span class="px-1.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant text-[10px]">5</span>
+</button>
+<button class="filter-pill whitespace-nowrap px-space-md py-1.5 rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-all flex items-center gap-1.5 shadow-sm" data-filter="deceased">
+<span>With the Lord</span>
+<span class="px-1.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant text-[10px]">3</span>
+</button>
+</div>
+</div>
+<!-- Main Directory Ledger Card -->
+<div class="bg-surface-container-lowest rounded-xl shadow-[0_4px_20px_rgba(4,22,50,0.06)] overflow-hidden">
+<!-- Active State Table -->
+<div class="overflow-x-auto" id="directoryTableContainer">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-md text-label-md uppercase tracking-wider select-none">
+<th class="py-space-md px-space-md font-semibold">Member &amp; Family Calling</th>
+<th class="py-space-md px-space-md font-semibold">Status &amp; Covenant</th>
+<th class="py-space-md px-space-md font-semibold">Contact &amp; Address</th>
+<th class="py-space-md px-space-md font-semibold">Household Affiliation</th>
+<th class="py-space-md px-space-md font-semibold">Spiritual Milestones</th>
+<th class="py-space-md px-space-md text-right font-semibold">Pastoral Actions</th>
+</tr>
+</thead>
+<tbody class="font-body-md text-body-md text-on-surface divide-y-0" id="memberListBody">
+<!-- Row 1: Pastor Noel Navarro -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="relative shrink-0">
+<img class="w-11 h-11 rounded-full object-cover shadow-sm" data-alt="Portrait of an esteemed Filipino Baptist pastor in his late fifties with warm gentle eyes, neatly parted hair, wearing a white Barong Tagalog in an orderly church sanctuary bathed in soft daylight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_nVlnvNT-t3UjwUrliDeY8z7ObEk8iTomAYsH7TDxtb3kMwEPgGROuTtpNg3QiHfhrhscZCcsTYeqZo08IK9AklrP9fDrRg_Ps_ww916w5oGXPk-W7nATNvlNVO2sYyBu4s8c4FVCSG6ddcIRaqE5aiYX6u5HpFnzWRcA64p1M-DXqQ9ATDjVWe_DhJMx6khiaMjMiGfB0Pf0gfoBtthybmPpZp3JCn0VDCcwT0E"/>
+<span class="absolute bottom-0 right-0 w-3 h-3 bg-tertiary-fixed rounded-full shadow-[0_0_0_2px_#ffffff]" title="Active Minister"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-title-md font-semibold text-primary-container truncate">Bro. Emmanuel Navarro</span>
+<span class="text-secondary font-medium font-body-sm text-body-sm">"Noel"</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm mt-0.5">
+<span class="bg-surface-container px-1.5 py-0.5 rounded text-[11px] font-medium text-on-surface">Senior Pastor</span>
+<span>•</span>
+<span>54 yrs</span>
+<span>•</span>
+<span>Male</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-label-sm font-label-sm bg-primary-fixed text-primary-container font-semibold uppercase tracking-wider">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                Member
+              </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">0917-882-9011</span>
+<span class="text-on-surface-variant text-body-sm font-body-sm truncate">Brgy. 1-S Barani, Batac City</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-secondary">roofing</span>
+<div class="flex flex-col">
+<span class="font-medium text-on-surface truncate">Navarro Household</span>
+<span class="text-label-sm font-label-sm text-secondary font-semibold uppercase">Household Head</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col gap-0.5">
+<span class="text-body-sm font-body-sm text-on-surface">Baptized: <strong class="font-medium">Apr 1988 (BBC Laoag)</strong></span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">Salvation: Dec 1984 • Ordained 1996</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="inline-flex items-center justify-end gap-1">
+<button class="p-1.5 text-on-surface-variant hover:text-primary-container hover:bg-surface-container rounded-lg transition-colors" title="View Profile" type="button">
+<span class="material-symbols-outlined text-[20px]">id_card</span>
+</button>
+<button class="p-1.5 text-on-surface-variant hover:text-secondary hover:bg-surface-container rounded-lg transition-colors" title="Edit Record" type="button">
+<span class="material-symbols-outlined text-[20px]">edit_note</span>
+</button>
+<button class="p-1.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded-lg transition-colors" title="Options" type="button">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Sis Grace Navarro -->
+<tr class="bg-surface-container-low/20 hover:bg-surface-container-low/60 transition-colors group">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-11 h-11 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed font-title-md text-title-md font-bold shadow-sm shrink-0">
+                  GA
+                </div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-title-md font-semibold text-primary-container truncate">Sis. Grace Navarro</span>
+<span class="text-secondary font-medium font-body-sm text-body-sm">"Grace"</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm mt-0.5">
+<span class="bg-secondary-container/50 text-on-secondary-container px-1.5 py-0.5 rounded text-[11px] font-medium">Sunday School Supt.</span>
+<span>•</span>
+<span>52 yrs</span>
+<span>•</span>
+<span>Female</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-label-sm font-label-sm bg-primary-fixed text-primary-container font-semibold uppercase tracking-wider">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                Member
+              </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">0917-882-9012</span>
+<span class="text-on-surface-variant text-body-sm font-body-sm truncate">Brgy. 1-S Barani, Batac City</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">favorite</span>
+<div class="flex flex-col">
+<span class="font-medium text-on-surface truncate">Navarro Household</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant uppercase">Spouse</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col gap-0.5">
+<span class="text-body-sm font-body-sm text-on-surface">Baptized: <strong class="font-medium">Nov 1989</strong></span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">Salvation: Aug 1987</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="inline-flex items-center justify-end gap-1">
+<button class="p-1.5 text-on-surface-variant hover:text-primary-container hover:bg-surface-container rounded-lg transition-colors" title="View Profile" type="button">
+<span class="material-symbols-outlined text-[20px]">id_card</span>
+</button>
+<button class="p-1.5 text-on-surface-variant hover:text-secondary hover:bg-surface-container rounded-lg transition-colors" title="Edit Record" type="button">
+<span class="material-symbols-outlined text-[20px]">edit_note</span>
+</button>
+<button class="p-1.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded-lg transition-colors" title="Options" type="button">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Deacon Juan Ramos -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="relative shrink-0">
+<img class="w-11 h-11 rounded-full object-cover shadow-sm" data-alt="Portrait of an elderly respected Filipino church deacon in his seventies with dignified silver hair, serene smile, seated in wooden pews of BBC Barani church with sun rays on the background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeuzI1Y_pzKvuRWJa0i0o9Zti3w5scC2yJsCRNpSNEQ55CYRw4lLC-Mpd5MiMXhMfuCa6qFWDA5U0Pj3ZyiWpznItLYAhiNkYrodSgMvCVGdbigxA2NNZI8KrPXk-6wtzW1ejY9f8cz-qQN6G-b7mak4avfKwvAIwKU_p1YNzi_pcx8lJ6MbjwfYtgwzqbTmWRROtoz2w11pBns86ZNrUy9H3n2mQ-_9JxRRxFU_o"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-title-md font-semibold text-primary-container truncate">Deacon Juan Ramos</span>
+<span class="text-secondary font-medium font-body-sm text-body-sm">"Tatay Juan"</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm mt-0.5">
+<span class="bg-surface-container px-1.5 py-0.5 rounded text-[11px] font-medium text-on-surface">Head Usher &amp; Deacon</span>
+<span>•</span>
+<span>71 yrs</span>
+<span>•</span>
+<span>Male</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-label-sm font-label-sm bg-primary-fixed text-primary-container font-semibold uppercase tracking-wider">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                Member
+              </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">0918-341-2290</span>
+<span class="text-on-surface-variant text-body-sm font-body-sm truncate">Sitio Bungro, Barani, Batac</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-secondary">roofing</span>
+<div class="flex flex-col">
+<span class="font-medium text-on-surface truncate">Ramos Household</span>
+<span class="text-label-sm font-label-sm text-secondary font-semibold uppercase">Household Head</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col gap-0.5">
+<span class="text-body-sm font-body-sm text-on-surface">Baptized: <strong class="font-medium">Mar 1978 (BBC Barani)</strong></span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">Charter Member • Deacon 1985</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="inline-flex items-center justify-end gap-1">
+<button class="p-1.5 text-on-surface-variant hover:text-primary-container hover:bg-surface-container rounded-lg transition-colors" title="View Profile" type="button">
+<span class="material-symbols-outlined text-[20px]">id_card</span>
+</button>
+<button class="p-1.5 text-on-surface-variant hover:text-secondary hover:bg-surface-container rounded-lg transition-colors" title="Edit Record" type="button">
+<span class="material-symbols-outlined text-[20px]">edit_note</span>
+</button>
+<button class="p-1.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded-lg transition-colors" title="Options" type="button">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: Sis Remedios Castro -->
+<tr class="bg-surface-container-low/20 hover:bg-surface-container-low/60 transition-colors group">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-11 h-11 rounded-full bg-surface-container-high flex items-center justify-center text-primary-container font-title-md text-title-md font-bold shadow-sm shrink-0">
+                  RC
+                </div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-title-md font-semibold text-primary-container truncate">Sis. Remedios Castro</span>
+<span class="text-secondary font-medium font-body-sm text-body-sm">"Lola Meding"</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm mt-0.5">
+<span class="bg-surface-container px-1.5 py-0.5 rounded text-[11px] font-medium text-on-surface">Senior Circle</span>
+<span>•</span>
+<span>82 yrs</span>
+<span>•</span>
+<span>Female</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-label-sm font-label-sm bg-primary-fixed text-primary-container font-semibold uppercase tracking-wider">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                Member
+              </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">0920-911-4432</span>
+<span class="text-on-surface-variant text-body-sm font-body-sm truncate">Poblacion 2, Batac City</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">home</span>
+<div class="flex flex-col">
+<span class="font-medium text-on-surface truncate">Castro-Perez Home</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant uppercase">Matriarch</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col gap-0.5">
+<span class="text-body-sm font-body-sm text-on-surface">Baptized: <strong class="font-medium">Oct 1981</strong></span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">Homebound Visitation List</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="inline-flex items-center justify-end gap-1">
+<button class="p-1.5 text-on-surface-variant hover:text-primary-container hover:bg-surface-container rounded-lg transition-colors" title="View Profile" type="button">
+<span class="material-symbols-outlined text-[20px]">id_card</span>
+</button>
+<button class="p-1.5 text-on-surface-variant hover:text-secondary hover:bg-surface-container rounded-lg transition-colors" title="Edit Record" type="button">
+<span class="material-symbols-outlined text-[20px]">edit_note</span>
+</button>
+<button class="p-1.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded-lg transition-colors" title="Options" type="button">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5: Bro Mark Anthony Flores -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="relative shrink-0">
+<img class="w-11 h-11 rounded-full object-cover shadow-sm" data-alt="Close up profile photo of a young energetic Filipino youth ministry director in his mid-twenties smiling with guitar strapped on shoulder inside BBC church hall." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0Hf37ag4KcCxHW9_hgOp34HTSFRYcRRo7wHpm5Jm01T65ZdvVDD4uVBK8RWVLYmUU_ZWOgz5DKQoqybZbwfv-tbxgCgwUbLHlhl5bytolBNvCLZ-tOa5omsIlS3sJylT81IXhKsAmbUy9UiPYFblIxx8YOtmsUU8Io4alYJLfNA_IMPT3S_nr75gGcE0AkbNR8ypDSA1Qf5ltWzijhiObF8Ds1yDCNqAdqr5RoFs"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-title-md font-semibold text-primary-container truncate">Bro. Mark Anthony Flores</span>
+<span class="text-secondary font-medium font-body-sm text-body-sm">"Mark"</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm mt-0.5">
+<span class="bg-surface-container px-1.5 py-0.5 rounded text-[11px] font-medium text-on-surface">Youth Leader</span>
+<span>•</span>
+<span>26 yrs</span>
+<span>•</span>
+<span>Male</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-label-sm font-label-sm bg-primary-fixed text-primary-container font-semibold uppercase tracking-wider">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                Member
+              </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">0995-120-8841</span>
+<span class="text-on-surface-variant text-body-sm font-body-sm truncate">Brgy. Ricarte, Batac City</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">home</span>
+<div class="flex flex-col">
+<span class="font-medium text-on-surface truncate">Flores Household</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant uppercase">Adult Son</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col gap-0.5">
+<span class="text-body-sm font-body-sm text-on-surface">Baptized: <strong class="font-medium">May 2012</strong></span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">Camp Counselor • Worship Team</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="inline-flex items-center justify-end gap-1">
+<button class="p-1.5 text-on-surface-variant hover:text-primary-container hover:bg-surface-container rounded-lg transition-colors" title="View Profile" type="button">
+<span class="material-symbols-outlined text-[20px]">id_card</span>
+</button>
+<button class="p-1.5 text-on-surface-variant hover:text-secondary hover:bg-surface-container rounded-lg transition-colors" title="Edit Record" type="button">
+<span class="material-symbols-outlined text-[20px]">edit_note</span>
+</button>
+<button class="p-1.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded-lg transition-colors" title="Options" type="button">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 6: Sis Christine Joy Valdez -->
+<tr class="bg-surface-container-low/20 hover:bg-surface-container-low/60 transition-colors group">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-11 h-11 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-title-md text-title-md font-bold shadow-sm shrink-0">
+                  CV
+                </div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-title-md font-semibold text-primary-container truncate">Sis. Christine Joy Valdez</span>
+<span class="text-secondary font-medium font-body-sm text-body-sm">"Tin"</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm mt-0.5">
+<span class="bg-surface-container px-1.5 py-0.5 rounded text-[11px] font-medium text-on-surface">Choir Director</span>
+<span>•</span>
+<span>34 yrs</span>
+<span>•</span>
+<span>Female</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-label-sm font-label-sm bg-primary-fixed text-primary-container font-semibold uppercase tracking-wider">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                Member
+              </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">0917-555-8902</span>
+<span class="text-on-surface-variant text-body-sm font-body-sm truncate">Brgy. Baay, Batac City</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">home</span>
+<div class="flex flex-col">
+<span class="font-medium text-on-surface truncate">Valdez-Marcos Household</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant uppercase">Spouse</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col gap-0.5">
+<span class="text-body-sm font-body-sm text-on-surface">Baptized: <strong class="font-medium">Aug 2005</strong></span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">Music Ministry • Pianist</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="inline-flex items-center justify-end gap-1">
+<button class="p-1.5 text-on-surface-variant hover:text-primary-container hover:bg-surface-container rounded-lg transition-colors" title="View Profile" type="button">
+<span class="material-symbols-outlined text-[20px]">id_card</span>
+</button>
+<button class="p-1.5 text-on-surface-variant hover:text-secondary hover:bg-surface-container rounded-lg transition-colors" title="Edit Record" type="button">
+<span class="material-symbols-outlined text-[20px]">edit_note</span>
+</button>
+<button class="p-1.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded-lg transition-colors" title="Options" type="button">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 7: Sis Angelica Mae Corpuz (Regular Attendee) -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-11 h-11 rounded-full bg-secondary-fixed-dim/30 text-secondary flex items-center justify-center font-title-md text-title-md font-bold shadow-sm shrink-0">
+                  AC
+                </div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-title-md font-semibold text-primary-container truncate">Sis. Angelica Mae Corpuz</span>
+<span class="text-secondary font-medium font-body-sm text-body-sm">"Angie"</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm mt-0.5">
+<span>Young Professionals</span>
+<span>•</span>
+<span>29 yrs</span>
+<span>•</span>
+<span>Female</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-label-sm font-label-sm bg-secondary-container/40 text-secondary font-semibold uppercase tracking-wider">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Regular Attendee
+              </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">0947-663-1189</span>
+<span class="text-on-surface-variant text-body-sm font-body-sm truncate">Brgy. Ben-agan, Batac City</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">home</span>
+<div class="flex flex-col">
+<span class="font-medium text-on-surface truncate">Corpuz Household</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant uppercase">Individual Member</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col gap-0.5">
+<span class="text-body-sm font-body-sm text-on-surface">Orientation: <strong class="font-medium">In Progress (Lesson 3)</strong></span>
+<span class="text-label-sm font-label-sm text-secondary font-medium">Candidate for Baptism</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="inline-flex items-center justify-end gap-1">
+<button class="p-1.5 text-on-surface-variant hover:text-primary-container hover:bg-surface-container rounded-lg transition-colors" title="View Profile" type="button">
+<span class="material-symbols-outlined text-[20px]">id_card</span>
+</button>
+<button class="p-1.5 text-on-surface-variant hover:text-secondary hover:bg-surface-container rounded-lg transition-colors" title="Edit Record" type="button">
+<span class="material-symbols-outlined text-[20px]">edit_note</span>
+</button>
+<button class="p-1.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded-lg transition-colors" title="Options" type="button">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 8: Bro Paul Gabriel Pasion (Visitor) -->
+<tr class="bg-surface-container-low/20 hover:bg-surface-container-low/60 transition-colors group">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-11 h-11 rounded-full bg-tertiary-fixed text-tertiary-container flex items-center justify-center font-title-md text-title-md font-bold shadow-sm shrink-0">
+                  PP
+                </div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-title-md font-semibold text-primary-container truncate">Bro. Paul Gabriel Pasion</span>
+<span class="text-secondary font-medium font-body-sm text-body-sm">"Gabby"</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm mt-0.5">
+<span class="text-tertiary-container font-semibold">1st-Time Guest</span>
+<span>•</span>
+<span>22 yrs</span>
+<span>•</span>
+<span>Male</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-label-sm font-label-sm bg-tertiary-fixed/60 text-tertiary-container font-semibold uppercase tracking-wider">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-container"></span>
+                Visitor
+              </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">0908-412-0056</span>
+<span class="text-on-surface-variant text-body-sm font-body-sm truncate">MMSU College Dorm, Batac City</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-tertiary-container">person_pin</span>
+<div class="flex flex-col">
+<span class="font-medium text-on-surface truncate">Student Ministry</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant uppercase">Invited by M. Flores</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col gap-0.5">
+<span class="text-body-sm font-body-sm text-on-surface">First Visit: <strong class="font-medium">Last Lord's Day</strong></span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">Follow-up: Coffee fellowship</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="inline-flex items-center justify-end gap-1">
+<button class="p-1.5 text-on-surface-variant hover:text-primary-container hover:bg-surface-container rounded-lg transition-colors" title="View Profile" type="button">
+<span class="material-symbols-outlined text-[20px]">id_card</span>
+</button>
+<button class="p-1.5 text-on-surface-variant hover:text-secondary hover:bg-surface-container rounded-lg transition-colors" title="Edit Record" type="button">
+<span class="material-symbols-outlined text-[20px]">edit_note</span>
+</button>
+<button class="p-1.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded-lg transition-colors" title="Options" type="button">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Friendly Classical Empty State (Hidden by default, toggleable via demo button) -->
+<div class="hidden py-space-xl px-space-lg flex flex-col items-center justify-center text-center max-w-lg mx-auto" id="emptySearchState">
+<div class="w-16 h-16 rounded-full bg-surface-container-high flex items-center justify-center text-secondary mb-space-md shadow-inner">
+<span class="material-symbols-outlined text-[32px]">menu_book</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary-container mb-space-xs">No Soul Found in this Record</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-lg">
+        We could not find any active believer or household matching "<span class="italic text-on-surface font-semibold" id="emptyQueryTerm">Unknown</span>". Check the spelling, try searching by nickname (e.g. "Tatay Juan"), or register a new attendee.
+      </p>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md py-space-sm rounded-lg bg-surface-container hover:bg-surface-variant text-on-surface font-label-md text-label-md transition-colors" id="resetSearchBtn" type="button">
+          Clear Filters
+        </button>
+<button class="px-space-md py-space-sm rounded-lg bg-primary-container text-surface-container-lowest hover:bg-on-primary-fixed-variant font-label-md text-label-md transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>Register Soul to Roll</span>
+</button>
+</div>
+</div>
+<!-- Administrative Pagination Footer -->
+<div class="px-space-md py-space-md bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-sm text-body-sm font-body-sm text-on-surface-variant">
+<div class="flex items-center gap-space-xs">
+<span>Showing</span>
+<strong class="text-on-surface font-semibold">1–8</strong>
+<span>of</span>
+<strong class="text-on-surface font-semibold">348 records</strong>
+<span class="text-outline mx-1">•</span>
+<span class="text-label-sm font-label-sm uppercase tracking-wider text-secondary">Batac City Assembly</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="px-space-sm py-1 rounded bg-surface-container-lowest text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors disabled:opacity-40" disabled="" type="button">
+<span class="material-symbols-outlined text-[18px] align-middle">chevron_left</span>
+<span class="font-label-md text-label-md">Previous</span>
+</button>
+<div class="flex items-center gap-1 px-1">
+<button class="w-8 h-8 rounded font-label-md text-label-md bg-primary-container text-surface-container-lowest font-semibold" type="button">1</button>
+<button class="w-8 h-8 rounded font-label-md text-label-md bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-colors" type="button">2</button>
+<button class="w-8 h-8 rounded font-label-md text-label-md bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-colors" type="button">3</button>
+<span class="px-1 text-outline">...</span>
+<button class="w-8 h-8 rounded font-label-md text-label-md bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-colors" type="button">44</button>
+</div>
+<button class="px-space-sm py-1 rounded bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-colors" type="button">
+<span class="font-label-md text-label-md">Next</span>
+<span class="material-symbols-outlined text-[18px] align-middle">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Editorial Note / Historical Footnote -->
+<div class="mt-space-lg flex items-start gap-space-sm p-space-md bg-surface-container-low/50 rounded-lg">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">verified_user</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+<strong class="font-medium text-on-surface">Ecclesiastical Notice:</strong> Membership status indicates covenant communion at Bible Baptist Church Barani. All spiritual milestones, confidential pastoral logs, and family headships are maintained under pastoral privilege pursuant to church bylaws and Philippine Data Privacy compliance.
+    </p>
+</div>
+</div>
+<script>
+  // Filter interaction
+  const pills = document.querySelectorAll('.filter-pill');
+  pills.forEach(pill => {
+    pill.addEventListener('click', () => {
+      pills.forEach(p => {
+        p.classList.remove('bg-primary-container', 'text-surface-container-lowest');
+        p.classList.add('bg-surface-container-lowest', 'text-on-surface');
+      });
+      pill.classList.remove('bg-surface-container-lowest', 'text-on-surface');
+      pill.classList.add('bg-primary-container', 'text-surface-container-lowest');
+    });
+  });
+
+  // Empty state simulation toggle
+  const toggleBtn = document.getElementById('simulateEmptyToggle');
+  const tableContainer = document.getElementById('directoryTableContainer');
+  const emptyState = document.getElementById('emptySearchState');
+  const searchInput = document.getElementById('memberSearchInput');
+  const emptyQueryTerm = document.getElementById('emptyQueryTerm');
+  const resetSearchBtn = document.getElementById('resetSearchBtn');
+
+  let isEmptySimulated = false;
+
+  function setEmptyState(show, term = "Barani non-member") {
+    if (show) {
+      tableContainer.classList.add('hidden');
+      emptyState.classList.remove('hidden');
+      emptyQueryTerm.textContent = term;
+      toggleBtn.innerHTML = '<span class="material-symbols-outlined text-[16px]">table_rows</span><span>Restore List View</span>';
+      isEmptySimulated = true;
+    } else {
+      tableContainer.classList.remove('hidden');
+      emptyState.classList.add('hidden');
+      toggleBtn.innerHTML = '<span class="material-symbols-outlined text-[16px]">visibility</span><span>Toggle Empty Query</span>';
+      isEmptySimulated = false;
+      if (searchInput) searchInput.value = '';
+    }
+  }
+
+  toggleBtn.addEventListener('click', () => {
+    setEmptyState(!isEmptySimulated, "Unregistered Inquirer");
+  });
+
+  if (resetSearchBtn) {
+    resetSearchBtn.addEventListener('click', () => {
+      setEmptyState(false);
+    });
+  }
+
+  // Real-time search placeholder response
+  if (searchInput) {
+    searchInput.addEventListener('input', (e) => {
+      const val = e.target.value.trim();
+      if (val.toLowerCase() === 'none' || val.toLowerCase() === 'zero') {
+        setEmptyState(true, val);
+      } else if (isEmptySimulated && val === '') {
+        setEmptyState(false);
+      }
+    });
+  }
+</script></div></main></div></body></html>

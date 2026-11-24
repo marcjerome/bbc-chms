@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+{% load chms %}
+{% block title %}Self check-in · {% endblock %}
+{% block content %}
+<div class="flex flex-wrap items-end justify-between gap-4">
+  <div><p class="label !text-secondary">Phase 2</p><h1 class="page-title mt-1">Self check-in</h1>
+    <p class="mt-3 text-sm text-on-surface-variant">People check themselves in at the door: a QR sticker in their Bible, a fingerprint, or their face.</p><div class="gold-rule"></div></div>
+  <div class="flex flex-wrap gap-2">
+    {% if perms.checkin.change_checkinsettings %}<a href="{% url 'checkin:modes' %}" class="btn-outline"><span aria-hidden="true" class="material-symbols-outlined">tune</span>Modes</a>{% endif %}
+    {% if QR_ON and perms.checkin.view_checkincard %}<a href="{% url 'checkin:stickers' %}" class="btn-outline"><span aria-hidden="true" class="material-symbols-outlined">print</span>Print stickers</a>{% endif %}
+    {% if KIOSK_ON and perms.checkin.add_scan %}<a href="{% url 'checkin:kiosk' %}" class="btn-primary"><span aria-hidden="true" class="material-symbols-outlined">qr_code_scanner</span>Open kiosk</a>{% endif %}
+  </div>
+</div>
+
+<div class="mt-6 flex flex-wrap items-center gap-2 text-sm" aria-label="Check-in modes">
+  <span class="label mr-1">Modes</span>
+  <span class="pill {% if QR_ON %}bg-primary text-white{% else %}bg-surface-container text-on-surface-variant line-through{% endif %}">QR stickers{% if QR_ON %} · on{% else %} · off{% endif %}</span>
+  <span class="pill {% if FINGERPRINT_ON %}bg-primary text-white{% else %}bg-surface-container text-on-surface-variant line-through{% endif %}">Fingerprint{% if FINGERPRINT_ON %} · on{% else %} · off{% endif %}</span>
+  <span class="pill {% if FACE_ON %}bg-primary text-white{% else %}bg-surface-container text-on-surface-variant line-through{% endif %}">Face{% if FACE_ON %} · on{% else %} · off{% endif %}</span>
+  {% if TERMINALS_ON and perms.biometrics.view_scan %}<a href="{% url 'biometrics:overview' %}" class="ml-2 font-semibold text-secondary hover:underline">Door terminals →</a>{% endif %}
+</div>
+{% if not SELF_CHECKIN_ENABLED %}
+<p class="card mt-6 p-6 text-sm text-on-surface-variant">Every check-in mode is off, so only ushers check people in. {% if perms.checkin.change_checkinsettings %}<a class="font-semibold text-secondary hover:underline" href="{% url 'checkin:modes' %}">Turn a mode on</a>.{% endif %}</p>
+{% endif %}
+
+<div class="mt-8 grid grid-cols-2 gap-4 lg:grid-cols-4">
+  {% include "core/partials/stat_card.html" with label="Active congregation" value=active_people note="Visitors, attendees and members" pct=100 bar="bg-primary" color="text-primary" %}
+  {% include "core/partials/stat_card.html" with label="Have a QR code" value=with_card note="Code given out" pct=with_card|percent:active_people bar="bg-secondary" color="text-secondary" %}
+  {% include "core/partials/stat_card.html" with label="Stickers printed" value=printed note="Ready to put in their Bible" pct=printed|percent:active_people bar="bg-primary-container" color="text-primary" %}
+  {% include "core/partials/stat_card.html" with label="Checked in today" value=today note="At the kiosk" pct=today|percent:active_people bar="bg-tertiary" color="text-tertiary" %}
+</div>
+
+<div class="mt-6 grid gap-6 lg:grid-cols-3">
+  <section class="card p-6 text-sm text-on-surface-variant lg:col-span-1">
+    <h2 class="flex items-center gap-2 text-lg font-semibold text-on-surface"><span aria-hidden="true" class="material-symbols-outlined text-secondary">help</span>How it works</h2>
+    {% if QR_ON %}
+    <h3 class="mt-3 font-semibold text-on-surface">QR stickers</h3>
+    <ol class="mt-1 list-decimal space-y-1 pl-5">
+      <li>Give people a QR code on their profile, or many at once from <a class="font-semibold text-secondary hover:underline" href="{% url 'checkin:stickers' %}">Print stickers</a>.</li>
+      <li>Print the stickers and put each one inside the person's Bible.</li>
+      <li>At the door, open the <strong>kiosk</strong> on a tablet, laptop or phone and log in as an usher or the kiosk account. A USB QR scanner works too.</li>
+    </ol>
+    {% endif %}
+    {% if FACE_ON %}
+    <h3 class="mt-4 font-semibold text-on-surface">Face at the kiosk</h3>
+    <ol class="mt-1 list-decimal space-y-1 pl-5">
+      <li>Record the person's signed consent on their profile, then <strong>Enroll face</strong> (5 pictures, 10 seconds). {{ faces }} enrolled so far.</li>
+      <li>At the kiosk they simply look at the camera.</li>
+    </ol>
+    {% endif %}
+    {% if TERMINALS_ON %}
+    <h3 class="mt-4 font-semibold text-on-surface">Door terminal</h3>
+    <ol class="mt-1 list-decimal space-y-1 pl-5">
+      <li>Record consent and <strong>Register on terminals</strong> on their profile, then enroll their {% if FINGERPRINT_ON %}finger{% endif %}{% if FINGERPRINT_ON and FACE_ON %} or {% endif %}{% if FACE_ON %}face{% endif %} at the terminal.</li>
+      <li>Set up and approve terminals under <a class="font-semibold text-secondary hover:underline" href="{% url 'biometrics:overview' %}">Door terminals</a>.</li>
+    </ol>
+    {% endif %}
+    <p class="mt-4">Every way checks them into the service happening at that time. The service opens automatically.</p>
+    <h3 class="mt-5 flex items-center gap-2 font-semibold text-on-surface"><span aria-hidden="true" class="material-symbols-outlined text-base text-secondary">shield_person</span>Privacy</h3>
+    <ul class="mt-2 list-disc space-y-1 pl-5">
+      <li>The QR holds only a random code, never a name or other personal details. A lost sticker? Make a new code on their profile.</li>
+      {% if TERMINALS_ON %}<li>Fingerprints and faces need the person's signed consent (RA 10173). Withdrawing it removes them from the kiosk and every terminal.</li>{% endif %}
+      {% if FACE_ON %}<li>The kiosk keeps numbers computed from a face, never a photo.</li>{% endif %}
+    </ul>
+  </section>
+
+  <section class="card lg:col-span-2">
+    <h2 class="border-b border-outline-variant/40 px-5 py-4 text-lg font-semibold">Live scans</h2>
+    <div hx-get="{% url 'checkin:overview' %}" hx-trigger="every 5s" hx-swap="innerHTML">
+    {% partialdef scan_feed inline %}
+    <ul class="divide-y divide-outline-variant/40">
+      {% for s in scans %}
+      <li class="flex items-center gap-3 px-5 py-2.5 text-sm">
+        <span aria-hidden="true" class="material-symbols-outlined {% if s.result == 'checked_in' %}text-tertiary{% elif s.result == 'duplicate' %}text-outline{% else %}text-error{% endif %}">{% if s.code == "FACE" %}face{% else %}qr_code_2{% endif %}</span>
+        <div class="min-w-0 flex-1"><p class="font-medium">{% if s.member %}{{ s.member.display_name }}{% elif s.code == "FACE" %}Face not recognised{% else %}Unknown code {{ s.code }}{% endif %}</p>
+          <p class="text-xs text-on-surface-variant">{{ s.get_result_display }}{% if s.service %} · {{ s.service.title|default:s.service.service_type.name }}{% endif %}{% if s.station %} · {{ s.station }}{% endif %}</p></div>
+        <span class="text-xs text-on-surface-variant">{{ s.scanned_at|date:"M j, g:i A" }}</span>
+      </li>
+      {% empty %}
+      <li class="px-5 py-8 text-center font-serif italic text-on-surface-variant">No scans yet.</li>
+      {% endfor %}
+    </ul>
+    {% endpartialdef %}
+    </div>
+  </section>
+</div>
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<a href="{% if household %}{{ household.get_absolute_url }}{% else %}{% url 'members:household_list' %}{% endif %}" class="text-sm text-on-surface-variant hover:underline">← Back</a>
+<h1 class="page-title mt-3">{% if household %}Edit {{ household.name }}{% else %}Add household{% endif %}</h1>
+<div class="gold-rule"></div>
+<form method="post" class="card mt-8 max-w-3xl p-6">{% csrf_token %}
+  <div class="grid gap-4 md:grid-cols-2">{% for field in form %}{% include "partials/form_field.html" %}{% endfor %}</div>
+  <div class="mt-6 flex justify-end gap-2">
+    <a href="{% if household %}{{ household.get_absolute_url }}{% else %}{% url 'members:household_list' %}{% endif %}" class="btn-ghost">Cancel</a>
+    <button class="btn-primary">Save</button>
+  </div>
+</form>
+{% endblock %}

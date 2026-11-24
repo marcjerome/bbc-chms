@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% block title %}Members · {% endblock %}
+{% block content %}
+<div class="flex flex-wrap items-end justify-between gap-4">
+  <div>
+    <h1 class="page-title">Members</h1>
+    <div class="gold-rule"></div>
+  </div>
+  <div class="flex flex-wrap gap-2">
+    <a href="{% url 'members:member_export' %}?{{ request.GET.urlencode }}" class="btn-ghost"><span aria-hidden="true" class="material-symbols-outlined">download</span>Export CSV</a>
+    {% if perms.members.add_member %}<a href="{% url 'members:member_create' %}" class="btn-primary"><span aria-hidden="true" class="material-symbols-outlined">person_add</span>Add member</a>{% endif %}
+  </div>
+</div>
+
+<form class="mt-6 space-y-3" hx-get="{% url 'members:member_list' %}" hx-target="#results" hx-push-url="true"
+      hx-trigger="input changed delay:300ms from:input[name=q], change from:input[name=status]">
+  <div class="relative max-w-md">
+    <span aria-hidden="true" class="material-symbols-outlined pointer-events-none absolute top-1/2 left-3 -translate-y-1/2 text-outline">search</span>
+    <input type="search" name="q" value="{{ query }}" placeholder="Search name, mobile or email…" class="!pl-10" autocomplete="off">
+  </div>
+  <div class="flex flex-wrap gap-2">
+    <label class="cursor-pointer"><input type="radio" name="status" value="" class="peer sr-only" {% if not status %}checked{% endif %}><span class="pill border border-outline-variant bg-white px-3 py-1.5 text-on-surface-variant peer-checked:border-primary peer-checked:bg-primary peer-checked:text-white">All</span></label>
+    <label class="cursor-pointer"><input type="radio" name="status" value="active" class="peer sr-only" {% if status == "active" %}checked{% endif %}><span class="pill border border-outline-variant bg-white px-3 py-1.5 text-on-surface-variant peer-checked:border-primary peer-checked:bg-primary peer-checked:text-white">All active</span></label>
+    {% for value, label in status_choices %}
+    <label class="cursor-pointer"><input type="radio" name="status" value="{{ value }}" class="peer sr-only" {% if status == value %}checked{% endif %}><span class="pill border border-outline-variant bg-white px-3 py-1.5 text-on-surface-variant peer-checked:border-primary peer-checked:bg-primary peer-checked:text-white">{{ label }}</span></label>
+    {% endfor %}
+  </div>
+</form>
+
+<div id="results" class="mt-6">
+{% partialdef results inline %}
+<div class="card overflow-hidden">
+  <p class="border-b border-outline-variant/40 px-4 py-3 text-sm text-on-surface-variant">{{ total }} {{ total|pluralize:"person,people" }}</p>
+  {% if page.object_list %}
+  <div class="hidden md:block">
+  <table class="table">
+    <thead><tr><th>Name</th><th>Status</th><th>Mobile</th><th>Household</th><th class="text-right">Age</th></tr></thead>
+    <tbody>
+    {% for m in page %}
+      <tr class="cursor-pointer" onclick="location='{{ m.get_absolute_url }}'">
+        <td><div class="flex items-center gap-3">{% include "partials/avatar.html" with member=m %}
+          <div><a href="{{ m.get_absolute_url }}" class="font-medium text-ink hover:underline">{% if m.title %}{{ m.title }} {% endif %}{{ m.sort_name }}</a>{% if m.nickname %} <span class="text-xs text-secondary">“{{ m.nickname }}”</span>{% endif %}{% if m.church_role %}<p><span class="pill mt-0.5 bg-surface-container text-on-surface-variant">{{ m.church_role }}</span></p>{% endif %}</div></div></td>
+        <td>{% include "partials/status_pill.html" with member=m %}</td>
+        <td>{{ m.phone|default:"—" }}</td>
+        <td>{{ m.household|default:"—" }}</td>
+        <td class="text-right">{{ m.age|default_if_none:"—" }}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  </div>
+  <ul class="divide-y divide-outline-variant/40 md:hidden">
+    {% for m in page %}
+    <li><a href="{{ m.get_absolute_url }}" class="flex items-center gap-3 px-4 py-3">
+      {% include "partials/avatar.html" with member=m size="h-11 w-11 text-sm" %}
+      <div class="min-w-0 flex-1"><p class="truncate font-medium">{{ m.sort_name }}</p><p class="text-xs text-on-surface-variant">{{ m.phone|default:m.household|default:"" }}</p></div>
+      {% include "partials/status_pill.html" with member=m %}
+    </a></li>
+    {% endfor %}
+  </ul>
+  {% include "partials/pagination.html" with target="#results" %}
+  {% else %}
+  <div class="px-6 py-12 text-center">
+    <p class="font-serif text-lg italic text-on-surface-variant">{% if query or status %}No one matches your search.{% else %}No members yet.{% endif %}</p>
+    {% if not query and perms.members.add_member %}<a href="{% url 'members:member_create' %}" class="btn-primary mt-4">Add the first member</a>{% endif %}
+  </div>
+  {% endif %}
+</div>
+{% endpartialdef %}
+</div>
+{% endblock %}

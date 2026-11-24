@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<a href="{% url 'biometrics:overview' %}" class="text-sm text-on-surface-variant hover:underline">← Door terminals</a>
+<h1 class="page-title mt-3">Terminal {{ device.serial_number }}</h1>
+<div class="gold-rule"></div>
+<form method="post" class="card mt-8 max-w-xl space-y-4 p-6">{% csrf_token %}
+  {% for field in form %}{% include "partials/form_field.html" %}{% endfor %}
+  <div class="flex justify-end gap-2"><a href="{% url 'biometrics:overview' %}" class="btn-ghost">Cancel</a><button class="btn-primary">Save</button></div>
+</form>
+{% endblock %}

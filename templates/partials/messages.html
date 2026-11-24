@@ -1,0 +1,12 @@
+{% if messages %}
+<div class="fixed right-4 bottom-4 z-50 space-y-2">
+  {% for message in messages %}
+  <div x-data="{ show: true }" x-show="show" x-init="setTimeout(() => show = false, 5000)" x-transition
+       class="flex items-center gap-3 rounded-lg px-4 py-3 text-sm shadow-sanctuary {% if message.tags == 'error' %}bg-error-container text-error{% else %}bg-tertiary text-white{% endif %}">
+    <span aria-hidden="true" class="material-symbols-outlined text-lg">{% if message.tags == 'error' %}error{% else %}check_circle{% endif %}</span>
+    {{ message }}
+    <button @click="show = false" class="ml-2 opacity-70 hover:opacity-100" aria-label="Dismiss"><span aria-hidden="true" class="material-symbols-outlined text-base">close</span></button>
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
